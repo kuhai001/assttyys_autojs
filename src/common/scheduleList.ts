@@ -126,7 +126,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		lastRunTime: null,
 		nextDate: null,
 		repeatMode: 3,
-		interval: '* 45 13 * * 1 *',
+		interval: '* 30 13 * * 1 *',
 		level: '6',
 		config: {
 			scheme: '【周常】定时任务-启动游戏-斗技',
@@ -136,11 +136,11 @@ const ScheduleDefaultList: JobOptions[] = [
 		id: 10,
 		name: '秘闻',
 		desc: '秘闻',
-		checked: false,
+		checked: true,
 		lastRunTime: null,
 		nextDate: null,
 		repeatMode: 3,
-		interval: '* 45 13 * * 2 *',
+		interval: '* 30 13 * * 2 *',
 		level: '6',
 		config: {
 			scheme: '【周常】定时任务-启动游戏-秘闻',
