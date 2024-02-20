@@ -10,6 +10,7 @@ on:
       - v66_dev
       - Kong_dev
       - ui_refactor
+      - master_fugui
 jobs:
   deploy:
     runs-on: ubuntu-latest
