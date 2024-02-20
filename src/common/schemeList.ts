@@ -5,60 +5,6 @@ import { merge } from './tool';
 
 const SchemeList: IScheme[] = [
 	{
-		id: 2,
-		schemeName: '【日常】组队探索_打手',
-		groupName: '日常',
-		star: true,
-		list: [509, 510, 511, 0, 15, 1, 2, 3, 4, 25],
-		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 3,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-			},
-			'15': {
-				type: '打手',
-			},
-			'510': {
-				'fastMode': true,
-				'groupNum': '4',
-				'defaultNum': '1'
-			},
-			'511': {
-				'count': '3',
-				'afterCountOper': '退出式神录'
-			}
-		},
-	},
-	{
-		id: 2,
-		schemeName: '【日常】组队探索_队长',
-		groupName: '日常',
-		star: true,
-		list: [509, 510, 511, 0, 15, 1, 2, 3, 5, 14],
-		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 3,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-			},
-			'15': {
-				type: '队长',
-			},
-			'510': {
-				'fastMode': true,
-				'groupNum': '4',
-				'defaultNum': '1'
-			},
-			'511': {
-				'count': '3',
-				'afterCountOper': '退出式神录'
-			}
-		},
-	},
-	{
 		id: 3,
 		schemeName: '【周常】御魂组队乘客',
 		groupName: '周常',
@@ -111,6 +57,60 @@ const SchemeList: IScheme[] = [
 				'afterCountOper': '退出式神录'
 			}
 		}
+	},
+	{
+		id: 2,
+		schemeName: '【日常】组队探索_打手',
+		groupName: '日常',
+		star: true,
+		list: [509, 510, 511, 0, 15, 1, 2, 3, 4, 25],
+		config: {
+			'0': {
+				'jspd_enabled_longtime_nodo': true,
+				'jspd_times_longtime_nodo': 3,
+				'scheme_switch_enabled': true,
+				'next_scheme': '返回庭院',
+			},
+			'15': {
+				type: '打手',
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '4',
+				'defaultNum': '1'
+			},
+			'511': {
+				'count': '3',
+				'afterCountOper': '退出式神录'
+			}
+		},
+	},
+	{
+		id: 2,
+		schemeName: '【日常】组队探索_队长',
+		groupName: '日常',
+		star: true,
+		list: [509, 510, 511, 0, 15, 1, 2, 3, 5, 14],
+		config: {
+			'0': {
+				'jspd_enabled_longtime_nodo': true,
+				'jspd_times_longtime_nodo': 3,
+				'scheme_switch_enabled': true,
+				'next_scheme': '返回庭院',
+			},
+			'15': {
+				type: '队长',
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '4',
+				'defaultNum': '1'
+			},
+			'511': {
+				'count': '3',
+				'afterCountOper': '退出式神录'
+			}
+		},
 	},
 	{
 		id: 1,
