@@ -377,7 +377,7 @@ const SchemeList: IScheme[] = [
 		schemeName: '【日常】突破_9退4_进攻',
 		groupName: '日常',
 		star: false,
-		list: [509, 510, 511, 0, 51, 1, 2, 3, 8, 9, 11, 10, 25, 29],
+		list: [509, 510, 511, 0, 51, 1, 2, 3, 8, 9, 11,  25, 29],
 		config: {
 			'0': {
 				'jspd_enabled_longtime_nodo': true,
