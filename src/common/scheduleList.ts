@@ -70,7 +70,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		lastRunTime: null,
 		nextDate: null,
 		repeatMode: 3,
-		interval: '* 10 12 * * * * *',
+		interval: '* 10 20 * * * * *',
 		level: '4',
 		config: {
 			scheme: '【日常】定时任务-启动游戏-经验妖怪',
@@ -84,7 +84,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		lastRunTime: null,
 		nextDate: null,
 		repeatMode: 3,
-		interval: '* 20 12 * * * * *',
+		interval: '* 20 20 * * * * *',
 		level: '5',
 		config: {
 			scheme: '【日常】定时任务-启动游戏-金币妖怪',
@@ -98,7 +98,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		lastRunTime: null,
 		nextDate: null,
 		repeatMode: 3,
-		interval: '* 30 16 * * * * *',
+		interval: '* 40 20 * * * * *',
 		level: '6',
 		config: {
 			scheme: '【日常】定时任务-启动游戏-地鬼',
