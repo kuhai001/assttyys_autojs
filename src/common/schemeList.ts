@@ -966,6 +966,26 @@ const SchemeList: IScheme[] = [
 		},
 		groupNames: ['绘卷']
 	},
+	{
+		'schemeName': '绘卷_个突_9退4_退出',
+		'star': false,
+		'list': [0, 1, 2, 3, 8, 9, 10],
+		'config': {
+			'0': {
+				'jspd_enabled_2': true,
+				'jspd_times_2': '4',
+				'scheme_switch_enabled': true,
+				'next_scheme': '__返回上个方案__'
+			},
+			'1': { 'exitBeforeReady': true },
+			'2': { 'rechallenge': true },
+			'8': {
+				'afterCountOper': '九退四_切换方案',
+				'next_scheme': '__返回上个方案__'
+			}
+		},
+		'groupNames': ['绘卷']
+	},
 	// , {
 	// 	id: 102,
 	// 	schemeName: '定时任务-启动游戏-对弈竞猜',
