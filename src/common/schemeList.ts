@@ -934,7 +934,28 @@ const SchemeList: IScheme[] = [
 		id: 103,
 		schemeName: '喜乐雀儿戏',
 		list: [0, 1, 2, 115, 24],
-	}
+	},
+	{
+		"schemeName": "绘卷_个突_9退4_进攻",
+		"star": true,
+		"list": [509, 510, 511, 0, 51, 1, 2, 3, 8, 9, 10, 29, 25],
+		"config": {
+			"0": {
+				"jspd_times_longtime_nodo": "3",
+				"scheme_switch_enabled": true,
+				"next_scheme": "个突_9退4_退出",
+				"after_operation": "切换方案"
+			},
+			"8": {
+				"afterCountOper": "切换方案",
+				"next_scheme": "返回庭院_个人30次探索"
+			},
+			"9": { "scheme_switch_enabled": true, "next_scheme": "绘卷_个突_9退4_退出" },
+			"51": { "greenType": "自定义坐标", "preSearch": true },
+			"510": { "fastMode": true, "groupNum": "3" }
+		},
+		"groupNames": ["绘卷"]
+	},
 	// , {
 	// 	id: 102,
 	// 	schemeName: '定时任务-启动游戏-对弈竞猜',
@@ -1031,7 +1052,7 @@ SchemeList.forEach((item, id) => {
 export const schemeNameMap = innerSchemeListName;
 export default SchemeList;
 export type GroupSchemeName = {
-    groupName: string,
-    hidden: boolean,
-    schemeNames: string[]
+	groupName: string,
+	hidden: boolean,
+	schemeNames: string[]
 }
