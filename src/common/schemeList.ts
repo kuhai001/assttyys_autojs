@@ -987,6 +987,61 @@ const SchemeList: IScheme[] = [
 		},
 		'groupNames': ['绘卷']
 	},
+	{
+		id: 502,
+		'schemeName': '绘卷_个人探索30次',
+		'star': true,
+		'list': [0, 15, 1, 2, 3, 13, 14, 509, 510, 511, 29, 12],
+		'config': {
+			'0': {
+				'jspd_times_longtime_nodo': '3',
+				'jspd_times_1': '3',
+				'jspd_enabled_2': true,
+				'jspd_times_2': '30',
+				'scheme_switch_enabled': true,
+				'next_scheme': '返回庭院_突破_9退4_进攻',
+				'after_operation': '切换方案',
+				'after_operation_sleep': '2,5'
+			},
+			'2': {
+				'next_scheme': '__返回上个方案__',
+				'mini_area_click': true,
+				'fail': true
+			},
+			'14': { 'type': '无差别' },
+			'510': {
+				'fastMode': true,
+				'groupNum': '4'
+			}
+		},
+		'groupNames': ['绘卷']
+	},
+	{
+		id: 503,
+		'schemeName': '返回庭院_个人30次探索',
+		'star': false,
+		'list': [3, 502, 503],
+		'config': {
+			'503': {
+				'scheme_switch_enabled': true,
+				'next_scheme': '绘卷_个人探索30次'
+			}
+		},
+		'groupNames': ['绘卷']
+	},
+	{
+		id: 504,
+		'schemeName': '返回庭院_突破_9退4_进攻',
+		'star': false,
+		'list': [3, 502, 503, 2],
+		'config': {
+			'503': {
+				'scheme_switch_enabled': true,
+				'next_scheme': '绘卷_个突_9退4_进攻'
+			}
+		},
+		'groupNames': ['绘卷']
+	}
 	// , {
 	// 	id: 102,
 	// 	schemeName: '定时任务-启动游戏-对弈竞猜',
