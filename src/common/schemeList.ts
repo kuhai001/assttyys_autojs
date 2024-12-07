@@ -5,20 +5,15 @@ import { merge } from './tool';
 
 const SchemeList: IScheme[] = [
 	{
-		id: 3,
-		schemeName: '【周常】御魂组队乘客',
-		groupName: '周常',
+		id: 2,
+		schemeName: '【日常】御魂组队乘客',
+		groupName: '日常',
 		star: true,
 		list: [509, 510, 511, 0, 1, 2, 3, 4],
 		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 3,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-			},
 			'510': {
-
+				'groupName': '默认分组',
+				'defaultName': '队伍1',
 				'fastMode': true,
 				'groupNum': '1',
 				'defaultNum': '1'
@@ -30,24 +25,35 @@ const SchemeList: IScheme[] = [
 		}
 	},
 	{
-		id: 3,
-		schemeName: '【周常】御魂组队司机70次',
-		groupName: '周常',
+		id: 2,
+		schemeName: '【日常】御魂组队司机70次',
+		groupName: '日常',
 		star: true,
 		list: [509, 510, 511, 0, 1, 2, 3, 5],
 		config: {
 			'0': {
 				'jspd_enabled_longtime_nodo': true,
 				'jspd_times_longtime_nodo': 3,
+				'jspd_enabled_zjsj': false,
+				'jspd_times_zjsj': 30,
+				'jspd_txpl_zjsj': 60,
+				'jspd_enabled_1': false,
+				'jspd_times_1': 20,
 				'jspd_enabled_2': true,
 				'jspd_times_2': '70',
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
+				'stop_with_launched_app_exit': false,
+				'scheme_switch_enabled': false,
+				'next_scheme': '【绘卷】突破_9退4_进攻-30次探索',
+				'pause_enabled': false,
+				'define_run_time': '10,30',
+				'define_pause_time': '2,7'
 			},
 			'5': {
 				'type': '三人'
 			},
 			'510': {
+				'groupName': '默认分组',
+				'defaultName': '队伍1',
 				'fastMode': true,
 				'groupNum': '1',
 				'defaultNum': '1'
@@ -59,71 +65,14 @@ const SchemeList: IScheme[] = [
 		}
 	},
 	{
-		id: 2,
-		schemeName: '【日常】组队探索_打手',
-		groupName: '日常',
-		star: true,
-		list: [509, 510, 511, 0, 15, 1, 2, 3, 4, 25],
-		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 3,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-			},
-			'15': {
-				type: '打手',
-			},
-			'510': {
-				'fastMode': true,
-				'groupNum': '4',
-				'defaultNum': '1'
-			},
-			'511': {
-				'count': '3',
-				'afterCountOper': '退出式神录'
-			}
-		},
-	},
-	{
-		id: 2,
-		schemeName: '【日常】组队探索_队长',
-		groupName: '日常',
-		star: true,
-		list: [509, 510, 511, 0, 15, 1, 2, 3, 5, 14],
-		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 3,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-			},
-			'15': {
-				type: '队长',
-			},
-			'510': {
-				'fastMode': true,
-				'groupNum': '4',
-				'defaultNum': '1'
-			},
-			'511': {
-				'count': '3',
-				'afterCountOper': '退出式神录'
-			}
-		},
-	},
-	{
 		id: 1,
 		schemeName: '【日常】定时任务-启动游戏-突破_9退4_进攻',
 		star: true,
 		groupName: '定时任务',
-		list: [0, 1, 2, 502, 503, 993, 3],
+		list: [1, 2, 3, 502, 503, 993],
 		config: {
-			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 10, 	//	定时任务启动时间为10
-			},
 			'993': {
+				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '【日常】突破_9退4_进攻',
 			},
@@ -137,13 +86,10 @@ const SchemeList: IScheme[] = [
 		schemeName: '【日常】定时任务-启动游戏-寮突破',
 		star: true,
 		groupName: '定时任务',
-		list: [0, 1, 2, 502, 503, 993, 3],
+		list: [1, 2, 3, 502, 503, 993],
 		config: {
-			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 10, //	定时任务启动时间为10,
-			},
 			'993': {
+				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '【日常】寮突破',
 			},
@@ -157,13 +103,10 @@ const SchemeList: IScheme[] = [
 		schemeName: '【日常】定时任务-启动游戏-悬赏',
 		star: true,
 		groupName: '定时任务',
-		list: [0, 1, 2, 502, 503, 993, 3],
+		list: [1, 2, 3, 502, 503, 993],
 		config: {
-			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 10, //		定时任务启动时间为10,
-			},
 			'993': {
+				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '【日常】悬赏',
 			},
@@ -177,13 +120,10 @@ const SchemeList: IScheme[] = [
 		schemeName: '【日常】定时任务-启动游戏-式神寄养',
 		star: true,
 		groupName: '定时任务',
-		list: [0, 1, 2, 502, 503, 993, 3],
+		list: [1, 2, 3, 502, 503, 993],
 		config: {
-			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 10, //		定时任务启动时间为10,
-			},
 			'993': {
+				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '【日常】式神寄养',
 			},
@@ -197,18 +137,19 @@ const SchemeList: IScheme[] = [
 		schemeName: '【绘卷】定时任务-启动游戏-突破_9退4_进攻-30次探索',
 		groupName: '定时任务',
 		star: true,
-		list: [0, 1, 2, 502, 503, 993, 3],
+		list: [1, 2, 3, 502, 503, 993],
 		config: {
-			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 10, //	定时任务启动时间为10,
-			},
 			'503': {
+				'scheme_switch_enabled': false,
+				'next_scheme': '通用准备退出',
 				'afterCountOper': '不进行任何操作'
 			},
 			'993': {
+				'area': '',
 				'is_shutdown_the_game_before': true,
 				'next_scheme': '【绘卷】突破_9退4_进攻-30次探索',
+				'account_index': 0,
+				'account_name': ''
 			}
 		},
 	},
@@ -217,13 +158,10 @@ const SchemeList: IScheme[] = [
 		schemeName: '【日常】定时任务-启动游戏-地鬼',
 		star: true,
 		groupName: '定时任务',
-		list: [0, 1, 2, 502, 503, 993, 3],
+		list: [1, 2, 3, 502, 503, 993],
 		config: {
-			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 10, //	定时任务启动时间为10,
-			},
 			'993': {
+				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '【日常】地鬼',
 			},
@@ -237,13 +175,10 @@ const SchemeList: IScheme[] = [
 		schemeName: '【日常】定时任务-启动游戏-逢魔',
 		star: true,
 		groupName: '定时任务',
-		list: [0, 1, 2, 502, 503, 993, 3],
+		list: [1, 2, 3, 502, 503, 993],
 		config: {
-			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 10, //	定时任务启动时间为10,
-			},
 			'993': {
+				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '【日常】逢魔',
 			},
@@ -257,13 +192,10 @@ const SchemeList: IScheme[] = [
 		schemeName: '【日常】定时任务-启动游戏-签到与邮件',
 		star: true,
 		groupName: '定时任务',
-		list: [0, 1, 2, 502, 503, 993, 3],
+		list: [1, 2, 3, 502, 503, 993],
 		config: {
-			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 10, //	定时任务启动时间为10,
-			},
 			'993': {
+				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '【日常】签到与邮件',
 			},
@@ -277,13 +209,10 @@ const SchemeList: IScheme[] = [
 		schemeName: '【日常】定时任务-启动游戏-经验妖怪',
 		star: true,
 		groupName: '定时任务',
-		list: [0, 1, 2, 502, 503, 993, 3],
+		list: [1, 2, 3, 502, 503, 993],
 		config: {
-			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 10, //	定时任务启动时间为10,
-			},
 			'993': {
+				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '【日常】开启经验BUFF_经验妖怪',
 			},
@@ -297,13 +226,10 @@ const SchemeList: IScheme[] = [
 		schemeName: '【日常】定时任务-启动游戏-金币妖怪',
 		star: true,
 		groupName: '定时任务',
-		list: [0, 1, 2, 502, 503, 993, 3],
+		list: [1, 2, 3, 502, 503, 993],
 		config: {
-			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 10, //	定时任务启动时间为10,
-			},
 			'993': {
+				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '【日常】开启金币BUFF_金币妖怪',
 			},
@@ -317,13 +243,10 @@ const SchemeList: IScheme[] = [
 		schemeName: '【周常】定时任务-启动游戏-斗技',
 		star: true,
 		groupName: '定时任务',
-		list: [0, 1, 2, 502, 503, 993, 3],
+		list: [1, 2, 3, 502, 503, 993],
 		config: {
-			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 10, //	定时任务启动时间为10,
-			},
 			'993': {
+				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '【周常】斗技',
 			},
@@ -337,13 +260,10 @@ const SchemeList: IScheme[] = [
 		schemeName: '【周常】定时任务-启动游戏-秘闻',
 		star: true,
 		groupName: '定时任务',
-		list: [0, 1, 2, 502, 503, 993, 3],
+		list: [1, 2, 3, 502, 503, 993],
 		config: {
-			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 10, //	定时任务启动时间为10,
-			},
 			'993': {
+				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '【周常】秘闻',
 			},
@@ -357,13 +277,10 @@ const SchemeList: IScheme[] = [
 		schemeName: '定时任务-奉纳御魂_贪食鬼吃经验',
 		star: true,
 		groupName: '定时任务',
-		list: [0, 1, 2, 502, 503, 993, 3],
+		list: [1, 2, 3, 502, 503, 993],
 		config: {
-			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 10, //	定时任务启动时间为10,
-			},
 			'993': {
+				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '奉纳御魂_贪食鬼吃经验',
 			},
@@ -377,13 +294,24 @@ const SchemeList: IScheme[] = [
 		schemeName: '【日常】突破_9退4_进攻',
 		groupName: '日常',
 		star: false,
-		list: [509, 510, 511, 0, 51, 1, 2, 3, 8, 9, 11,  25, 29],
+		list: [509, 510, 511, 0, 51, 1, 2, 3, 8, 9, 11, 10, 25, 29],
 		config: {
 			'0': {
 				'jspd_enabled_longtime_nodo': true,
 				'jspd_times_longtime_nodo': 3,
+				'jspd_enabled_zjsj': false,
+				'jspd_times_zjsj': 30,
+				'jspd_txpl_zjsj': 60,
+				'jspd_enabled_1': false,
+				'jspd_times_1': 20,
+				'jspd_enabled_2': false,
+				'jspd_times_2': 20,
+				'stop_with_launched_app_exit': false,
 				'scheme_switch_enabled': true,
 				'next_scheme': '返回庭院',
+				'pause_enabled': false,
+				'define_run_time': '10,30',
+				'define_pause_time': '2,7'
 			},
 			'1': {
 				'exitBeforeReady': false
@@ -424,6 +352,8 @@ const SchemeList: IScheme[] = [
 				'offset': '0,0'
 			},
 			'510': {
+				'groupName': '默认分组',
+				'defaultName': '队伍1',
 				'fastMode': true,
 				'groupNum': '3',
 				'defaultNum': '1'
@@ -439,13 +369,24 @@ const SchemeList: IScheme[] = [
 		schemeName: '【日常】寮突破',
 		groupName: '日常',
 		star: false,
-		list: [509, 510, 511, 0, 51, 1, 2, 3, 8, 9, 10, 12, 29],
+		list: [509, 510, 511,  0, 51, 1, 2, 3, 8, 9, 10, 12, 29],
 		config: {
 			'0': {
 				'jspd_enabled_longtime_nodo': true,
 				'jspd_times_longtime_nodo': 3,
+				'jspd_enabled_zjsj': false,
+				'jspd_times_zjsj': 30,
+				'jspd_txpl_zjsj': 60,
+				'jspd_enabled_1': false,
+				'jspd_times_1': 20,
+				'jspd_enabled_2': false,
+				'jspd_times_2': 20,
+				'stop_with_launched_app_exit': false,
 				'scheme_switch_enabled': true,
 				'next_scheme': '返回庭院',
+				'pause_enabled': false,
+				'define_run_time': '10,30',
+				'define_pause_time': '2,7'
 			},
 			'8': {
 				count: '2',
@@ -454,11 +395,6 @@ const SchemeList: IScheme[] = [
 			},
 			'10': {
 				type: '寮突破',
-			},
-			'12': {
-				count: '6',
-				afterCountOper: '切换方案',
-				next_scheme: '返回庭院'
 			},
 			'51': {
 				'greenType': '自定义坐标',
@@ -469,6 +405,8 @@ const SchemeList: IScheme[] = [
 				'offset': '0,0'
 			},
 			'510': {
+				'groupName': '默认分组',
+				'defaultName': '队伍1',
 				'fastMode': true,
 				'groupNum': '3',
 				'defaultNum': '1'
@@ -489,10 +427,19 @@ const SchemeList: IScheme[] = [
 			'0': {
 				'jspd_enabled_longtime_nodo': true,
 				'jspd_times_longtime_nodo': 3,
+				'jspd_enabled_zjsj': false,
+				'jspd_times_zjsj': 30,
+				'jspd_txpl_zjsj': 60,
+				'jspd_enabled_1': false,
+				'jspd_times_1': 20,
 				'jspd_enabled_2': true,
 				'jspd_times_2': '4',
+				'stop_with_launched_app_exit': false,
 				'scheme_switch_enabled': true,
 				'next_scheme': '【日常】突破_9退4_进攻',
+				'pause_enabled': false,
+				'define_run_time': '10,30',
+				'define_pause_time': '2,7'
 			},
 			'1': {
 				'exitBeforeReady': true
@@ -509,8 +456,8 @@ const SchemeList: IScheme[] = [
 			},
 			'8': {
 				'count': '2',
-				'afterCountOper': '切换方案',
-				'next_scheme': '【日常】寮突破',
+				'afterCountOper': '停止脚本',
+				'next_scheme': '【绘卷】30次探索-突破_9退4_进攻',
 				'type': '个人突破',
 				'cdWaitTime': '30,60',
 				'cdSwitchSchemeEnable': false,
@@ -561,397 +508,31 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-<<<<<<< HEAD
-		id: 5,
-		schemeName: '个突_9退4_进攻',
-		groupNames: ['个突9退4'],
-		star: true,
-		list: [51, 0, 1, 2, 3, 8, 9, 10],
-		config: {
-			'0': {
-				scheme_switch_enabled: true,
-				next_scheme: '个突_9退4_退出',
-			},
-			'3': { type: '关闭' },
-			'8': {
-				count: '2',
-				afterCountOper: '停止脚本',
-				type: '个人突破',
-			},
-			'9': {
-				scheme_switch_enabled: true,
-			},
-			'10': { type: '个人突破' },
-			'51': {
-				greenType: '自定义坐标',
-				'preSearch': true
-			},
-		},
-		commonConfig: {
-			// 通用参数
-			multiColorSimilar: 97,
-		},
-	},
-	{
-		id: 5,
-		schemeName: '个突_9退4_退出',
-		groupNames: ['个突9退4'],
-		list: [0, 1, 2, 3, 8, 9, 10],
-		config: {
-			'0': {
-				jspd_enabled_2: true,
-				jspd_times_2: '4',
-				scheme_switch_enabled: true,
-				next_scheme: '__返回上个方案__',
-			},
-			'1': { exitBeforeReady: true },
-			'2': { rechallenge: true },
-			'8': {
-				count: '2',
-				afterCountOper: '九退四_切换方案',
-				next_scheme: '__返回上个方案__',
-				type: '个人突破',
-			},
-			'10': { type: '个人突破' },
-		},
-		commonConfig: {
-			// 通用参数
-			multiColorSimilar: 97,
-		},
-	},
-	{
-		id: 6,
-		schemeName: '寮突破',
-		star: true,
-		list: [0, 1, 2, 3, 8, 9, 10, 12, 29],
-		config: {
-			'8': {
-				count: '2',
-				afterCountOper: '关闭界面',
-				type: '寮突破',
-			},
-			'10': {
-				type: '寮突破',
-			},
-		},
-	},
-	{
-		id: 7,
-		schemeName: '个人探索',
-		star: true,
-		list: [0, 15, 1, 2, 3, 13, 14, 29],
-		config: {
-			'0': {
-				next_scheme: '关闭BUFF',
-			},
-		},
-	},
-	{
-		id: 8,
-		schemeName: '组队探索_队长',
-		star: false,
-		list: [0, 15, 1, 2, 3, 5, 14],
-		config: {
-			'15': {
-				type: '队长',
-			},
-		},
-	},
-	{
-		id: 8,
-		schemeName: '组队探索_打手',
-		star: false,
-		list: [0, 15, 1, 2, 3, 4, 25],
-		config: {
-			'15': {
-				type: '打手',
-			},
-		},
-	},
-	{
-		id: 9,
-		schemeName: '地鬼日常',
-		star: true,
-		list: [1, 2, 16, 29],
-	},
-	{
-		id: 10,
-		schemeName: '逢魔日常',
-		star: true,
-		list: [1, 2, 3, 23, 24, 26, 508, 8, 504],
-		config: {
-			'508': {
-				switch_ji_enabled: false,
-			},
-		},
-	},
-	{
-		id: 11,
-		schemeName: '百鬼夜行',
-		list: [3, 17, 18, 19, 20, 21],
-	},
-	{
-		id: 12,
-		schemeName: '抽厕纸',
-		list: [3, 22],
-	},
-	{
-		id: 13,
-		groupNames: ['切换方案样例'],
-		schemeName: '例_个人探索30次_转个人突破',
-		star: true,
-		list: [0, 15, 1, 2, 3, 13, 14],
-		config: {
-			'0': {
-				jspd_enabled_2: true,
-				jspd_times_2: 30,
-				scheme_switch_enabled: true,
-				next_scheme: '例_个人突破_结束后转寮突破',
-			},
-		},
-	},
-	{
-		id: 14,
-		groupNames: ['切换方案样例'],
-		schemeName: '例_个人突破_结束后转寮突破',
-		star: true,
-		list: [0, 1, 2, 3, 7, 10, 8, 9, 11, 25],
-		config: {
-			'8': {
-				count: '2',
-				afterCountOper: '切换方案',
-				type: '个人突破',
-				next_scheme: '寮突破',
-			},
-			'10': {
-				type: '个人突破',
-			},
-		},
-	},
-	{
-		id: 15,
-		schemeName: '组队_自动匹配流程',
-		star: true,
-		list: [0, 1, 2, 3, 5, 27],
-	},
-	{
-		id: 16,
-		schemeName: '继续育成',
-		list: [3, 28],
-	},
-	{
-		id: 17,
-		schemeName: '斗技',
-		list: [0, 1, 2, 3, 30, 307],
-	},
-	{
-		id: 18,
-		schemeName: '结界卡_继续合成',
-		list: [0, 3, 31],
-	},
-	{
-		id: 19,
-		schemeName: '道馆',
-		list: [0, 1, 2, 3, 32],
-		star: true,
-	},
-	{
-		id: 22,
-		schemeName: '秘闻',
-		list: [0, 51, 1, 2, 3, 34, 308],
-		star: true,
-		config: {
-			'0': {
-				jspd_enabled_1: true,
-				jspd_times_1: 15,
-			},
-			'51': {
-				greenType: '自定义文本',
-				greenText: '绿标专用',
-				preSearch: true,
-			},
-		},
-	},
-	{
-		id: 23,
-		schemeName: '悬赏',
-		star: true,
-		list: [0, 1, 2, 3, 52, 29, 41, 42, 43, 44, 45, 46, 47, 48, 49],
-		config: {
-			'52': {
-				scheme_switch_enabled: false,
-			},
-		},
-	},
-	{
-		id: 24,
-		schemeName: '金币妖怪',
-		list: [0, 50, 1, 2, 3, 35, 37, 38],
-		config: {
-			'37': {
-				target: '金币妖怪',
-				createMode: '创建队伍',
-				next_scheme: '关闭BUFF',
-			},
-			'50': {
-				ready_once_buff: true,
-				buff_type: '金币',
-			}
-		},
-	},
-	{
-		id: 25,
-		schemeName: '宴会',
-		star: true,
-		list: [0, 3, 1000, 1001],
-		config: {
-			'1001': {
-				change_shikigami_index: '1',
-			},
-		},
-	},
-	{
-		id: 26,
-		schemeName: '关闭BUFF',
-		list: [502, 1, 2, 3, 501, 29, 40],
-	},
-	{
-		id: 27,
-		schemeName: '开启BUFF_打探索',
-		list: [501, 50],
-	},
-	//  {
-	//     id: 28,
-	//     schemeName: '悬赏_庭院打开悬赏界面',
-	//     list: [52],
-	// },
-	{
-		id: 29,
-		schemeName: '返回庭院',
-		list: [3, 503],
-		config: {
-			'503': {
-				scheme_switch_enabled: false,
-				next_scheme: '通用准备退出',
-				afterCountOper: '停止脚本',
-			},
-		},
-	},
-	{
-		id: 30,
-		schemeName: '式神寄养',
-		star: true,
-		groupNames: ['式神寄养'],
-=======
 		id: 2,
 		schemeName: '【日常】式神寄养',
 		groupName: '日常',
 		star: false,
->>>>>>> 2ce96ae (初始化)
-		list: [0, 3, 999, 998, 997, 994, 995],
+		list: [3, 999, 998, 997, 994, 995],
 		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 20,
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 20, // 定时任务启动时间为10,寄养运行时间为20
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-			},
 			'3': {
 				type: '关闭',
 			},
 			'994': {
 				count: '6',
+				maxTimeForwait: '10',
 				afterCountOper: '停止脚本',
 				next_scheme: '通用准备退出',
 			},
 			'995': {
-				maxTimeForwait: '10',
+				next_scheme: '返回庭院',
 				afterCountOper: '停止脚本',
 				isAutoFosterCare: true,
-				next_scheme: '返回庭院',
+				maxTimeForwait: '10',
 			},
 			'997': {
 				priority: '太鼓6->斗鱼6->太鼓5->斗鱼5->太鼓4->太鼓3->斗鱼4',
 			},
 		},
-<<<<<<< HEAD
-	},
-	{
-		id: 31,
-		schemeName: '定时任务-启动游戏-式神寄养',
-		star: true,
-		groupNames: ['式神寄养'],
-		list: [1, 2, 3, 503, 993],
-		config: {
-			'993': {
-				area: '',
-				is_shutdown_the_game_before: true,
-				next_scheme: '式神寄养',
-			},
-			'503': {
-				afterCountOper: '不进行任何操作',
-			},
-			'998': {
-				change_enchantment_switch: false,
-				change_enchantment_type: '太鼓',
-			},
-		},
-	},
-	{
-		id: 32,
-		schemeName: '式神指定寄养',
-		star: true,
-		groupNames: ['定时任务'],
-		list: [3, 999, 998, 996, 994, 995],
-		config: {
-			'3': {
-				type: '关闭',
-			},
-			'994': {
-				count: '3',
-				afterCountOper: '停止脚本',
-				next_scheme: '通用准备退出',
-			},
-			'995': {
-				next_scheme: '返回庭院',
-				afterCountOper: '停止脚本',
-				isAutoFosterCare: true,
-				maxTimeForwait: '10',
-			},
-			'996': {
-				friendName: '老王',
-			},
-		},
-	},
-	{
-		id: 33,
-		schemeName: '狩猎战',
-		list: [0, 1, 2, 3, 507],
-	},
-	{
-		id: 34,
-		schemeName: '庭院进入寮每日活动(自动)',
-		list: [3, 505, 506, 516],
-		config: {
-			'506': {
-				auto_switch_enabled: true,
-				gateOfHades_switch: false,
-			},
-			'516': {
-				count: '10',
-				afterCountOper: '停止脚本',
-				next_scheme: '通用准备退出',
-			},
-		},
-	},
-	{
-		id: 35,
-		schemeName: '六道萤草',
-		list: [0, 1, 2, 3, 24, 201, 202, 203, 207, 204, 205, 206, 208, 209],
-=======
->>>>>>> 2ce96ae (初始化)
 		commonConfig: {
 			'loopDelay': 200,
 			'afterClickDelayBase': 0,
@@ -961,35 +542,6 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-<<<<<<< HEAD
-		id: 36,
-		schemeName: '定时任务-启动游戏-每日寮活动',
-		star: true,
-		groupNames: ['定时任务'],
-		list: [1, 2, 3, 503, 993],
-		config: {
-			'993': {
-				area: '',
-				is_shutdown_the_game_before: true,
-				next_scheme: '庭院进入寮每日活动(自动)',
-			},
-			'503': {
-				afterCountOper: '不进行任何操作',
-			},
-		},
-	},
-	{
-		id: 39,
-		schemeName: '夜行荒河',
-		list: [2, 3, 220, 221],
-	},
-	{
-		id: 40,
-		schemeName: '定时任务-启动游戏-每日逢魔',
-		star: true,
-		groupNames: ['定时任务'],
-		list: [1, 2, 3, 503, 993],
-=======
 		id: 2,
 		schemeName: '【日常】地鬼',
 		groupName: '日常',
@@ -1001,30 +553,14 @@ const SchemeList: IScheme[] = [
 		schemeName: '【日常】逢魔',
 		groupName: '日常',
 		star: false,
-		list: [509, 510, 511, 0, 1, 2, 3, 23, 24, 26, 508, 8, 504],
->>>>>>> 2ce96ae (初始化)
+		list: [509, 510, 511, 1, 2, 3, 23, 24, 26, 508, 8, 504],
 		config: {
-			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 20, //	定时任务启动时间为10,寄养运行时间为20，逢魔为20
-				scheme_switch_enabled: true,
-				next_scheme: '返回庭院',
-			},
 			'508': {
 				switch_ji_enabled: false,
 			},
-<<<<<<< HEAD
-		},
-	},
-	{
-		id: 41,
-		schemeName: '实例-更换式神预设御魂',
-		groupNames: ['切换方案样例'],
-		list: [509, 510, 511],
-		config: {
-=======
->>>>>>> 2ce96ae (初始化)
 			'510': {
+				'groupName': '默认分组',
+				'defaultName': '队伍1',
 				'fastMode': true,
 				'groupNum': '2',
 				'defaultNum': '1'
@@ -1036,346 +572,23 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-<<<<<<< HEAD
-		id: 42,
-		schemeName: '阴门挑战',
-		list: [0, 1, 2, 3, 5, 513],
-	},
-	{
-		id: 43,
-		schemeName: '首领退治',
-		list: [0, 1, 2, 3, 512],
-	},
-	{
-		id: 44,
-		schemeName: '狭间暗域',
-		list: [0, 1, 3, 514, 515],
-	},
-	{
-		id: 45,
-		schemeName: '喂猫喂狗',
-		list: [3, 517],
-	},
-	{
-		id: 46,
-		schemeName: '定时任务-启动游戏-喂猫喂狗',
-		star: false,
-		groupNames: ['定时任务'],
-		list: [1, 2, 3, 503, 993],
-		config: {
-			'993': {
-				area: '',
-				is_shutdown_the_game_before: true,
-				next_scheme: '喂猫喂狗',
-			},
-			'503': {
-				afterCountOper: '不进行任何操作',
-			},
-		},
-	},
-	{
-		id: 47,
-		groupNames: ['御魂奉纳'],
-		schemeName: '奉纳御魂_贪食鬼吃经验',
-		list: [0, 301, 303],
-		star: true,
-	},
-	{
-		id: 48,
-		groupNames: ['御魂奉纳'],
-		schemeName: '奉纳御魂_开始奉纳',
-		list: [0, 2, 302],
-	},
-	{
-		id: 49,
-		groupNames: ['绘卷进度检测'],
-		schemeName: '绘卷进度_检测并提醒',
-		list: [0, 304],
-		star: true,
-	},
-	{
-		id: 50,
-		groupNames: ['绘卷进度检测'],
-		schemeName: '绘卷进度_持续查询进度',
-		list: [0, 305],
-	},
-	{
-		id: 51,
-		schemeName: '定时任务-启动游戏-寮突',
-		star: true,
-		groupNames: ['定时任务'],
-		list: [1, 2, 3, 503, 993],
-		config: {
-			'993': {
-				area: '',
-				is_shutdown_the_game_before: true,
-				next_scheme: '寮突破',
-			},
-			'503': {
-				afterCountOper: '不进行任何操作',
-			},
-		},
-	},
-	{
-		id: 52,
-		schemeName: '定时任务-启动游戏-地鬼',
-		star: true,
-		groupNames: ['定时任务'],
-		list: [1, 2, 3, 503, 993],
-		config: {
-			'993': {
-				area: '',
-				is_shutdown_the_game_before: true,
-				next_scheme: '地鬼日常',
-			},
-			'503': {
-				afterCountOper: '不进行任何操作',
-			},
-		},
-	},
-	{
-		id: 53,
-		schemeName: '庭院进入寮每日活动(包含阴门)',
-		list: [3, 505, 506, 516],
-		config: {
-			'506': {
-				auto_switch_enabled: false,
-				gateOfHades_switch: true,
-			},
-			'516': {
-				count: '10',
-				afterCountOper: '停止脚本',
-				next_scheme: '通用准备退出',
-			},
-		},
-	},
-	{
-		id: 54,
-		schemeName: '庭院进入寮每日活动(不包含阴门)',
-		list: [3, 505, 506, 516],
-		config: {
-			'506': {
-				auto_switch_enabled: false,
-				gateOfHades_switch: false,
-			},
-			'516': {
-				count: '10',
-				afterCountOper: '停止脚本',
-				next_scheme: '通用准备退出',
-			},
-		},
-	},
-	{
-		id: 55,
-		schemeName: '定时任务-启动游戏-庭院进入寮每日活动(包含阴门)',
-		star: true,
-		groupNames: ['定时任务'],
-		list: [1, 2, 3, 503, 993],
-		config: {
-			'993': {
-				area: '',
-				is_shutdown_the_game_before: true,
-				next_scheme: '庭院进入寮每日活动(包含阴门)',
-			},
-			'503': {
-				afterCountOper: '不进行任何操作',
-			},
-		},
-	},
-	{
-		id: 56,
-		schemeName: '定时任务-启动游戏-庭院进入寮每日活动(不包含阴门)',
-		star: true,
-		groupNames: ['定时任务'],
-		list: [1, 2, 3, 503, 993],
-		config: {
-			'993': {
-				area: '',
-				is_shutdown_the_game_before: true,
-				next_scheme: '庭院进入寮每日活动(不包含阴门)',
-			},
-			'503': {
-				afterCountOper: '不进行任何操作',
-			},
-		},
-	},
-	{
-		id: 57,
-		groupNames: ['组队循环示例'],
-		schemeName: '组队队长创建和邀请',
-		list: [0, 27, 306],
-		commonConfig: {
-			colorSimilar: 91,
-		},
-	},
-	{
-		id: 58,
-		groupNames: ['组队循环示例'],
-		schemeName: '组队队员接受邀请',
-		list: [4],
-		config: {
-			'4': {
-				exit: true,
-			},
-		},
-	},
-	{
-		id: 59,
-		schemeName: '强化御魂',
-		list: [0, 303, 309],
-		config: {
-			'0': {
-				jspd_times_longtime_nodo: '1',
-			},
-		},
-		commonConfig: {
-			multiColorSimilar: 93,
-		},
-		star: true,
-	},
-	{
-		id: 60,
-		schemeName: '定时任务-启动游戏-悬赏',
-		star: false,
-		groupNames: ['定时任务'],
-		list: [1, 2, 3, 503, 993],
-		config: {
-			'993': {
-				area: '',
-				is_shutdown_the_game_before: true,
-				next_scheme: '悬赏',
-			},
-			'503': {
-				afterCountOper: '不进行任何操作',
-			},
-		},
-	},
-	{
-		id: 61,
-		schemeName: '暴食鬼吃经验',
-		list: [0, 310],
-		config: {
-			'0': {
-				jspd_times_longtime_nodo: '1',
-			},
-		},
-		star: true,
-	},
-	{
-		id: 62,
-		schemeName: '通用活动',
-		star: true,
-		list: [0, 1, 2, 3, 312],
-	},
-	{
-		id: 63,
-		schemeName: '重启模拟器',
-		list: [991],
-	},
-	{
-		id: 64,
-		schemeName: '每日签到与收取邮件',
-=======
 		id: 2,
 		schemeName: '【日常】签到与邮件',
 		groupName: '日常',
->>>>>>> 2ce96ae (初始化)
 		list: [0, 2, 3, 518],
 		config: {
 			'0': {
-				jspd_enabled_zjsj: true,
-				jspd_times_zjsj: 5, //	定时任务启动时间为10,寄养运行时间为20，逢魔为20，签到为5
 				jspd_enabled_longtime_nodo: true,
 				jspd_times_longtime_nodo: 1,
 			},
 		},
 	},
 	{
-<<<<<<< HEAD
-		id: 65,
-		schemeName: '定时任务-启动游戏-每日签到与收取邮件',
-		star: true,
-		groupNames: ['定时任务'],
-		list: [1, 2, 3, 503, 993],
-		config: {
-			'993': {
-				area: '',
-				is_shutdown_the_game_before: true,
-				next_scheme: '每日签到与收取邮件',
-			},
-			'503': {
-				afterCountOper: '不进行任何操作',
-			},
-		},
-	},
-	{
-		id: 66,
-		schemeName: '契灵',
-		list: [510, 0, 1, 51, 2, 3, 313, 29],
-		star: true,
-		config: {
-			'510': {
-				fastMode: true
-			}
-		}
-	}, {
-		id: 67,
-		schemeName: '庭院进入寮每日活动(狭间)',
-		list: [3, 505, 506, 516],
-		config: {
-			'506': {
-				gateOfHades_switch: false,
-			},
-			'516': {
-				count: '2',
-				afterCountOper: '不做任何操作',
-				next_scheme: '通用准备退出',
-			},
-		},
-	}, {
-		id: 68,
-		schemeName: '定时任务-启动游戏-庭院进入寮每日活动(狭间)',
-		star: true,
-		groupNames: ['定时任务'],
-		list: [1, 2, 3, 503, 993],
-		config: {
-			'993': {
-				area: '',
-				is_shutdown_the_game_before: true,
-				next_scheme: '庭院进入寮每日活动(狭间)',
-			},
-			'503': {
-				afterCountOper: '不进行任何操作',
-			},
-		},
-	}, {
-		id: 69,
-		schemeName: '六道椒图',
-		star: true,
-		list: [0, 1, 316, 2, 3, 24],
-	},
-	{
-		id: 72,
-		schemeName: '经验妖怪',
-		list: [0, 50, 1, 2, 3, 35, 37, 38],
-		config: {
-			'37': {
-				target: '经验妖怪',
-				createMode: '创建队伍',
-				next_scheme: '关闭BUFF',
-=======
 		id: 2,
 		schemeName: '【日常】开启经验BUFF_经验妖怪',
 		groupName: '日常',
-		list: [0, 3, 509, 510, 511, 501, 50],
+		list: [509, 510, 511, 501, 50],
 		config: {
-			'0': {
-				jspd_enabled_longtime_nodo: true,
-				jspd_times_longtime_nodo: 3,
-				scheme_switch_enabled: true,
-				next_scheme: '返回庭院',
->>>>>>> 2ce96ae (初始化)
-			},
 			'50': {
 				scheme_switch_enabled: true,
 				next_scheme: '【日常】经验妖怪',
@@ -1383,6 +596,8 @@ const SchemeList: IScheme[] = [
 				ready_once_buff: false,
 			},
 			'510': {
+				'groupName': '默认分组',
+				'defaultName': '队伍1',
 				'fastMode': true,
 				'groupNum': '4',
 				'defaultNum': '2'
@@ -1399,12 +614,6 @@ const SchemeList: IScheme[] = [
 		groupName: '日常',
 		list: [0, 1, 2, 3, 35, 37, 38],
 		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 5,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-			},
 			'37': {
 				target: '经验',
 				createMode: '自动匹配',
@@ -1413,25 +622,11 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-<<<<<<< HEAD
-		id: 74,
-		schemeName: '定时任务-启动游戏-金币妖怪',
-		star: true,
-		groupNames: ['定时任务'],
-		list: [1, 2, 3, 503, 993],
-=======
 		id: 2,
 		schemeName: '【日常】开启金币BUFF_金币妖怪',
 		groupName: '日常',
-		list: [0, 3, 509, 510, 511, 501, 50],
->>>>>>> 2ce96ae (初始化)
+		list: [509, 510, 511, 501, 50],
 		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 3,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-			},
 			'50': {
 				scheme_switch_enabled: true,
 				next_scheme: '【日常】金币妖怪',
@@ -1439,6 +634,8 @@ const SchemeList: IScheme[] = [
 				ready_once_buff: false,
 			},
 			'510': {
+				'groupName': '默认分组',
+				'defaultName': '队伍1',
 				'fastMode': true,
 				'groupNum': '4',
 				'defaultNum': '3'
@@ -1455,12 +652,6 @@ const SchemeList: IScheme[] = [
 		groupName: '日常',
 		list: [0, 1, 2, 3, 35, 37, 38],
 		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 5,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-			},
 			'37': {
 				target: '金币',
 				createMode: '自动匹配',
@@ -1473,28 +664,14 @@ const SchemeList: IScheme[] = [
 		schemeName: '【日常】悬赏',
 		groupName: '日常',
 		star: true,
-<<<<<<< HEAD
-		groupNames: ['定时任务'],
-		list: [1, 2, 3, 503, 993],
-=======
 		list: [509, 510, 511, 0, 1, 2, 3, 52, 29, 41, 42, 43, 44, 45, 46, 47, 48, 49],
->>>>>>> 2ce96ae (初始化)
 		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 5,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-			},
-			'47': {
-				scheme_switch_enabled: true,
-				next_scheme: '返回庭院'
-			},
 			'52': {
 				scheme_switch_enabled: false,
 			},
 			'510': {
-
+				'groupName': '默认分组',
+				'defaultName': '队伍1',
 				'fastMode': true,
 				'groupNum': '4',
 				'defaultNum': '1'
@@ -1512,17 +689,9 @@ const SchemeList: IScheme[] = [
 		groupName: '周常',
 		list: [509, 510, 511, 51, 0, 1, 2, 3, 30, 307],
 		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 5,
-				'jspd_enabled_zjsj': true,
-				'jspd_times_zjsj': 90,
-				'jspd_txpl_zjsj': 600,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-			},
 			'510': {
-
+				'groupName': '默认分组',
+				'defaultName': '队伍1',
 				'fastMode': true,
 				'groupNum': '6',
 				'defaultNum': '1'
@@ -1549,12 +718,8 @@ const SchemeList: IScheme[] = [
 		list: [509, 510, 511, 51, 0, 1, 2, 3, 34, 29],
 		config: {
 			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 20,
-				'jspd_enabled_1': true,
-				'jspd_times_1': 11,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
+				jspd_enabled_1: true,
+				jspd_times_1: 11,
 			},
 			'51': {
 				'greenType': '自定义坐标',
@@ -1565,7 +730,8 @@ const SchemeList: IScheme[] = [
 				'offset': '0,0'
 			},
 			'510': {
-
+				'groupName': '默认分组',
+				'defaultName': '队伍1',
 				'fastMode': true,
 				'groupNum': '7',
 				'defaultNum': '1'
@@ -1586,8 +752,19 @@ const SchemeList: IScheme[] = [
 			'0': {
 				'jspd_enabled_longtime_nodo': true,
 				'jspd_times_longtime_nodo': 3,
+				'jspd_enabled_zjsj': false,
+				'jspd_times_zjsj': 30,
+				'jspd_txpl_zjsj': 60,
+				'jspd_enabled_1': false,
+				'jspd_times_1': 20,
+				'jspd_enabled_2': false,
+				'jspd_times_2': 20,
+				'stop_with_launched_app_exit': false,
 				'scheme_switch_enabled': true,
 				'next_scheme': '返回庭院-30次探索-突破_9退4_进攻',
+				'pause_enabled': false,
+				'define_run_time': '10,30',
+				'define_pause_time': '2,7'
 			},
 			'1': {
 				'exitBeforeReady': false
@@ -1628,7 +805,8 @@ const SchemeList: IScheme[] = [
 				'offset': '0,0'
 			},
 			'510': {
-
+				'groupName': '默认分组',
+				'defaultName': '队伍1',
 				'fastMode': true,
 				'groupNum': '3',
 				'defaultNum': '1'
@@ -1649,10 +827,19 @@ const SchemeList: IScheme[] = [
 			'0': {
 				'jspd_enabled_longtime_nodo': true,
 				'jspd_times_longtime_nodo': 3,
+				'jspd_enabled_zjsj': false,
+				'jspd_times_zjsj': 30,
+				'jspd_txpl_zjsj': 60,
+				'jspd_enabled_1': false,
+				'jspd_times_1': 20,
 				'jspd_enabled_2': true,
 				'jspd_times_2': 30,
+				'stop_with_launched_app_exit': false,
 				'scheme_switch_enabled': true,
 				'next_scheme': '返回庭院-突破_9退4_进攻-30次探索',
+				'pause_enabled': false,
+				'define_run_time': '10,30',
+				'define_pause_time': '2,7'
 			},
 			'1': {
 				'exitBeforeReady': false
@@ -1678,7 +865,8 @@ const SchemeList: IScheme[] = [
 				'handle_position': '20%'
 			},
 			'510': {
-
+				'groupName': '默认分组',
+				'defaultName': '队伍1',
 				'fastMode': true,
 				'groupNum': '4',
 				'defaultNum': '1'
@@ -1706,10 +894,19 @@ const SchemeList: IScheme[] = [
 			'0': {
 				'jspd_enabled_longtime_nodo': true,
 				'jspd_times_longtime_nodo': 3,
+				'jspd_enabled_zjsj': false,
+				'jspd_times_zjsj': 30,
+				'jspd_txpl_zjsj': 60,
+				'jspd_enabled_1': false,
+				'jspd_times_1': 20,
 				'jspd_enabled_2': true,
 				'jspd_times_2': '4',
+				'stop_with_launched_app_exit': false,
 				'scheme_switch_enabled': true,
 				'next_scheme': '【绘卷】突破_9退4_进攻-30次探索',
+				'pause_enabled': false,
+				'define_run_time': '10,30',
+				'define_pause_time': '2,7'
 			},
 			'1': {
 				'exitBeforeReady': true
@@ -1754,14 +951,8 @@ const SchemeList: IScheme[] = [
 		id: 4,
 		schemeName: '返回庭院-30次探索-突破_9退4_进攻',
 		groupName: '绘卷',
-		list: [0, 1, 2, 3, 502, 503],
+		list: [3, 502, 503],
 		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 3,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-			},
 			'503': {
 				scheme_switch_enabled: true,
 				next_scheme: '【绘卷】30次探索-突破_9退4_进攻',
@@ -1773,14 +964,8 @@ const SchemeList: IScheme[] = [
 		id: 4,
 		schemeName: '返回庭院-突破_9退4_进攻-30次探索',
 		groupName: '绘卷',
-		list: [0, 1, 2, 3, 502, 503],
+		list: [3, 502, 503],
 		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 3,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-			},
 			'503': {
 				scheme_switch_enabled: true,
 				next_scheme: '【绘卷】突破_9退4_进攻-30次探索',
@@ -1799,25 +984,8 @@ const SchemeList: IScheme[] = [
 		id: 5,
 		schemeName: '返回庭院',
 		groupName: '通用',
-		list: [0, 1, 2, 3, 502, 503],
+		list: [3, 502, 503],
 		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 3,
-				'jspd_enabled_zjsj': false,
-				'jspd_times_zjsj': 30,
-				'jspd_txpl_zjsj': 60,
-				'jspd_enabled_1': false,
-				'jspd_times_1': 20,
-				'jspd_enabled_2': false,
-				'jspd_times_2': '4',
-				'stop_with_launched_app_exit': false,
-				'scheme_switch_enabled': false,
-				'next_scheme': '【绘卷】突破_9退4_进攻-30次探索',
-				'pause_enabled': false,
-				'define_run_time': '10,30',
-				'define_pause_time': '2,7'
-			},
 			'503': {
 				scheme_switch_enabled: false,
 				next_scheme: '通用准备退出',
@@ -1829,25 +997,8 @@ const SchemeList: IScheme[] = [
 		id: 5,
 		schemeName: '关闭BUFF',
 		groupName: '通用',
-		list: [502, 0, 1, 2, 3, 29, 40, 501],
+		list: [502, 1, 2, 3, 29, 40, 501],
 		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 3,
-				'jspd_enabled_zjsj': false,
-				'jspd_times_zjsj': 30,
-				'jspd_txpl_zjsj': 60,
-				'jspd_enabled_1': false,
-				'jspd_times_1': 20,
-				'jspd_enabled_2': false,
-				'jspd_times_2': '4',
-				'stop_with_launched_app_exit': false,
-				'scheme_switch_enabled': false,
-				'next_scheme': '【绘卷】突破_9退4_进攻-30次探索',
-				'pause_enabled': false,
-				'define_run_time': '10,30',
-				'define_pause_time': '2,7'
-			},
 			'40': {
 				scheme_switch_enabled: true,
 				next_scheme: '返回庭院'
@@ -1860,91 +1011,26 @@ const SchemeList: IScheme[] = [
 		schemeName: '奉纳御魂_贪食鬼吃经验',
 		list: [0, 509, 301, 303],
 		star: true,
-		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 3,
-				'jspd_enabled_zjsj': false,
-				'jspd_times_zjsj': 30,
-				'jspd_txpl_zjsj': 60,
-				'jspd_enabled_1': false,
-				'jspd_times_1': 20,
-				'jspd_enabled_2': false,
-				'jspd_times_2': '15',
-				'stop_with_launched_app_exit': false,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-				'pause_enabled': false,
-				'define_run_time': '10,30',
-				'define_pause_time': '2,7'
-			},
-		}
 	},
 	{
 		id: 5,
 		groupName: '通用',
 		schemeName: '奉纳御魂_开始奉纳',
 		list: [0, 2, 302],
-		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 3,
-				'jspd_enabled_zjsj': false,
-				'jspd_times_zjsj': 30,
-				'jspd_txpl_zjsj': 60,
-				'jspd_enabled_1': false,
-				'jspd_times_1': 20,
-				'jspd_enabled_2': false,
-				'jspd_times_2': '15',
-				'stop_with_launched_app_exit': false,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-				'pause_enabled': false,
-				'define_run_time': '10,30',
-				'define_pause_time': '2,7'
-			},
-		}
 	},
 	{
 		id: 5,
 		schemeName: '抽厕纸',
 		groupName: '通用',
 		star: true,
-		list: [0, 3, 22],
-		config: {
-			'0': {
-				'jspd_enabled_longtime_nodo': true,
-				'jspd_times_longtime_nodo': 3,
-				'scheme_switch_enabled': true,
-				'next_scheme': '返回庭院',
-			},
-		}
+		list: [3, 22],
 	},
 	// {
 	// 	id: 2,
 	// 	schemeName: '【日常】寮突破',
 	// 	groupName: '日常',
 	// 	star: true,
-<<<<<<< HEAD
-	// 	groupNames: ['定时任务'],
-	// 	list: [1, 2, 3, 503, 993],
-	// 	config: {
-	// 		'993': {
-	// 			area: '',
-	// 			is_shutdown_the_game_before: true,
-	// 			next_scheme: '对弈竞猜',
-	// 		},
-	// 		'503': {
-	// 			afterCountOper: '不进行任何操作',
-	// 		},
-	// 	},
-	// }, {
-	// 	id: 101,
-	// 	schemeName: '对弈竞猜',
-	// 	list: [0, 2, 401],
-=======
 	// 	list: [509, 510, 511, 0, 1, 51, 2, 3, 8, 9, 10, 12, 29],
->>>>>>> 2ce96ae (初始化)
 	// 	config: {
 	// 		'0': {
 	// 			'jspd_enabled_longtime_nodo': true,
@@ -2356,6 +1442,7 @@ const SchemeList: IScheme[] = [
 			list: [1, 2, 3, 503, 993],
 			config: {
 				'993': {
+					area: '',
 					is_shutdown_the_game_before: true,
 					next_scheme: '式神寄养',
 				},
@@ -2434,6 +1521,7 @@ const SchemeList: IScheme[] = [
 			list: [1, 2, 3, 503, 993],
 			config: {
 				'993': {
+					area: '',
 					is_shutdown_the_game_before: true,
 					next_scheme: '庭院进入寮每日活动(自动)',
 				},
@@ -2455,6 +1543,7 @@ const SchemeList: IScheme[] = [
 			list: [1, 2, 3, 503, 993],
 			config: {
 				'993': {
+					area: '',
 					is_shutdown_the_game_before: true,
 					next_scheme: '逢魔日常',
 				},
@@ -2507,6 +1596,7 @@ const SchemeList: IScheme[] = [
 			list: [1, 2, 3, 503, 993],
 			config: {
 				'993': {
+					area: '',
 					is_shutdown_the_game_before: true,
 					next_scheme: '喂猫喂狗',
 				},
@@ -2549,6 +1639,7 @@ const SchemeList: IScheme[] = [
 			list: [1, 2, 3, 503, 993],
 			config: {
 				'993': {
+					area: '',
 					is_shutdown_the_game_before: true,
 					next_scheme: '寮突破',
 				},
@@ -2565,6 +1656,7 @@ const SchemeList: IScheme[] = [
 			list: [1, 2, 3, 503, 993],
 			config: {
 				'993': {
+					area: '',
 					is_shutdown_the_game_before: true,
 					next_scheme: '地鬼日常',
 				},
@@ -2613,7 +1705,7 @@ const SchemeList: IScheme[] = [
 			list: [1, 2, 3, 503, 993],
 			config: {
 				'993': {
-
+					area: '',
 					is_shutdown_the_game_before: true,
 					next_scheme: '庭院进入寮每日活动(包含阴门)',
 				},
@@ -2630,6 +1722,7 @@ const SchemeList: IScheme[] = [
 			list: [1, 2, 3, 503, 993],
 			config: {
 				'993': {
+					area: '',
 					is_shutdown_the_game_before: true,
 					next_scheme: '庭院进入寮每日活动(不包含阴门)',
 				},
@@ -2680,6 +1773,7 @@ const SchemeList: IScheme[] = [
 			list: [1, 2, 3, 503, 993],
 			config: {
 				'993': {
+					area: '',
 					is_shutdown_the_game_before: true,
 					next_scheme: '悬赏',
 				},
@@ -2729,6 +1823,7 @@ const SchemeList: IScheme[] = [
 			list: [1, 2, 3, 503, 993],
 			config: {
 				'993': {
+					area: '',
 					is_shutdown_the_game_before: true,
 					next_scheme: '每日签到与收取邮件',
 				},
@@ -2769,6 +1864,7 @@ const SchemeList: IScheme[] = [
 			list: [1, 2, 3, 503, 993],
 			config: {
 				'993': {
+					area: '',
 					is_shutdown_the_game_before: true,
 					next_scheme: '庭院进入寮每日活动(狭间)',
 				},
@@ -2840,6 +1936,7 @@ const SchemeList: IScheme[] = [
 			list: [1, 2, 3, 503, 993],
 			config: {
 				'993': {
+					area: '',
 					is_shutdown_the_game_before: true,
 					next_scheme: '开启金币BUFF_金币妖怪',
 				},
@@ -2856,6 +1953,7 @@ const SchemeList: IScheme[] = [
 			list: [1, 2, 3, 503, 993],
 			config: {
 				'993': {
+					area: '',
 					is_shutdown_the_game_before: true,
 					next_scheme: '开启经验BUFF_经验妖怪',
 				},
@@ -2981,13 +2079,4 @@ SchemeList.forEach((item, id) => {
 
 // 将innerSchemeListName赋值给schemeNameMap，并将SchemeList赋值给default
 export const schemeNameMap = innerSchemeListName;
-<<<<<<< HEAD
 export default SchemeList;
-export type GroupSchemeName = {
-    groupName: string,
-    hidden: boolean,
-    schemeNames: string[]
-}
-=======
-export default SchemeList;
->>>>>>> 2ce96ae (初始化)
