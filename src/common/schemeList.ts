@@ -967,6 +967,7 @@ const SchemeList: IScheme[] = [
 		groupNames: ['绘卷']
 	},
 	{
+		id: 501,
 		'schemeName': '绘卷_个突_9退4_退出',
 		'star': false,
 		'list': [0, 1, 2, 3, 8, 9, 10],
