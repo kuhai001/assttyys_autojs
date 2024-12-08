@@ -939,7 +939,7 @@ const SchemeList: IScheme[] = [
 		id: 500,
 		schemeName: '绘卷_个突_9退4_进攻',
 		star: true,
-		list: [509, 510, 511, 0, 51, 1, 2, 3, 8, 9, 10, 29, 25],
+		list: [509, 510, 511, 0, 51, 1, 2, 3, 8, 9, 10, 29, 25, 7],
 		config: {
 			'0': {
 				jspd_times_longtime_nodo: '3',
@@ -962,6 +962,10 @@ const SchemeList: IScheme[] = [
 			'510': {
 				fastMode: true,
 				groupNum: '3'
+			},
+			'7': {
+				switch_nineWin: true,
+
 			}
 		},
 		groupNames: ['绘卷']
