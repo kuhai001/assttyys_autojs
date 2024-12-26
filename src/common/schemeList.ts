@@ -1024,7 +1024,7 @@ const SchemeList: IScheme[] = [
 		id: 503,
 		'schemeName': '返回庭院_个人30次探索',
 		'star': false,
-		'list': [3, 502, 503,2],
+		'list': [3, 502, 503, 2],
 		'config': {
 			'503': {
 				'scheme_switch_enabled': true,
