@@ -944,7 +944,7 @@ const SchemeList: IScheme[] = [
 			'0': {
 				jspd_times_longtime_nodo: '3',
 				scheme_switch_enabled: true,
-				next_scheme: '个突_9退4_退出',
+				next_scheme: '返回庭院_个人30次探索',
 				after_operation: '切换方案'
 			},
 			'8': {
@@ -1024,7 +1024,7 @@ const SchemeList: IScheme[] = [
 		id: 503,
 		'schemeName': '返回庭院_个人30次探索',
 		'star': false,
-		'list': [3, 502, 503],
+		'list': [3, 502, 503,2],
 		'config': {
 			'503': {
 				'scheme_switch_enabled': true,
