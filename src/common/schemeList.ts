@@ -1059,7 +1059,7 @@ const SchemeList: IScheme[] = [
 		id: 505,
 		'schemeName': '绘卷_定时任务_启动游戏_绘卷',
 		'star': false,
-		 'list': [1, 2, 3, 503, 993],
+		'list': [1, 2, 3, 503, 993],
 		'config': {
 			'503': { 'afterCountOper': '不进行任何操作' },
 			'993': {
