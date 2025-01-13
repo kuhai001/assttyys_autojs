@@ -852,7 +852,8 @@ const SchemeList: IScheme[] = [
 				day: true
 			},
 		},
-	}, {
+	}, 
+	{
 		id: 77,
 		schemeName: '宴会筹备',
 		list: [0, 2, 520, 29],
@@ -866,7 +867,8 @@ const SchemeList: IScheme[] = [
 		id: 100,
 		schemeName: '缘结趣游',
 		list: [0, 24, 319],
-	}, {
+	}, 
+	{
 		id: 101,
 		schemeName: '对弈竞猜',
 		list: [0, 2, 401],
@@ -875,7 +877,8 @@ const SchemeList: IScheme[] = [
 				jspd_times_longtime_nodo: '1',
 			}
 		}
-	}, {
+	}, 
+	{
 		// [{"schemeName":"123","star":true,"list":[3,500,505,516],"groupNames":["未分组"],"config":{"500":{"a_ctivity_gateOfHades":true,"a_ctivity_dojo":true,"a_ctivity_hunt":true,"a_ctivity_narrow":true,"a_ctivity_banquet":true,"a_ctivity_huntBoss":true}}}]
 		id: 102,
 		schemeName: '进入寮活动New',
@@ -901,6 +904,159 @@ const SchemeList: IScheme[] = [
 			'993': { scheme_switch_enabled: false },
 			'1106': { switch_group: '2', switch_default: '4' }
 		}
+	},
+	/*
+	1.绘卷
+		绘卷_个突_9退4_进攻-500
+		绘卷_个突_9退4_退出-501
+		绘卷_个人探索30次-502
+		绘卷_返回庭院_个人30次探索'-503
+		绘卷_返回庭院_突破_9退4_进攻-504
+		绘卷_定时任务_个突_9退4_进攻-505
+	2.日常
+		日常_个突_9退4_进攻
+		日常_个突_9退4_退出
+		日常_寮突破
+		日常_定时任务_个突_9退4_进攻
+		日常_签到
+		日常_地鬼
+		日常_逢魔
+		日常_悬赏
+		日常_金币妖怪
+		日常_魂土30次_司机
+		日常_魂土30次_乘客
+		日常_结界寄养
+	3.周常
+		周常_秘闻
+		周常_真蛇
+		周常_永生之海
+		周常_器灵
+		周常_斗技
+	*/
+	{
+		id: 500,
+		schemeName: '绘卷_个突_9退4_进攻',
+		star: true,
+		list: [509, 510, 511, 0, 51, 1, 2, 3, 8, 9, 10, 29, 25, 7],
+		config: {
+			'0': {
+				jspd_times_longtime_nodo: '3',
+				scheme_switch_enabled: true,
+				next_scheme: '绘卷_返回庭院_个人30次探索',
+				after_operation: '切换方案'
+			},
+			'8': {
+				afterCountOper: '切换方案',
+				next_scheme: '绘卷_返回庭院_个人30次探索'
+			},
+			'9': {
+				scheme_switch_enabled: true,
+				next_scheme: '绘卷_个突_9退4_退出'
+			},
+			'51': {
+				greenType: '自定义坐标',
+				preSearch: true
+			},
+			'510': {
+				fastMode: true,
+				groupNum: '3'
+			},
+			'7': {
+				switch_nineWin: true,
+
+			}
+		},
+		groupNames: ['绘卷']
+	},
+	{
+		id: 501,
+		'schemeName': '绘卷_个突_9退4_退出',
+		'star': false,
+		'list': [0, 1, 2, 3, 8, 9, 10],
+		'config': {
+			'0': {
+				'jspd_enabled_2': true,
+				'jspd_times_2': '4',
+				'scheme_switch_enabled': true,
+				'next_scheme': '__返回上个方案__'
+			},
+			'1': { 'exitBeforeReady': true },
+			'2': { 'rechallenge': true },
+			'8': {
+				'afterCountOper': '九退四_切换方案',
+				'next_scheme': '__返回上个方案__'
+			}
+		},
+		'groupNames': ['绘卷']
+	},
+	{
+		id: 502,
+		'schemeName': '绘卷_个人探索30次',
+		'star': true,
+		'list': [0, 15, 1, 2, 3, 13, 14, 509, 510, 511, 29, 12],
+		'config': {
+			'0': {
+				'jspd_times_longtime_nodo': '3',
+				'jspd_times_1': '3',
+				'jspd_enabled_2': true,
+				'jspd_times_2': '30',
+				'scheme_switch_enabled': true,
+				'next_scheme': '绘卷_返回庭院_突破_9退4_进攻',
+				'after_operation': '切换方案',
+				'after_operation_sleep': '2,5'
+			},
+			'2': {
+				'next_scheme': '__返回上个方案__',
+				'mini_area_click': true,
+				'fail': true
+			},
+			'14': { 'type': '无差别' },
+			'510': {
+				'fastMode': true,
+				'groupNum': '4'
+			}
+		},
+		'groupNames': ['绘卷']
+	},
+	{
+		id: 503,
+		'schemeName': '绘卷_返回庭院_个人30次探索',
+		'star': false,
+		'list': [3, 502, 503, 2],
+		'config': {
+			'503': {
+				'scheme_switch_enabled': true,
+				'next_scheme': '绘卷_个人探索30次'
+			}
+		},
+		'groupNames': ['绘卷']
+	},
+	{
+		id: 504,
+		'schemeName': '绘卷_返回庭院_突破_9退4_进攻',
+		'star': false,
+		'list': [3, 502, 503, 2],
+		'config': {
+			'503': {
+				'scheme_switch_enabled': true,
+				'next_scheme': '绘卷_个突_9退4_进攻'
+			}
+		},
+		'groupNames': ['绘卷']
+	},
+	{
+		id: 505,
+		'schemeName': '绘卷_定时任务_启动游戏_绘卷',
+		'star': false,
+		'list': [1, 2, 3, 503, 993],
+		'config': {
+			'503': { 'afterCountOper': '不进行任何操作' },
+			'993': {
+				'is_shutdown_the_game_before': true,
+				'next_scheme': '绘卷_个人探索30次'
+			}
+		},
+		'groupNames': ['绘卷']
 	}
 	// , {
 	// 	id: 102,
