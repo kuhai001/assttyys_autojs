@@ -74,13 +74,14 @@ const SchemeList: IScheme[] = [
 		schemeName: '个突_9退4_进攻',
 		groupNames: ['个突9退4'],
 		star: true,
-		list: [51, 0, 1, 2, 3, 8, 9, 10],
+		list: [509, 510, 511, 51, 0, 1, 2, 3, 8, 9, 10],
 		config: {
 			'3': { type: '关闭' },
 			'8': {
 				count: '2',
-				afterCountOper: '停止脚本',
+				afterCountOper:  '切换方案',
 				type: '个人突破',
+				next_scheme:'寮突破'
 			},
 			'9': {
 				scheme_switch_enabled: true,
@@ -343,7 +344,7 @@ const SchemeList: IScheme[] = [
 				maxTimeForwait: '10',
 				afterCountOper: '停止脚本',
 				isAutoFosterCare: true,
-				next_scheme: '返回庭院',
+				next_scheme: '__停止脚本__',
 			},
 			'997': {
 				priority: '太鼓6->太鼓5->太鼓4->太鼓3->斗鱼6->斗鱼5->斗鱼4',
@@ -977,7 +978,7 @@ const SchemeList: IScheme[] = [
 			'0': {
 				'jspd_enabled_2': true,
 				'jspd_times_2': '4',
-				'scheme_switch_enabled': true,
+				'after_operation':  '切换方案',
 				'next_scheme': '__返回上个方案__'
 			},
 			'1': { 'exitBeforeReady': true },
@@ -1000,7 +1001,6 @@ const SchemeList: IScheme[] = [
 				'jspd_times_1': '3',
 				'jspd_enabled_2': true,
 				'jspd_times_2': '30',
-				'scheme_switch_enabled': true,
 				'next_scheme': '绘卷_返回庭院_突破_9退4_进攻',
 				'after_operation': '切换方案',
 				'after_operation_sleep': '2,5'
