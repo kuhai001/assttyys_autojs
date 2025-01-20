@@ -83,9 +83,9 @@ const SchemeList: IScheme[] = [
 			'3': { type: '关闭' },
 			'8': {
 				count: '2',
-				afterCountOper:  '切换方案',
+				afterCountOper: '切换方案',
 				type: '个人突破',
-				next_scheme:'寮突破'
+				next_scheme: '寮突破'
 			},
 			'9': {
 				after_operation: '切换方案',
@@ -901,7 +901,6 @@ const SchemeList: IScheme[] = [
 		日常_个突_9退4_进攻-508
 		日常_个突_9退4_退出-509
 		自定义定时任务-启动游戏-寮突-510
-		
 		日常_签到
 		日常_地鬼
 		日常_逢魔
@@ -959,7 +958,7 @@ const SchemeList: IScheme[] = [
 			'0': {
 				'jspd_enabled_2': true,
 				'jspd_times_2': '4',
-				'after_operation':  '切换方案',
+				'after_operation': '切换方案',
 				'next_scheme': '__返回上个方案__'
 			},
 			'1': { 'exitBeforeReady': true },
@@ -1165,8 +1164,8 @@ const SchemeList: IScheme[] = [
 				'is_shutdown_the_game_before': true
 			}
 		},
-		'groupNames': ["自定义定时任务"]
-	},			
+		'groupNames': ['自定义定时任务']
+	},
 	// , {
 	// 	id: 102,
 	// 	schemeName: '定时任务-启动游戏-对弈竞猜',
