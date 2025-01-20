@@ -915,17 +915,18 @@ const SchemeList: IScheme[] = [
 		绘卷_返回庭院_突破_9退4_进攻-504
 		绘卷_定时任务_个突_9退4_进攻-505
 	2.日常
-		日常_个突_9退4_进攻
-		日常_个突_9退4_退出
-		日常_寮突破
-		日常_定时任务_个突_9退4_进攻
+		日常_魂土60次_司机-505
+		日常_魂土60次_乘客-506
+		日常_寮突破-507
+		日常_个突_9退4_进攻-508
+		日常_个突_9退4_退出-509
+		自定义定时任务-启动游戏-寮突-510
+		
 		日常_签到
 		日常_地鬼
 		日常_逢魔
 		日常_悬赏
-		日常_金币妖怪
-		日常_魂土30次_司机
-		日常_魂土30次_乘客
+		日常_金币妖怪		
 		日常_结界寄养
 	3.周常
 		周常_秘闻
@@ -1057,7 +1058,135 @@ const SchemeList: IScheme[] = [
 			}
 		},
 		'groupNames': ['绘卷']
-	}
+	},
+	{
+		id: 505,
+		groupNames: ['日常'],
+		schemeName: '日常_魂土60次_司机',
+		star: true,
+		list: [509, 510, 511, 0, 27, 306],
+		config: {
+			'0': {
+				'jspd_enabled_2': true,
+				'jspd_times_2': '60',
+				'after_operation': '切换方案',
+				'next_scheme': '定时任务-启动游戏-寮突'
+			},
+			'306': {
+				'inviteName': '苦海二号',
+				'secondPlayer': true
+			},
+			'510': {
+				'fastMode': true
+			}
+		},
+	},
+	{
+		id: 506,
+		groupNames: ['日常'],
+		schemeName: '日常_魂土60次_乘客',
+		list: [509, 510, 511, 0, 4, 3, 2],
+		'star': true,
+		config: {
+			'0': {
+				'jspd_enabled_2': true,
+				'jspd_times_2': '60',
+				'after_operation': '切换方案',
+				'next_scheme': '定时任务-启动游戏-寮突'
+			},
+			'510': {
+				'fastMode': true
+			}
+		},
+	},
+	{
+		id: 507,
+		'schemeName': '日常_寮突破',
+		'star': true,
+		'list': [0, 51, 1, 2, 3, 8, 9, 10, 12, 29],
+		'config': {
+			'8': {
+				'afterCountOper': '关闭界面',
+				'type': '寮突破'
+			}
+			, '10': {
+				'type': '寮突破'
+			},
+			'51': {
+				'greenType': '自定义坐标'
+			}
+		}
+	},
+	{
+		id: 508,
+		'schemeName': '日常_个突_9退4_进攻',
+		'star': true,
+		'list': [51, 0, 1, 2, 3, 8, 9, 509, 510, 511, 29, 10],
+		'config': {
+			'0': {
+				'after_operation': '停止脚本',
+			},
+			'8': {
+				'afterCountOper': '切换方案',
+				'next_scheme': '日常_寮突破'
+			},
+			'9': {
+				'scheme_switch_enabled': true,
+				'after_operation': '切换方案'
+				'next_scheme': '日常_个突_9退4_退出'
+			},
+			'51': {
+				'greenType': '自定义坐标',
+				'preSearch': true
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '3'
+			}
+		},
+		'groupNames': ['日常']
+	},
+	{
+		id: 509,
+		'schemeName': '日常_个突_9退4_退出',
+		'star': true,
+		'list': [0, 1, 2, 3, 8, 9, 10],
+		'config': {
+			'0': {
+				'jspd_enabled_2': true,
+				'jspd_times_2': '4',
+				'after_operation': '切换方案',
+				'next_scheme': '__返回上个方案__'
+			},
+			'1': {
+				'exitBeforeReady': true
+			},
+			'2': {
+				'rechallenge': true
+			},
+			'8': {
+				'afterCountOper': '九退四_切换方案',
+				'next_scheme': '__返回上个方案__'
+			}
+		},
+		'groupNames': ['日常']
+	},
+	{
+		id: 510,
+		'schemeName': '自定义定时任务-启动游戏-寮突',
+		'star': false,
+		'list': [0, 1, 2, 3, 503, 993],
+		'config': {
+			'503': {
+				'afterCountOper': '不进行任何操作'
+			},
+			'993': {
+				'next_scheme': '日常_个突_9退4_进攻',
+				'is_shutdown_the_game_before': true
+			}
+		},
+		'groupNames': ["自定义定时任务"]
+	},			
 	// , {
 	// 	id: 102,
 	// 	schemeName: '定时任务-启动游戏-对弈竞猜',
