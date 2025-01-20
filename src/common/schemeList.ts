@@ -1104,8 +1104,11 @@ const SchemeList: IScheme[] = [
 		id: 507,
 		'schemeName': '日常_寮突破',
 		'star': false,
-		'list': [0, 51, 1, 2, 3, 8, 9, 10, 12, 29],
+		'list': [40, 0, 51, 1, 2, 3, 8, 9, 10, 12, 29],
 		'config': {
+			'40': {
+				'ready_once_buff': true
+			}
 			'8': {
 				'afterCountOper': '关闭界面',
 				'type': '寮突破'
@@ -1124,6 +1127,9 @@ const SchemeList: IScheme[] = [
 		'star': true,
 		'list': [51, 0, 1, 2, 3, 8, 9, 509, 510, 511, 29, 10],
 		'config': {
+			'40': {
+				'ready_once_buff': true
+			},
 			'0': {
 				'after_operation': '停止脚本',
 			},
