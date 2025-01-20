@@ -308,6 +308,21 @@ const ScheduleDefaultList: JobOptions[] = [
 			scheme: '自定义定时任务-启动游戏-地鬼',
 		}
 	},
+	{
+		id: 504,
+		name: '自定义逢魔',
+		desc: '自动参加逢魔活动',
+		checked: true,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 0 17 * * *',
+		nextOffset: '0,0',
+		level: '9',
+		config: {
+			scheme: '自定义定时任务-启动游戏-每日逢魔',
+		}
+	},
 ];
 
 export default ScheduleDefaultList;
