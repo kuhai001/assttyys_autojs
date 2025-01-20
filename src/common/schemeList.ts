@@ -921,6 +921,8 @@ const SchemeList: IScheme[] = [
 		日常_个突_9退4_进攻-508
 		日常_个突_9退4_退出-509
 		自定义定时任务-启动游戏-寮突-510
+		日常_式神寄养-511
+		自定义定时任务-启动游戏-式神寄养-512
 		日常_签到
 		日常_地鬼
 		日常_逢魔
@@ -1185,6 +1187,55 @@ const SchemeList: IScheme[] = [
 			}
 		},
 		'groupNames': ['自定义定时任务']
+	},
+	{
+		id: 511,
+		schemeName: '日常_式神寄养',
+		groupNames: ['日常'],
+		list: [0, 3, 999, 998, 997, 994, 995],
+		config: {
+			'0': {
+				jspd_times_longtime_nodo: 20,
+			},
+			'3': {
+				type: '关闭',
+			},
+			'994': {
+				count: '6',
+				afterCountOper: '停止脚本',
+				next_scheme: '通用准备退出',
+			},
+			'995': {
+				maxTimeForwait: '10',
+				afterCountOper: '停止脚本',
+				isAutoFosterCare: true,
+				next_scheme: '__停止脚本__',
+			},
+			'997': {
+				priority: '太鼓6->太鼓5->太鼓4->太鼓3->斗鱼6->斗鱼5->斗鱼4',
+			},
+			'998': {
+				change_enchantment_switch: true,
+				change_enchantment_type: '太鼓',
+			},
+		},
+	},
+	{
+		id: 512,
+		schemeName: '自定义定时任务-启动游戏-式神寄养',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_式神寄养',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
 	},
 	// , {
 	// 	id: 102,
