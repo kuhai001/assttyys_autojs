@@ -1072,7 +1072,7 @@ const SchemeList: IScheme[] = [
 	{
 		id: 507,
 		'schemeName': '日常_寮突破',
-		'star': true,
+		'star': false,
 		'list': [0, 51, 1, 2, 3, 8, 9, 10, 12, 29],
 		'config': {
 			'8': {
@@ -1119,7 +1119,7 @@ const SchemeList: IScheme[] = [
 	{
 		id: 509,
 		'schemeName': '日常_个突_9退4_退出',
-		'star': true,
+		'star': false,
 		'list': [0, 1, 2, 3, 8, 9, 10],
 		'config': {
 			'0': {
@@ -1144,7 +1144,7 @@ const SchemeList: IScheme[] = [
 	{
 		id: 510,
 		'schemeName': '自定义定时任务-启动游戏-寮突',
-		'star': false,
+		'star': true,
 		'list': [0, 1, 2, 3, 503, 993],
 		'config': {
 			'503': {
