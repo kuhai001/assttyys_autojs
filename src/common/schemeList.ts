@@ -1282,7 +1282,6 @@ const SchemeList: IScheme[] = [
 	{
 		id: 515,
 		schemeName: '日常_逢魔日常',
-		star: true,
 		list: [509, 510, 511, 40, 0, 1, 2, 3, 23, 24, 26, 508, 8, 504],
 		config: {
 			'40': {
@@ -1297,6 +1296,7 @@ const SchemeList: IScheme[] = [
 				switch_ji_enabled: false,
 			},
 		},
+		groupNames: ['日常']
 	},
 	{
 		id: 516,
