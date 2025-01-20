@@ -1055,7 +1055,7 @@ const SchemeList: IScheme[] = [
 				'jspd_enabled_2': true,
 				'jspd_times_2': '60',
 				'after_operation': '切换方案',
-				'next_scheme': '定时任务-启动游戏-寮突'
+				'next_scheme': '自定义定时任务-启动游戏-寮突'
 			},
 			'306': {
 				'inviteName': '苦海二号',
@@ -1080,7 +1080,7 @@ const SchemeList: IScheme[] = [
 				'jspd_enabled_2': true,
 				'jspd_times_2': '60',
 				'after_operation': '切换方案',
-				'next_scheme': '定时任务-启动游戏-寮突'
+				'next_scheme': '自定义定时任务-启动游戏-寮突'
 			},
 			'510': {
 				'fastMode': true
