@@ -286,11 +286,26 @@ const ScheduleDefaultList: JobOptions[] = [
 		lastRunTime: null,
 		nextDate: null,
 		repeatMode: 3,
-		interval: '0 30 9,13 * * *',
+		interval: '0 0 13 * * *',
 		nextOffset: '0,0',
-		level: '5',
+		level: '1',
 		config: {
 			scheme: '自定义定时任务-启动游戏-寮突',
+		}
+	},
+	{
+		id: 503,
+		name: '自定义地鬼',
+		desc: '自动地鬼',
+		checked: true,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 0 18 * * *',
+		nextOffset: '0,0',
+		level: '2',
+		config: {
+			scheme: '自定义定时任务-启动游戏-地鬼',
 		}
 	},
 ];
