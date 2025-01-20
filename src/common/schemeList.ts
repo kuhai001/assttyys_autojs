@@ -1112,7 +1112,8 @@ const SchemeList: IScheme[] = [
 			'51': {
 				'greenType': '自定义坐标'
 			}
-		}
+		},
+		'groupNames': ['日常']
 	},
 	{
 		id: 508,
