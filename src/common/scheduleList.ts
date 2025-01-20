@@ -259,7 +259,26 @@ const ScheduleDefaultList: JobOptions[] = [
 		config: {
 			scheme: '定时任务-启动游戏-金币妖怪',
 		}
-	}
+	},
+	/**
+	 * 自定义定时任务
+	 * 
+	 */
+	{
+		id: 501,
+		name: '式神寄养',
+		desc: '自动续式神寄养，建议把执行时间提前5分钟，启动前需要退出游戏',
+		checked: true,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 2,
+		interval: '359',
+		nextOffset: '0,0',
+		level: '10',
+		config: {
+			scheme: '自定义定时任务-启动游戏-式神寄养',
+		}
+	},
 ];
 
 export default ScheduleDefaultList;
