@@ -265,7 +265,7 @@ const ScheduleDefaultList: JobOptions[] = [
 	 */
 	{
 		id: 501,
-		name: '式神寄养',
+		name: '自定义式神寄养',
 		desc: '自动续式神寄养，建议把执行时间提前5分钟，启动前需要退出游戏',
 		checked: true,
 		lastRunTime: null,
