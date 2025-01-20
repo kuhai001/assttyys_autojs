@@ -1063,7 +1063,7 @@ const SchemeList: IScheme[] = [
 		groupNames: ['日常'],
 		schemeName: '日常_魂土60次_司机',
 		star: true,
-		list: [509, 510, 511, 0, 27, 306],
+		list: [509, 510, 511, 0, 1, 2, 3, 5, 27, 306],
 		config: {
 			'0': {
 				'jspd_enabled_2': true,
