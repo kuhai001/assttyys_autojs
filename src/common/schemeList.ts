@@ -927,7 +927,8 @@ const SchemeList: IScheme[] = [
 		自定义定时任务-启动游戏-地鬼-514
 		日常_逢魔-515
 		自定义定时任务-启动游戏-每日逢魔-516
-		日常_签到
+		日常_每日签到与收取邮件-517
+		自定义定时任务-启动游戏-每日签到与收取邮件-518
 		日常_悬赏
 		日常_金币妖怪
 	3.周常
@@ -1316,6 +1317,34 @@ const SchemeList: IScheme[] = [
 				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '日常_逢魔日常',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 517,
+		schemeName: '日常_每日签到与收取邮件',
+		list: [0, 2, 3, 518],
+		config: {
+			'0': {
+				jspd_enabled_longtime_nodo: true,
+				jspd_times_longtime_nodo: 1,
+			},
+		},
+	},
+	{
+		id: 518,
+		schemeName: '自定义定时任务-启动游戏-每日签到与收取邮件',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_每日签到与收取邮件',
 			},
 			'503': {
 				afterCountOper: '不进行任何操作',
