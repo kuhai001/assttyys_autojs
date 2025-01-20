@@ -1132,7 +1132,7 @@ const SchemeList: IScheme[] = [
 			},
 			'9': {
 				'scheme_switch_enabled': true,
-				'after_operation': '切换方案'
+				'after_operation': '切换方案',
 				'next_scheme': '日常_个突_9退4_退出'
 			},
 			'51': {
