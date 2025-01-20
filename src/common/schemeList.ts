@@ -1087,7 +1087,8 @@ const SchemeList: IScheme[] = [
 		'list': [40, 0, 51, 1, 2, 3, 8, 9, 10, 12, 29],
 		'config': {
 			'40': {
-				'ready_once_buff': true
+				'ready_once_buff': true,
+				'afterCountOper': '不进行任何操作'
 			},
 			'8': {
 				'afterCountOper': '关闭界面',
@@ -1109,7 +1110,8 @@ const SchemeList: IScheme[] = [
 		'list': [40, 51, 0, 1, 2, 3, 8, 9, 509, 510, 511, 29, 10],
 		'config': {
 			'40': {
-				'ready_once_buff': true
+				'ready_once_buff': true,
+				'afterCountOper': '不进行任何操作'
 			},
 			'0': {
 				'after_operation': '停止脚本',
