@@ -278,6 +278,21 @@ const ScheduleDefaultList: JobOptions[] = [
 			scheme: '自定义定时任务-启动游戏-式神寄养',
 		}
 	},
+	{
+		id: 502,
+		name: '自定义寮突',
+		desc: '自动寮突',
+		checked: true,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 30 9,13 * * *',
+		nextOffset: '0,0',
+		level: '5',
+		config: {
+			scheme: '自定义定时任务-启动游戏-寮突',
+		}
+	},
 ];
 
 export default ScheduleDefaultList;
