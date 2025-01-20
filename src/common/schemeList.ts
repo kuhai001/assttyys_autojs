@@ -905,7 +905,8 @@ const SchemeList: IScheme[] = [
 		自定义定时任务-启动游戏-式神寄养-512
 		日常_地鬼-513
 		自定义定时任务-启动游戏-地鬼-514
-		日常_逢魔
+		日常_逢魔-515
+		自定义定时任务-启动游戏-每日逢魔-516
 		日常_签到
 		日常_悬赏
 		日常_金币妖怪		
@@ -1258,7 +1259,43 @@ const SchemeList: IScheme[] = [
 			'993': {
 				area: '',
 				is_shutdown_the_game_before: true,
-				next_scheme: '地鬼日常',
+				next_scheme: '日常_地鬼日常',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 515,
+		schemeName: '日常_逢魔日常',
+		star: true,
+		list: [509, 510, 511, 40, 0, 1, 2, 3, 23, 24, 26, 508, 8, 504],
+		config: {
+			'40': {
+				'ready_once_buff': true,
+				'afterCountOper': '不进行任何操作'
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '2'
+			},
+			'508': {
+				switch_ji_enabled: false,
+			},
+		},
+	},
+	{
+		id: 516,
+		schemeName: '自定义定时任务-启动游戏-每日逢魔',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_逢魔日常',
 			},
 			'503': {
 				afterCountOper: '不进行任何操作',
