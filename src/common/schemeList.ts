@@ -1101,12 +1101,12 @@ const SchemeList: IScheme[] = [
 		'config': {
 			'40': {
 				'ready_once_buff': true
-			}
+			},
 			'8': {
 				'afterCountOper': '关闭界面',
 				'type': '寮突破'
-			}
-			, '10': {
+			},
+			'10': {
 				'type': '寮突破'
 			},
 			'51': {
