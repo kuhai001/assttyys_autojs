@@ -1125,7 +1125,7 @@ const SchemeList: IScheme[] = [
 		id: 508,
 		'schemeName': '日常_个突_9退4_进攻',
 		'star': true,
-		'list': [51, 0, 1, 2, 3, 8, 9, 509, 510, 511, 29, 10],
+		'list': [40, 51, 0, 1, 2, 3, 8, 9, 509, 510, 511, 29, 10],
 		'config': {
 			'40': {
 				'ready_once_buff': true
