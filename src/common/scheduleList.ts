@@ -323,6 +323,21 @@ const ScheduleDefaultList: JobOptions[] = [
 			scheme: '自定义定时任务-启动游戏-每日逢魔',
 		}
 	},
+	{
+		id: 505,
+		name: '自定义每日签到与领取邮箱奖励',
+		desc: '每日签到与领取邮箱奖励',
+		checked: true,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 45 12 * * *',
+		nextOffset: '0,0',
+		level: '1',
+		config: {
+			scheme: '自定义定时任务-启动游戏-每日签到与收取邮件',
+		}
+	},
 ];
 
 export default ScheduleDefaultList;
