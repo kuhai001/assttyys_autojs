@@ -1075,7 +1075,6 @@ const SchemeList: IScheme[] = [
 			},
 			'306': {
 				'inviteName': '苦海二号',
-				'secondPlayer': true
 			},
 			'510': {
 				'fastMode': true
