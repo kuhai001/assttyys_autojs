@@ -261,7 +261,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		}
 	},
 	/**
-	 * 自定义定时任务 
+	 * 自定义定时任务
 	 */
 	{
 		id: 501,
