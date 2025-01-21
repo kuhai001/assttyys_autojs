@@ -916,8 +916,8 @@ const SchemeList: IScheme[] = [
 		自定义定时任务-启动游戏-魂土60次-司机-523
 		自定义定时任务-启动游戏-魂土60次-乘客-524
 	3.周常
+		周常_秘闻-525
 		周常_斗技
-		周常_秘闻
 		周常_器灵
 		周常_真蛇
 		周常_永生之海
@@ -1438,7 +1438,54 @@ const SchemeList: IScheme[] = [
 			},
 		},
 	},
-	
+	{
+		id: 525,
+		schemeName: '周常_秘闻',
+		groupNames: ['周常'],
+		star: true,
+		list: [503, 509, 510, 511, 29, 0, 51, 1, 2, 3, 34, 308],
+		config: {
+			'503': {
+				'afterCountOper': '不进行任何操作'
+
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '7',
+			},
+			'0': {
+				jspd_enabled_1: true,
+				jspd_times_1: 10,
+			},
+			'51': {
+				greenType: '自定义坐标',
+				greenText: '绿标专用',
+				preSearch: true,
+			},
+		},
+	},
+	{
+		id: 17,
+		schemeName: '周常_斗技',
+		groupNames: ['周常'],
+		star: true,
+		list: [503, 509, 510, 511, 0, 51, 1, 2, 3, 30, 307],
+		config: {
+			'503': {
+				'afterCountOper': '不进行任何操作'
+
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '6',
+			},
+			'51': {
+				greenType: '自定义坐标',
+				greenText: '绿标专用',
+				preSearch: true,
+			},
+		},
+	},
 	// , {
 	// 	id: 102,
 	// 	schemeName: '定时任务-启动游戏-对弈竞猜',
