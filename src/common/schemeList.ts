@@ -1350,7 +1350,7 @@ const SchemeList: IScheme[] = [
 	{
 		id: 519,
 		schemeName: '日常_悬赏',
-		schemeName: '日常',
+		groupNames: ['日常'],
 		star: true,
 		list: [509, 510, 511, 0, 1, 2, 3, 18, 29],
 		config: {
