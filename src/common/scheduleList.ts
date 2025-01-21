@@ -353,6 +353,21 @@ const ScheduleDefaultList: JobOptions[] = [
 			scheme: '自定义定时任务-启动游戏-悬赏',
 		}
 	},
+	{
+		id: 507,
+		name: '自定义金币妖怪',
+		desc: '金币妖怪',
+		checked: true,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 45 19 * * *',
+		nextOffset: '0,0',
+		level: '6',
+		config: {
+			scheme: '自定义定时任务-启动游戏-金币妖怪',
+		}
+	},
 ];
 
 export default ScheduleDefaultList;

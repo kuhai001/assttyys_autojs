@@ -931,7 +931,8 @@ const SchemeList: IScheme[] = [
 		自定义定时任务-启动游戏-每日签到与收取邮件-518
 		日常_悬赏-519
 		自定义定时任务-启动游戏-悬赏-520
-		日常_金币妖怪
+		日常_金币妖怪-521
+		自定义定时任务-启动游戏-金币妖怪-522
 	3.周常
 		周常_秘闻
 		周常_真蛇
@@ -1384,6 +1385,40 @@ const SchemeList: IScheme[] = [
 				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '日常_悬赏',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 521,
+		schemeName: '日常_金币妖怪',
+		groupNames: ['日常']
+		list: [509, 510, 511, 0, 50, 1, 2, 3, 35, 37, 38],
+		config: {
+			'37': {
+				target: '金币妖怪',
+				createMode: '创建队伍',
+				next_scheme: '关闭BUFF',
+			},
+			'50': {
+				ready_once_buff: true,
+				buff_type: '金币',
+			}
+		},
+	},
+	{
+		id: 522,
+		schemeName: '自定义定时任务-启动游戏-金币妖怪',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '金币妖怪',
 			},
 			'503': {
 				afterCountOper: '不进行任何操作',
