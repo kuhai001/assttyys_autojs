@@ -1344,11 +1344,7 @@ const SchemeList: IScheme[] = [
 		star: true,
 		list: [509, 510, 511, 0, 1, 2, 3, 18, 29],
 		config: {
-			'40': {
-				'ready_once_buff': true,
-				'afterCountOper': '不进行任何操作'
-			},
-			'510': {
+				'510': {
 				'fastMode': true,
 				'groupNum': '7'
 			},
@@ -1385,7 +1381,12 @@ const SchemeList: IScheme[] = [
 			'50': {
 				ready_once_buff: true,
 				buff_type: '金币',
-			}
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '4',
+				'defaultNum': '2'
+			},
 		},
 	},
 	{
