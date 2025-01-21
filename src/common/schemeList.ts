@@ -939,8 +939,6 @@ const SchemeList: IScheme[] = [
 		周常_器灵
 		周常_真蛇
 		周常_永生之海
-		
-		
 	*/
 	{
 		id: 500,
