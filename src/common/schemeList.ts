@@ -909,7 +909,8 @@ const SchemeList: IScheme[] = [
 		自定义定时任务-启动游戏-每日逢魔-516
 		日常_每日签到与收取邮件-517
 		自定义定时任务-启动游戏-每日签到与收取邮件-518
-		日常_悬赏
+		日常_悬赏-519
+		自定义定时任务-启动游戏-悬赏-520
 		日常_金币妖怪
 	3.周常
 		周常_秘闻
@@ -1093,12 +1094,8 @@ const SchemeList: IScheme[] = [
 		id: 507,
 		'schemeName': '日常_寮突破',
 		'star': false,
-		'list': [40, 0, 51, 1, 2, 3, 8, 9, 10, 12, 29],
+		'list': [0, 51, 1, 2, 3, 8, 9, 10, 12, 29],
 		'config': {
-			'40': {
-				'ready_once_buff': true,
-				'afterCountOper': '不进行任何操作'
-			},
 			'8': {
 				'afterCountOper': '关闭界面',
 				'type': '寮突破'
@@ -1116,10 +1113,9 @@ const SchemeList: IScheme[] = [
 		id: 508,
 		'schemeName': '日常_个突_9退4_进攻',
 		'star': true,
-		'list': [40, 51, 0, 1, 2, 3, 8, 9, 509, 510, 511, 29, 10],
+		'list': [501, 40, 51, 0, 1, 2, 3, 8, 9, 509, 510, 511, 29, 10],
 		'config': {
 			'40': {
-				'ready_once_buff': true,
 				'afterCountOper': '不进行任何操作'
 			},
 			'0': {
@@ -1325,6 +1321,40 @@ const SchemeList: IScheme[] = [
 				area: '',
 				is_shutdown_the_game_before: true,
 				next_scheme: '日常_每日签到与收取邮件',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 519,
+		schemeName: '日常_悬赏',
+		schemeName: '日常',
+		star: true,
+		list: [509, 510, 511, 0, 1, 2, 3, 18, 29],
+		config: {
+			'40': {
+				'ready_once_buff': true,
+				'afterCountOper': '不进行任何操作'
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '7'
+			},
+		},
+	},
+	{
+		id: 520,
+		schemeName: '自定义定时任务-启动游戏-悬赏',
+		star: false,
+		groupNames: ['定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_悬赏',
 			},
 			'503': {
 				afterCountOper: '不进行任何操作',
