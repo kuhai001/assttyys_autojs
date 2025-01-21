@@ -1135,6 +1135,9 @@ const SchemeList: IScheme[] = [
 		'star': true,
 		'list': [501, 40, 51, 0, 1, 2, 3, 8, 9, 509, 510, 511, 29, 10],
 		'config': {
+			'501': {
+				'once': true
+			}
 			'40': {
 				'afterCountOper': '不进行任何操作'
 			},
