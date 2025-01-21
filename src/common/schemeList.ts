@@ -1254,7 +1254,7 @@ const SchemeList: IScheme[] = [
 	{
 		id: 513,
 		schemeName: '日常_地鬼日常',
-		list: [509, 510, 511, 40, 0, 1, 2, 3, , 16, 29],
+		list: [509, 510, 511, 40, 0, 1, 2, 3, 16, 29],
 		'config': {
 			'40': {
 				'ready_once_buff': true,
