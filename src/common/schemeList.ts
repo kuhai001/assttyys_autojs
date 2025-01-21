@@ -1141,7 +1141,7 @@ const SchemeList: IScheme[] = [
 		'config': {
 			'501': {
 				'once': true
-			}
+			},
 			'40': {
 				'afterCountOper': '不进行任何操作'
 			},
