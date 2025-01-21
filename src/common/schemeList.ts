@@ -933,6 +933,8 @@ const SchemeList: IScheme[] = [
 		自定义定时任务-启动游戏-悬赏-520
 		日常_金币妖怪-521
 		自定义定时任务-启动游戏-金币妖怪-522
+		自定义定时任务-启动游戏-魂土60次-司机-523
+		自定义定时任务-启动游戏-魂土60次-乘客-524
 	3.周常
 		周常_斗技
 		周常_秘闻
@@ -1281,6 +1283,7 @@ const SchemeList: IScheme[] = [
 		id: 514,
 		schemeName: '自定义定时任务-启动游戏-地鬼',
 		groupNames: ['自定义定时任务'],
+		star: true,
 		list: [0, 1, 2, 3, 503, 993],
 		config: {
 			'993': {
@@ -1357,7 +1360,6 @@ const SchemeList: IScheme[] = [
 		id: 519,
 		schemeName: '日常_悬赏',
 		groupNames: ['日常'],
-		star: true,
 		list: [509, 510, 511, 0, 1, 2, 3, 18, 29],
 		config: {
 			'510': {
@@ -1410,7 +1412,7 @@ const SchemeList: IScheme[] = [
 		schemeName: '自定义定时任务-启动游戏-金币妖怪',
 		star: true,
 		groupNames: ['自定义定时任务'],
-		list: [1, 2, 3, 503, 993],
+		list: [0, 1, 2, 3, 503, 993],
 		config: {
 			'993': {
 				area: '',
@@ -1422,6 +1424,41 @@ const SchemeList: IScheme[] = [
 			},
 		},
 	},
+	{
+		id: 523,
+		schemeName: '自定义定时任务-启动游戏-魂土60次-司机',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_魂土60次_司机',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 524,
+		schemeName: '自定义定时任务-启动游戏-魂土60次-乘客',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_魂土60次_乘客',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	
 	// , {
 	// 	id: 102,
 	// 	schemeName: '定时任务-启动游戏-对弈竞猜',
