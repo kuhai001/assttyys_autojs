@@ -338,6 +338,21 @@ const ScheduleDefaultList: JobOptions[] = [
 			scheme: '自定义定时任务-启动游戏-每日签到与收取邮件',
 		}
 	},
+	{
+		id: 506,
+		name: '自定义悬赏',
+		desc: '自动悬赏',
+		checked: true,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 30 17,18 * * *',
+		nextOffset: '0,0',
+		level: '1',
+		config: {
+			scheme: '自定义定时任务-启动游戏-悬赏',
+		}
+	},
 ];
 
 export default ScheduleDefaultList;
