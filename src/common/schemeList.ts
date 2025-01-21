@@ -733,7 +733,8 @@ const SchemeList: IScheme[] = [
 				fastMode: true
 			}
 		}
-	}, {
+	},
+	{
 		id: 67,
 		schemeName: '庭院进入寮每日活动(狭间)',
 		list: [3, 505, 506, 516],
@@ -937,8 +938,8 @@ const SchemeList: IScheme[] = [
 		自定义定时任务-启动游戏-魂土60次-乘客-524
 	3.周常
 		周常_秘闻-525
-		周常_斗技
-		周常_器灵
+		周常_斗技-526
+		周常_器灵-527
 		周常_真蛇
 		周常_永生之海
 	*/
@@ -1463,12 +1464,8 @@ const SchemeList: IScheme[] = [
 		schemeName: '周常_秘闻',
 		groupNames: ['周常'],
 		star: true,
-		list: [503, 509, 510, 511, 29, 0, 51, 1, 2, 3, 34, 308],
+		list: [509, 510, 511, 29, 0, 51, 1, 2, 3, 34, 308],
 		config: {
-			'503': {
-				'afterCountOper': '不进行任何操作'
-
-			},
 			'510': {
 				'fastMode': true,
 				'groupNum': '7',
@@ -1485,16 +1482,12 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-		id: 17,
+		id: 526,
 		schemeName: '周常_斗技',
 		groupNames: ['周常'],
 		star: true,
-		list: [503, 509, 510, 511, 0, 51, 1, 2, 3, 30, 307],
+		list: [509, 510, 511, 0, 51, 1, 2, 3, 30, 307],
 		config: {
-			'503': {
-				'afterCountOper': '不进行任何操作'
-
-			},
 			'510': {
 				'fastMode': true,
 				'groupNum': '6',
@@ -1505,6 +1498,26 @@ const SchemeList: IScheme[] = [
 				preSearch: true,
 			},
 		},
+	},
+	{
+		id: 527,
+		schemeName: '周常_契灵',
+		groupNames: ['周常'],
+		list: [510, 0, 1, 51, 2, 3, 313, 29],
+		star: true,
+		config: {
+			'510': {
+				fastMode: true
+			},
+			'51': {
+				greenType: '自定义坐标',
+				greenText: '绿标专用',
+				preSearch: true,
+			},
+			'313': {
+				'preset_pair_契灵_镇墓兽': '1,3'
+			},
+		}
 	},
 	// , {
 	// 	id: 102,
