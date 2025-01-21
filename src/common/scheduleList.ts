@@ -368,6 +368,34 @@ const ScheduleDefaultList: JobOptions[] = [
 			scheme: '自定义定时任务-启动游戏-金币妖怪',
 		}
 	},
+	{
+		id: 508,
+		name: '自定义魂土司机',
+		desc: '魂土司机60次',
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 45 9 * * *',
+		nextOffset: '0,0',
+		level: '6',
+		config: {
+			scheme: '自定义定时任务-启动游戏-魂土60次-司机',
+		}
+	},
+	{
+		id: 509,
+		name: '自定义魂土乘客',
+		desc: '魂土乘客60次',
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 43 9 * * *',
+		nextOffset: '0,0',
+		level: '6',
+		config: {
+			scheme: '自定义定时任务-启动游戏-魂土60次-乘客',
+		}
+	},
 ];
 
 export default ScheduleDefaultList;
