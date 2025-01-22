@@ -269,6 +269,7 @@ const ScheduleDefaultList: JobOptions[] = [
 	 * 自定义寮突-14:00
 	 * 自定义逢魔-17:00
 	 * 自定义悬赏-17:30,18:30
+	 * 自定义绘卷-6:30,12:30,18:30,24:30,3.4.5.6.0
 	 */
 	{
 		id: 501,
@@ -383,7 +384,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		lastRunTime: null,
 		nextDate: null,
 		repeatMode: 3,
-		interval: '0 30 6,12,18,24 * * 3,4,5,6',
+		interval: '0 30 6,12,18,24 * * 3,4,5,6,0',
 		nextOffset: '0,0',
 		level: '9',
 		config: {
