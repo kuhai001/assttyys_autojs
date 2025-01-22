@@ -296,7 +296,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		repeatMode: 3,
 		interval: '0 45 12 * * *',
 		nextOffset: '0,0',
-		level: '1',
+		level: '5',
 		config: {
 			scheme: '自定义定时任务-启动游戏-每日签到与收取邮件',
 		}
@@ -311,7 +311,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		repeatMode: 3,
 		interval: '0 0 13 * * *',
 		nextOffset: '0,0',
-		level: '2',
+		level: '6',
 		config: {
 			scheme: '自定义定时任务-启动游戏-地鬼',
 		}
@@ -356,7 +356,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		repeatMode: 3,
 		interval: '0 0 17 * * *',
 		nextOffset: '0,0',
-		level: '9',
+		level: '7',
 		config: {
 			scheme: '自定义定时任务-启动游戏-每日逢魔',
 		}
@@ -371,7 +371,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		repeatMode: 3,
 		interval: '0 30 17,18 * * *',
 		nextOffset: '0,0',
-		level: '1',
+		level: '6',
 		config: {
 			scheme: '自定义定时任务-启动游戏-悬赏',
 		}
@@ -386,7 +386,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		repeatMode: 3,
 		interval: '0 30 6,12,18,24 * * 3,4,5,6,0',
 		nextOffset: '0,0',
-		level: '9',
+		level: '2',
 		config: {
 			scheme: '绘卷_定时任务_启动游戏_绘卷',
 		}
