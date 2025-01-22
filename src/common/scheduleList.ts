@@ -262,6 +262,13 @@ const ScheduleDefaultList: JobOptions[] = [
 	},
 	/**
 	 * 自定义定时任务
+	 * 自定义式神寄养-6,12,18,24
+	 * 自定义每日签到与领取邮箱奖励-12:45
+	 * 自定义地鬼-13:00
+	 * 自定义金币妖怪-13:30
+	 * 自定义寮突-14:00
+	 * 自定义逢魔-17:00
+	 * 自定义悬赏-17:30,18:30 
 	 */
 	{
 		id: 501,
@@ -271,7 +278,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		lastRunTime: null,
 		nextDate: null,
 		repeatMode: 2,
-		interval: '359',
+		interval: '0 0 6,12,18,24 * * *',
 		nextOffset: '0,0',
 		level: '10',
 		config: {
@@ -280,51 +287,6 @@ const ScheduleDefaultList: JobOptions[] = [
 	},
 	{
 		id: 502,
-		name: '自定义寮突',
-		desc: '自动寮突',
-		checked: true,
-		lastRunTime: null,
-		nextDate: null,
-		repeatMode: 3,
-		interval: '0 0 13 * * *',
-		nextOffset: '0,0',
-		level: '1',
-		config: {
-			scheme: '自定义定时任务-启动游戏-寮突',
-		}
-	},
-	{
-		id: 503,
-		name: '自定义地鬼',
-		desc: '自动地鬼',
-		checked: true,
-		lastRunTime: null,
-		nextDate: null,
-		repeatMode: 3,
-		interval: '0 0 18 * * *',
-		nextOffset: '0,0',
-		level: '2',
-		config: {
-			scheme: '自定义定时任务-启动游戏-地鬼',
-		}
-	},
-	{
-		id: 504,
-		name: '自定义逢魔',
-		desc: '自动参加逢魔活动',
-		checked: true,
-		lastRunTime: null,
-		nextDate: null,
-		repeatMode: 3,
-		interval: '0 0 17 * * *',
-		nextOffset: '0,0',
-		level: '9',
-		config: {
-			scheme: '自定义定时任务-启动游戏-每日逢魔',
-		}
-	},
-	{
-		id: 505,
 		name: '自定义每日签到与领取邮箱奖励',
 		desc: '每日签到与领取邮箱奖励',
 		checked: true,
@@ -338,6 +300,66 @@ const ScheduleDefaultList: JobOptions[] = [
 			scheme: '自定义定时任务-启动游戏-每日签到与收取邮件',
 		}
 	},
+	{
+		id: 503,
+		name: '自定义地鬼',
+		desc: '自动地鬼',
+		checked: true,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 0 13 * * *',
+		nextOffset: '0,0',
+		level: '2',
+		config: {
+			scheme: '自定义定时任务-启动游戏-地鬼',
+		}
+	},
+	{
+		id: 504,
+		name: '自定义金币妖怪',
+		desc: '金币妖怪',
+		checked: true,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 30 13 * * *',
+		nextOffset: '0,0',
+		level: '6',
+		config: {
+			scheme: '自定义定时任务-启动游戏-金币妖怪',
+		}
+	},
+	{
+		id: 505,
+		name: '自定义寮突',
+		desc: '自动寮突',
+		checked: true,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 0 14 * * *',
+		nextOffset: '0,0',
+		level: '1',
+		config: {
+			scheme: '自定义定时任务-启动游戏-寮突',
+		}
+	},	
+	{
+		id: 506,
+		name: '自定义逢魔',
+		desc: '自动参加逢魔活动',
+		checked: true,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 0 17 * * *',
+		nextOffset: '0,0',
+		level: '9',
+		config: {
+			scheme: '自定义定时任务-启动游戏-每日逢魔',
+		}
+	},	
 	{
 		id: 506,
 		name: '自定义悬赏',
@@ -353,21 +375,7 @@ const ScheduleDefaultList: JobOptions[] = [
 			scheme: '自定义定时任务-启动游戏-悬赏',
 		}
 	},
-	{
-		id: 507,
-		name: '自定义金币妖怪',
-		desc: '金币妖怪',
-		checked: true,
-		lastRunTime: null,
-		nextDate: null,
-		repeatMode: 3,
-		interval: '0 45 19 * * *',
-		nextOffset: '0,0',
-		level: '6',
-		config: {
-			scheme: '自定义定时任务-启动游戏-金币妖怪',
-		}
-	},
+	
 	{
 		id: 508,
 		name: '自定义魂土司机',
