@@ -268,7 +268,7 @@ const ScheduleDefaultList: JobOptions[] = [
 	 * 自定义金币妖怪-13:30
 	 * 自定义寮突-14:00
 	 * 自定义逢魔-17:00
-	 * 自定义悬赏-17:30,18:30 
+	 * 自定义悬赏-17:30,18:30
 	 */
 	{
 		id: 501,
@@ -376,7 +376,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		}
 	},
 	{
-		id: 506,
+		id: 507,
 		name: '自定义绘卷',
 		desc: '自动绘卷',
 		checked: false,
