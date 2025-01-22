@@ -344,7 +344,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		config: {
 			scheme: '自定义定时任务-启动游戏-寮突',
 		}
-	},	
+	},
 	{
 		id: 506,
 		name: '自定义逢魔',
@@ -359,7 +359,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		config: {
 			scheme: '自定义定时任务-启动游戏-每日逢魔',
 		}
-	},	
+	},
 	{
 		id: 506,
 		name: '自定义悬赏',
@@ -375,7 +375,21 @@ const ScheduleDefaultList: JobOptions[] = [
 			scheme: '自定义定时任务-启动游戏-悬赏',
 		}
 	},
-	
+	{
+		id: 506,
+		name: '自定义绘卷',
+		desc: '自动绘卷',
+		checked: false,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 30 6,12,18,24 * * 3,4,5,6',
+		nextOffset: '0,0',
+		level: '9',
+		config: {
+			scheme: '绘卷_定时任务_启动游戏_绘卷',
+		}
+	},
 	{
 		id: 508,
 		name: '自定义魂土司机',
