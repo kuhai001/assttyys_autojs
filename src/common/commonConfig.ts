@@ -12,7 +12,7 @@ const CommonConfig = [{
 			name: 'afterClickDelayBase',
 			desc: '点击后延时基数',
 			type: 'integer',
-			default: 0,
+			default: 1,
 			value: null,
 		},
 		{
