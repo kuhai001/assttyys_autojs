@@ -1527,7 +1527,7 @@ const SchemeList: IScheme[] = [
 		groupNames: ['常用'],
 		star: true,
 		schemeName: '常用_奉纳御魂_开始奉纳',
-		list: [0, 2, 3, , 302],
+		list: [0, 2, 3, 302],
 	},
 	{
 		id: 529,
