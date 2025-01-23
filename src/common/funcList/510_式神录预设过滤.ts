@@ -219,7 +219,7 @@ export class Func510 implements IFuncOrigin {
 							thisOperator[7].oper[0][1] + (thisOperator[7].oper[0][4] * tureGroupNum),
 							thisOperator[7].oper[0][2],
 							thisOperator[7].oper[0][3] + (thisOperator[7].oper[0][4] * tureGroupNum),
-							500
+							1500
 						]];
 						thisScript.regionClick(oper);
 						thisScript.global.change_shikigami_state = 'change_team_default_1';
