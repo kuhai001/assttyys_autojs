@@ -922,6 +922,9 @@ const SchemeList: IScheme[] = [
 		周常_器灵-527
 		周常_永生之海
 		周常_真蛇
+	4.常用
+		常用_奉纳御魂_开始奉纳-528
+		常用_抽厕纸-529
 	*/
 	{
 		id: 500,
@@ -1498,6 +1501,20 @@ const SchemeList: IScheme[] = [
 				'preset_pair_契灵_镇墓兽': '1,3'
 			},
 		}
+	},
+	{
+		id: 528,
+		groupNames: ['常用'],
+		star: true,
+		schemeName: '常用_奉纳御魂_开始奉纳',
+		list: [0, 2, 3, , 302],
+	},
+	{
+		id: 529,
+		schemeName: '常用_抽厕纸',
+		groupNames: ['常用'],
+		star: true,
+		list: [0, 3, 22],
 	},
 	// , {
 	// 	id: 102,
