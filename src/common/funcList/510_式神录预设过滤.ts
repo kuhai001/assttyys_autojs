@@ -194,8 +194,8 @@ export class Func510 implements IFuncOrigin {
 			})) {
 				if (thisConf && thisConf.fastMode) {
 					if (thisScript.global.change_shikigami_state === 'flushed') {
-						thisScript.regionBezierSwipe(thisOperator[2].oper[0], thisOperator[2].oper[1], [500, 700], 0, 1500);
-						thisScript.regionBezierSwipe(thisOperator[2].oper[0], thisOperator[2].oper[1], [500, 700], 0, 1500);
+						thisScript.regionBezierSwipe(thisOperator[2].oper[0], thisOperator[2].oper[1], [500, 700], 0, 2500);
+						thisScript.regionBezierSwipe(thisOperator[2].oper[0], thisOperator[2].oper[1], [500, 700], 0, 2500);
 						let tureGroupNum = null;
 						if (!thisScript.global.preset_once_groupNum) {
 							tureGroupNum = Number(thisConf.groupNum) - 1
@@ -207,7 +207,7 @@ export class Func510 implements IFuncOrigin {
 							thisOperator[7].oper[0][1] + (thisOperator[7].oper[0][4] * tureGroupNum),
 							thisOperator[7].oper[0][2],
 							thisOperator[7].oper[0][3] + (thisOperator[7].oper[0][4] * tureGroupNum),
-							1500
+							2500
 						]];
 						thisScript.regionClick(oper);
 						thisScript.global.change_shikigami_state = 'change_team_default_1';
