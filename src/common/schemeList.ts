@@ -1068,7 +1068,7 @@ const SchemeList: IScheme[] = [
 	{
 		id: 503,
 		'schemeName': '自定义定时任务_启动游戏_绘卷_个突_9退4_进攻',
-		'star': false,
+		'star': true,
 		'list': [0, 1, 2, 3, 502, 503, 993],
 		'config': {
 			'0': {
@@ -1085,7 +1085,7 @@ const SchemeList: IScheme[] = [
 	{
 		id: 504,
 		'schemeName': '自定义定时任务_启动游戏_绘卷_个人探索30次',
-		'star': false,
+		'star': true,
 		'list': [0, 1, 2, 3, 502, 503, 993],
 		'config': {
 			'0': {
