@@ -948,12 +948,12 @@ const SchemeList: IScheme[] = [
 			'0': {
 				jspd_times_longtime_nodo: '3',
 				scheme_switch_enabled: true,
-				next_scheme: '绘卷_定时任务_启动游戏_绘卷_个人探索30次',
+				next_scheme: '自定义定时任务_启动游戏_绘卷_个人探索30次',
 				after_operation: '切换方案'
 			},
 			'8': {
 				afterCountOper: '切换方案',
-				next_scheme: '绘卷_定时任务_启动游戏_绘卷_个人探索30次'
+				next_scheme: '自定义定时任务_启动游戏_绘卷_个人探索30次'
 			},
 			'9': {
 				scheme_switch_enabled: true,
@@ -1006,7 +1006,7 @@ const SchemeList: IScheme[] = [
 				'jspd_times_1': '3',
 				'jspd_enabled_2': true,
 				'jspd_times_2': '30',
-				'next_scheme': '绘卷_定时任务_启动游戏_绘卷_个突_9退4_进攻',
+				'next_scheme': '自定义定时任务_启动游戏_绘卷_个突_9退4_进攻',
 				'after_operation': '切换方案',
 				'after_operation_sleep': '2,5'
 			},
@@ -1057,7 +1057,7 @@ const SchemeList: IScheme[] = [
 	// },
 	{
 		id: 503,
-		'schemeName': '绘卷_定时任务_启动游戏_绘卷_个突_9退4_进攻',
+		'schemeName': '自定义定时任务_启动游戏_绘卷_个突_9退4_进攻',
 		'star': false,
 		'list': [0, 1, 2, 3, 503, 993],
 		'config': {
@@ -1070,11 +1070,11 @@ const SchemeList: IScheme[] = [
 				'next_scheme': '绘卷_个突_9退4_进攻'
 			}
 		},
-		'groupNames': ['绘卷']
+		'groupNames': ['自定义定时任务']
 	},
 	{
 		id: 504,
-		'schemeName': '绘卷_定时任务_启动游戏_绘卷_个人探索30次',
+		'schemeName': '自定义定时任务_启动游戏_绘卷_个人探索30次',
 		'star': false,
 		'list': [0, 1, 2, 3, 503, 993],
 		'config': {
@@ -1087,7 +1087,7 @@ const SchemeList: IScheme[] = [
 				'next_scheme': '绘卷_个人探索30次'
 			}
 		},
-		'groupNames': ['绘卷']
+		'groupNames': ['自定义定时任务']
 	},
 	{
 		id: 505,
