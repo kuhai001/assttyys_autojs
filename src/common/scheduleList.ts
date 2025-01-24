@@ -388,7 +388,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		nextOffset: '0,0',
 		level: '2',
 		config: {
-			scheme: '绘卷_定时任务_启动游戏_绘卷',
+			scheme: '自定义定时任务_启动游戏_绘卷_个人探索30次',
 		}
 	},
 	{
