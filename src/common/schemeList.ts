@@ -1049,7 +1049,7 @@ const SchemeList: IScheme[] = [
 		'list': [0, 1, 2, 3, 503, 993],
 		'config': {
 			'0': {
-				jspd_times_longtime_nodo: '3',				
+				jspd_times_longtime_nodo: '3',
 			},
 			'503': { 'afterCountOper': '不进行任何操作' },
 			'993': {
