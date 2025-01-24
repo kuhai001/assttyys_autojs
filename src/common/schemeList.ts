@@ -1003,8 +1003,11 @@ const SchemeList: IScheme[] = [
 		id: 503,
 		'schemeName': '绘卷_返回庭院_个人30次探索',
 		'star': false,
-		'list': [3, 502, 503, 2],
+		'list': [0, 3, 502, 503, 2],
 		'config': {
+			'0': {
+				jspd_times_longtime_nodo: '3',
+			},
 			'503': {
 				'scheme_switch_enabled': true,
 				'next_scheme': '绘卷_个人探索30次'
@@ -1016,8 +1019,11 @@ const SchemeList: IScheme[] = [
 		id: 504,
 		'schemeName': '绘卷_返回庭院_突破_9退4_进攻',
 		'star': false,
-		'list': [3, 502, 503, 2],
+		'list': [0, 3, 502, 503, 2],
 		'config': {
+			'0': {
+				jspd_times_longtime_nodo: '3',
+			},
 			'503': {
 				'scheme_switch_enabled': true,
 				'next_scheme': '绘卷_个突_9退4_进攻'
@@ -1029,8 +1035,11 @@ const SchemeList: IScheme[] = [
 		id: 505,
 		'schemeName': '绘卷_定时任务_启动游戏_绘卷',
 		'star': false,
-		'list': [1, 2, 3, 503, 993],
+		'list': [0, 1, 2, 3, 503, 993],
 		'config': {
+			'0': {
+				jspd_times_longtime_nodo: '3',				
+			},
 			'503': { 'afterCountOper': '不进行任何操作' },
 			'993': {
 				'is_shutdown_the_game_before': true,
