@@ -882,38 +882,37 @@ const SchemeList: IScheme[] = [
 		绘卷_个突_9退4_退出-501
 		绘卷_个人探索30次-502
 		绘卷_定时任务_启动游戏_绘卷_个突_9退4_进攻-503
-		绘卷_定时任务_启动游戏_绘卷_个人探索30次-504
-		绘卷_定时任务_个突_9退4_进攻-505
+		绘卷_定时任务_启动游戏_绘卷_个人探索30次-504		
 	2.日常
-		日常_魂土60次_司机-505
-		日常_魂土60次_乘客-506
-		日常_寮突破-507
-		日常_个突_9退4_进攻-508
-		日常_个突_9退4_退出-509
-		自定义定时任务-启动游戏-寮突-510
-		日常_式神寄养-511
-		自定义定时任务-启动游戏-式神寄养-512
-		日常_地鬼-513
-		自定义定时任务-启动游戏-地鬼-514
-		日常_逢魔-515
-		自定义定时任务-启动游戏-每日逢魔-516
-		日常_每日签到与收取邮件-517
-		自定义定时任务-启动游戏-每日签到与收取邮件-518
-		日常_悬赏-519
-		自定义定时任务-启动游戏-悬赏-520
-		日常_金币妖怪-521
-		自定义定时任务-启动游戏-金币妖怪-522
-		自定义定时任务-启动游戏-魂土60次-司机-523
-		自定义定时任务-启动游戏-魂土60次-乘客-524
+		日常_魂土60次_司机-601
+		日常_魂土60次_乘客-602
+		日常_寮突破-603
+		日常_个突_9退4_进攻-604
+		日常_个突_9退4_退出-605
+		自定义定时任务-启动游戏-寮突-606
+		自定义定时任务-启动游戏-魂土60次-司机-607
+		自定义定时任务-启动游戏-魂土60次-乘客-608
+		日常_式神寄养-611
+		自定义定时任务-启动游戏-式神寄养-612
+		日常_地鬼-613
+		自定义定时任务-启动游戏-地鬼-614
+		日常_逢魔-615
+		自定义定时任务-启动游戏-每日逢魔-616
+		日常_每日签到与收取邮件-617
+		自定义定时任务-启动游戏-每日签到与收取邮件-618
+		日常_悬赏-619
+		自定义定时任务-启动游戏-悬赏-620
+		日常_金币妖怪-621
+		自定义定时任务-启动游戏-金币妖怪-622		
 	3.周常
-		周常_秘闻-525
-		周常_斗技-526
-		周常_器灵-527
+		周常_秘闻-701
+		周常_斗技-702
+		周常_器灵-703
 		周常_永生之海
 		周常_真蛇
 	4.常用
-		常用_奉纳御魂_开始奉纳-528
-		常用_抽厕纸-529
+		常用_奉纳御魂_开始奉纳-801
+		常用_抽厕纸-802
 	*/
 	{
 		id: 500,
@@ -1066,7 +1065,7 @@ const SchemeList: IScheme[] = [
 		'groupNames': ['自定义定时任务']
 	},
 	{
-		id: 505,
+		id: 601,
 		groupNames: ['日常'],
 		schemeName: '日常_魂土60次_司机',
 		star: true,
@@ -1094,7 +1093,7 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-		id: 506,
+		id: 602,
 		groupNames: ['日常'],
 		schemeName: '日常_魂土60次_乘客',
 		list: [509, 510, 511, 50, 0, 4, 3, 2],
@@ -1119,7 +1118,7 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-		id: 507,
+		id: 603,
 		'schemeName': '日常_寮突破',
 		'star': false,
 		'list': [0, 51, 1, 2, 3, 8, 9, 10, 12, 29],
@@ -1138,7 +1137,7 @@ const SchemeList: IScheme[] = [
 		'groupNames': ['日常']
 	},
 	{
-		id: 508,
+		id: 604,
 		'schemeName': '日常_个突_9退4_进攻',
 		'star': true,
 		'list': [501, 40, 51, 0, 1, 2, 3, 8, 9, 509, 510, 511, 29, 10],
@@ -1173,7 +1172,7 @@ const SchemeList: IScheme[] = [
 		'groupNames': ['日常']
 	},
 	{
-		id: 509,
+		id: 605,
 		'schemeName': '日常_个突_9退4_退出',
 		'star': false,
 		'list': [0, 1, 2, 3, 8, 9, 10],
@@ -1198,10 +1197,10 @@ const SchemeList: IScheme[] = [
 		'groupNames': ['日常']
 	},
 	{
-		id: 510,
+		id: 606,
 		'schemeName': '自定义定时任务-启动游戏-寮突',
 		'star': true,
-		'list': [0, 1, 2, 3, 503, 993],
+		'list': [0, 1, 2, 3, 502, 503, 993],
 		'config': {
 			'503': {
 				'afterCountOper': '不进行任何操作'
@@ -1214,7 +1213,41 @@ const SchemeList: IScheme[] = [
 		'groupNames': ['自定义定时任务']
 	},
 	{
-		id: 511,
+		id: 607,
+		schemeName: '自定义定时任务-启动游戏-魂土60次-司机',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_魂土60次_司机',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 608,
+		schemeName: '自定义定时任务-启动游戏-魂土60次-乘客',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_魂土60次_乘客',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 611,
 		schemeName: '日常_式神寄养',
 		groupNames: ['日常'],
 		list: [0, 3, 999, 998, 997, 994, 995],
@@ -1246,7 +1279,7 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-		id: 512,
+		id: 612,
 		schemeName: '自定义定时任务-启动游戏-式神寄养',
 		star: true,
 		groupNames: ['自定义定时任务'],
@@ -1263,7 +1296,7 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-		id: 513,
+		id: 613,
 		schemeName: '日常_地鬼日常',
 		list: [509, 510, 511, 40, 0, 1, 2, 3, 16, 29],
 		'config': {
@@ -1279,7 +1312,7 @@ const SchemeList: IScheme[] = [
 		groupNames: ['日常'],
 	},
 	{
-		id: 514,
+		id: 614,
 		schemeName: '自定义定时任务-启动游戏-地鬼',
 		groupNames: ['自定义定时任务'],
 		star: true,
@@ -1296,7 +1329,7 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-		id: 515,
+		id: 615,
 		schemeName: '日常_逢魔日常',
 		list: [509, 510, 511, 0, 1, 2, 3, 23, 24, 26, 508, 8, 504],
 		config: {
@@ -1311,7 +1344,7 @@ const SchemeList: IScheme[] = [
 		groupNames: ['日常']
 	},
 	{
-		id: 516,
+		id: 616,
 		schemeName: '自定义定时任务-启动游戏-每日逢魔',
 		star: true,
 		groupNames: ['自定义定时任务'],
@@ -1328,7 +1361,7 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-		id: 517,
+		id: 617,
 		schemeName: '日常_每日签到与收取邮件',
 		list: [0, 2, 3, 518],
 		config: {
@@ -1339,7 +1372,7 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-		id: 518,
+		id: 618,
 		schemeName: '自定义定时任务-启动游戏-每日签到与收取邮件',
 		star: true,
 		groupNames: ['自定义定时任务'],
@@ -1356,7 +1389,7 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-		id: 519,
+		id: 619,
 		schemeName: '日常_悬赏',
 		groupNames: ['日常'],
 		list: [509, 510, 511, 0, 1, 2, 3, 18, 29],
@@ -1368,7 +1401,7 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-		id: 520,
+		id: 620,
 		schemeName: '自定义定时任务-启动游戏-悬赏',
 		star: false,
 		groupNames: ['定时任务'],
@@ -1385,7 +1418,7 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-		id: 521,
+		id: 621,
 		schemeName: '日常_金币妖怪',
 		groupNames: ['日常'],
 		list: [509, 510, 511, 0, 50, 1, 2, 3, 35, 37, 38],
@@ -1407,7 +1440,7 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-		id: 522,
+		id: 622,
 		schemeName: '自定义定时任务-启动游戏-金币妖怪',
 		star: true,
 		groupNames: ['自定义定时任务'],
@@ -1422,43 +1455,9 @@ const SchemeList: IScheme[] = [
 				afterCountOper: '不进行任何操作',
 			},
 		},
-	},
+	},	
 	{
-		id: 523,
-		schemeName: '自定义定时任务-启动游戏-魂土60次-司机',
-		star: true,
-		groupNames: ['自定义定时任务'],
-		list: [0, 1, 2, 3, 503, 993],
-		config: {
-			'993': {
-				area: '',
-				is_shutdown_the_game_before: true,
-				next_scheme: '日常_魂土60次_司机',
-			},
-			'503': {
-				afterCountOper: '不进行任何操作',
-			},
-		},
-	},
-	{
-		id: 524,
-		schemeName: '自定义定时任务-启动游戏-魂土60次-乘客',
-		star: true,
-		groupNames: ['自定义定时任务'],
-		list: [0, 1, 2, 3, 503, 993],
-		config: {
-			'993': {
-				area: '',
-				is_shutdown_the_game_before: true,
-				next_scheme: '日常_魂土60次_乘客',
-			},
-			'503': {
-				afterCountOper: '不进行任何操作',
-			},
-		},
-	},
-	{
-		id: 525,
+		id: 701,
 		schemeName: '周常_秘闻',
 		groupNames: ['周常'],
 		star: true,
@@ -1480,7 +1479,7 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-		id: 526,
+		id: 702,
 		schemeName: '周常_斗技',
 		groupNames: ['周常'],
 		star: true,
@@ -1498,7 +1497,7 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
-		id: 527,
+		id: 703,
 		schemeName: '周常_契灵',
 		groupNames: ['周常'],
 		list: [510, 0, 1, 51, 2, 3, 313, 29],
@@ -1518,14 +1517,14 @@ const SchemeList: IScheme[] = [
 		}
 	},
 	{
-		id: 528,
+		id: 801,
 		groupNames: ['常用'],
 		star: true,
 		schemeName: '常用_奉纳御魂_开始奉纳',
 		list: [0, 2, 3, 302],
 	},
 	{
-		id: 529,
+		id: 802,
 		schemeName: '常用_抽厕纸',
 		groupNames: ['常用'],
 		star: true,
