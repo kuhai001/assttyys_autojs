@@ -16,12 +16,12 @@ export class Func003 implements IFuncOrigin {
 			desc: '操作',
 			type: 'list',
 			data: ['关闭', '接受', '拒绝'],
-			default: '关闭',
+			default: '接受',
 		}, {
 			name: 'switch',
 			desc: '仅接受勾协',
 			type: 'switch',
-			default: false,
+			default: true,
 		}]
 	}, {
 		desc: '邀约协作（活动）',
