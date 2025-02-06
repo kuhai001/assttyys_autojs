@@ -11,6 +11,7 @@ on:
       - Kong_dev
       - ui_refactor
       - fg
+      - fgbak
 jobs:
   deploy:
     runs-on: ubuntu-latest
