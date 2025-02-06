@@ -1385,7 +1385,7 @@ const SchemeList: IScheme[] = [
 				jspd_enabled_longtime_nodo: true,
 				jspd_times_longtime_nodo: 1,
 				after_operation: '切换方案',
-				next_scheme:  '自定义定时任务-启动游戏-地鬼'
+				next_scheme: '自定义定时任务-启动游戏-地鬼'
 			},
 		},
 	},
