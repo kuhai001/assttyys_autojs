@@ -15,7 +15,7 @@ export class Func000 implements IFuncOrigin {
 			name: 'jspd_times_longtime_nodo',
 			desc: '多少分钟后停止脚本',
 			type: 'integer',
-			default: 10,
+			default: 3,
 		}]
 	}, {
 		desc: '运行时间判断',
