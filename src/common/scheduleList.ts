@@ -369,7 +369,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		lastRunTime: null,
 		nextDate: null,
 		repeatMode: 3,
-		interval: '0 30 16,18, 3 * * *',
+		interval: '0 30 16,18,3 * * *',
 		nextOffset: '0,0',
 		level: '6',
 		config: {
