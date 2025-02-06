@@ -31,7 +31,7 @@ export class Func002 implements IFuncOrigin {
 			name: 'mini_area_click',
 			desc: '是否缩小区域点击，解决部分掉落过多时点击错误的问题',
 			type: 'switch',
-			default: false,
+			default: true,
 		}, {
 			name: 'fail',
 			desc: '失败后停止脚本',
