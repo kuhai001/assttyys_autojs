@@ -1312,12 +1312,14 @@ const SchemeList: IScheme[] = [
 		list: [509, 510, 511, 40, 0, 1, 2, 3, 16, 29],
 		'config': {
 			'40': {
-				'ready_once_buff': true,
 				'afterCountOper': '不进行任何操作'
 			},
 			'510': {
 				'fastMode': true,
 				'groupNum': '7'
+			},
+			'16': {
+				next_scheme: '自定义定时任务-启动游戏-金币妖怪',
 			}
 		},
 		groupNames: ['日常'],
@@ -1342,14 +1344,17 @@ const SchemeList: IScheme[] = [
 	{
 		id: 615,
 		schemeName: '日常_逢魔日常',
-		list: [509, 510, 511, 0, 1, 2, 3, 23, 24, 26, 508, 8, 504],
+		list: [509, 510, 511, 40, 0, 1, 2, 3, 23, 24, 26, 508, 8, 504],
 		config: {
 			'510': {
 				'fastMode': true,
 				'groupNum': '2'
 			},
 			'508': {
-				switch_ji_enabled: false,
+				next_scheme: '自定义定时任务-启动游戏-每日签到与收取邮件',
+			},
+			'40': {
+				'afterCountOper': '不进行任何操作'
 			},
 		},
 		groupNames: ['日常']
@@ -1379,6 +1384,8 @@ const SchemeList: IScheme[] = [
 			'0': {
 				jspd_enabled_longtime_nodo: true,
 				jspd_times_longtime_nodo: 1,
+				after_operation: '切换方案',
+				next_scheme:  '自定义定时任务-启动游戏-地鬼'
 			},
 		},
 	},
@@ -1403,8 +1410,11 @@ const SchemeList: IScheme[] = [
 		id: 619,
 		schemeName: '日常_悬赏',
 		groupNames: ['日常'],
-		list: [509, 510, 511, 0, 1, 2, 3, 18, 29],
+		list: [509, 510, 511, 40, 0, 1, 2, 3, 18, 29],
 		config: {
+			'40': {
+				'afterCountOper': '不进行任何操作'
+			},
 			'510': {
 				'fastMode': true,
 				'groupNum': '7'
