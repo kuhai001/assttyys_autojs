@@ -854,7 +854,7 @@ const SchemeList: IScheme[] = [
 				day: true
 			},
 		},
-	}, 
+	},
 	{
 		id: 77,
 		schemeName: '宴会筹备',
@@ -869,7 +869,7 @@ const SchemeList: IScheme[] = [
 		id: 100,
 		schemeName: '缘结趣游',
 		list: [0, 24, 319],
-	}, 
+	},
 	{
 		id: 101,
 		schemeName: '对弈竞猜',
