@@ -16,7 +16,7 @@ export class Func051 implements IFuncOrigin {
 			desc: '绿标类型',
 			type: 'list',
 			data: ['自定义坐标', '自定义文本'],
-			default: '自定义文本',
+			default: '自定义坐标',
 		}, {
 			name: 'greenPosition',
 			desc: '绿标坐标，仅绿标类型为自定义坐标时生效，格式x,y，实际点击时xy坐标会在±20内随机点击，如245,500',
