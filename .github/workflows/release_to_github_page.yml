@@ -3,14 +3,7 @@ name: release_to_github_page
 on:
   push:
     branches:
-      - master
-      - zz_dev
-      - kk_dev
-      - hm_dev
-      - v66_dev
-      - Kong_dev
-      - ui_refactor
-      - fg
+       - fgbak
 jobs:
   deploy:
     runs-on: ubuntu-latest
