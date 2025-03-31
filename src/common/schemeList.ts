@@ -1522,6 +1522,9 @@ const SchemeList: IScheme[] = [
 		star: true,
 		list: [509, 510, 511, 0, 51, 1, 2, 3, 30, 307],
 		config: {
+			'0': {
+				jspd_times_longtime_nodo: 20,
+			},
 			'510': {
 				'fastMode': true,
 				'groupNum': '6',
