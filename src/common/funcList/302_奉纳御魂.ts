@@ -51,12 +51,11 @@ export class Func302 implements IFuncOrigin {
 		]
 	}, {  // 2,开始奉纳
 		desc: [
-			1280, 720,
-			[
-				[left, 49, 134, 0x4a5de9],
-				[left, 173, 252, 0x0685aa],
-				[left, 100, 252, 0xa9dee6],
-				[left, 117, 252, 0xa0d8e1],
+			1280, 720, [
+				[left, 45, 124, 0xc48843],
+				[left, 140, 252, 0x63959a],
+				[left, 155, 250, 0x66959b],
+				[left, 169, 251, 0x01779a]
 			]
 		],
 		oper: [
