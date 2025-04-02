@@ -312,6 +312,20 @@ export class Func002 implements IFuncOrigin {
 		oper: [
 			[center, 1280, 720, 1112, 113, 1238, 595, 1000],
 		]
+	}, {
+		// 28 轻衫染获得奖励
+		desc: [1280, 720,
+			[
+				[center, 323, 234, 0x634223],
+				[center, 949, 239, 0x4f361e],
+				[center, 917, 461, 0x987449],
+				[center, 366, 458, 0x977449],
+				[center, 523, 234, 0xdcc884]
+			]
+		],
+		oper: [
+			[right, 1280, 720, 1054, 533, 1160, 662, 1000],
+		]
 	}];
 	operatorFunc(thisScript: Script, thisOperator: IFuncOperator[]): boolean {
 		const thisconf = thisScript.scheme.config['2'];
@@ -377,7 +391,7 @@ export class Func002 implements IFuncOrigin {
 				thisOperator[12], thisOperator[13], thisOperator[14], thisOperator[15],
 				thisOperator[16], thisOperator[17], thisOperator[22], thisOperator[18], // 22要放18前面
 				thisOperator[21], thisOperator[23], thisOperator[24], thisOperator[25],
-				thisOperator[26], thisOperator[27],
+				thisOperator[26], thisOperator[27]
 			]
 		});
 	}
