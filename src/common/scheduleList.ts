@@ -335,11 +335,11 @@ const ScheduleDefaultList: JobOptions[] = [
 		id: 505,
 		name: '自定义寮突',
 		desc: '自动寮突',
-		checked: false,
+		checked: true,
 		lastRunTime: null,
 		nextDate: null,
 		repeatMode: 3,
-		interval: '0 0 21 * * *',
+		interval: '0 0 14,21 * * *',
 		nextOffset: '0,0',
 		level: '1',
 		config: {
