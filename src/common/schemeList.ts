@@ -1112,7 +1112,7 @@ const SchemeList: IScheme[] = [
 			},
 			'0': {
 				'jspd_enabled_2': true,
-				'jspd_times_2': '60',
+				'jspd_times_2': '30',
 				'after_operation': '切换方案',
 				'next_scheme': '自定义定时任务-启动游戏-寮突'
 			},
@@ -1140,7 +1140,7 @@ const SchemeList: IScheme[] = [
 			},
 			'0': {
 				'jspd_enabled_2': true,
-				'jspd_times_2': '60',
+				'jspd_times_2': '30',
 				'after_operation': '切换方案',
 				'next_scheme': '自定义定时任务-启动游戏-寮突'
 			},
