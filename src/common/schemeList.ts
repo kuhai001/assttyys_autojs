@@ -944,6 +944,7 @@ const SchemeList: IScheme[] = [
 	4.常用
 		常用_奉纳御魂_开始奉纳-801
 		常用_抽厕纸-802
+		常用_通用活动-803
 	*/
 	{
 		id: 500,
@@ -1569,6 +1570,13 @@ const SchemeList: IScheme[] = [
 		groupNames: ['常用'],
 		star: true,
 		list: [0, 3, 22],
+	},
+	{
+		id: 803,
+		schemeName: '常用_通用活动',
+		star: true,
+		groupNames: ['常用'],
+		list: [0, 1, 2, 3, 312],
 	},
 	// , {
 	// 	id: 102,
