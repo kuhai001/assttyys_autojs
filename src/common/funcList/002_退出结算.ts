@@ -313,7 +313,8 @@ export class Func002 implements IFuncOrigin {
 		],
 		oper: [
 			[right, 1280, 720, 1054, 533, 1160, 662, 1000],
-		]
+		],
+		notForCnt: true,
 	}];
 	operatorFunc(thisScript: Script, thisOperator: IFuncOperator[]): boolean {
 		const thisconf = thisScript.scheme.config['2'];
