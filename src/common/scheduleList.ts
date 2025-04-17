@@ -419,6 +419,21 @@ const ScheduleDefaultList: JobOptions[] = [
 			scheme: '自定义定时任务-启动游戏-魂土60次-乘客',
 		}
 	},
+	{
+		id: 510,
+		name: '自定义斗技',
+		desc: '周常-斗技',
+		checked: true,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 30 14,21 * * *',
+		nextOffset: '0,0',
+		level: '6',
+		config: {
+			scheme: '自定义定时任务-启动游戏-斗技',
+		}
+	},
 ];
 
 export default ScheduleDefaultList;
