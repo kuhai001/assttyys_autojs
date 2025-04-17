@@ -378,49 +378,6 @@ const ScheduleDefaultList: JobOptions[] = [
 	},
 	{
 		id: 507,
-		name: '自定义绘卷',
-		desc: '自动绘卷',
-		checked: false,
-		lastRunTime: null,
-		nextDate: null,
-		repeatMode: 3,
-		interval: '0 30 6,12,18,24 * * 3,4,5,6,0',
-		nextOffset: '0,0',
-		level: '2',
-		config: {
-			scheme: '自定义定时任务_启动游戏_绘卷_个人探索30次',
-		}
-	},
-	{
-		id: 508,
-		name: '自定义魂土司机',
-		desc: '魂土司机60次',
-		lastRunTime: null,
-		nextDate: null,
-		repeatMode: 3,
-		interval: '0 45 9 * * *',
-		nextOffset: '0,0',
-		level: '6',
-		config: {
-			scheme: '自定义定时任务-启动游戏-魂土60次-司机',
-		}
-	},
-	{
-		id: 509,
-		name: '自定义魂土乘客',
-		desc: '魂土乘客60次',
-		lastRunTime: null,
-		nextDate: null,
-		repeatMode: 3,
-		interval: '0 43 9 * * *',
-		nextOffset: '0,0',
-		level: '6',
-		config: {
-			scheme: '自定义定时任务-启动游戏-魂土60次-乘客',
-		}
-	},
-	{
-		id: 510,
 		name: '自定义斗技',
 		desc: '周常-斗技',
 		checked: true,
@@ -434,6 +391,49 @@ const ScheduleDefaultList: JobOptions[] = [
 			scheme: '自定义定时任务-启动游戏-斗技',
 		}
 	},
+	{
+		id: 508,
+		name: '自定义绘卷',
+		desc: '自动绘卷',
+		checked: false,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 30 6,12,18,24 * * 3,4,5,6,0',
+		nextOffset: '0,0',
+		level: '2',
+		config: {
+			scheme: '自定义定时任务_启动游戏_绘卷_个人探索30次',
+		}
+	},
+	// {
+	// 	id: 508,
+	// 	name: '自定义魂土司机',
+	// 	desc: '魂土司机60次',
+	// 	lastRunTime: null,
+	// 	nextDate: null,
+	// 	repeatMode: 3,
+	// 	interval: '0 45 9 * * *',
+	// 	nextOffset: '0,0',
+	// 	level: '6',
+	// 	config: {
+	// 		scheme: '自定义定时任务-启动游戏-魂土60次-司机',
+	// 	}
+	// },
+	// {
+	// 	id: 509,
+	// 	name: '自定义魂土乘客',
+	// 	desc: '魂土乘客60次',
+	// 	lastRunTime: null,
+	// 	nextDate: null,
+	// 	repeatMode: 3,
+	// 	interval: '0 43 9 * * *',
+	// 	nextOffset: '0,0',
+	// 	level: '6',
+	// 	config: {
+	// 		scheme: '自定义定时任务-启动游戏-魂土60次-乘客',
+	// 	}
+	// },
 ];
 
 export default ScheduleDefaultList;
