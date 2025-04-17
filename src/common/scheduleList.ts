@@ -386,7 +386,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		repeatMode: 3,
 		interval: '0 30 14,21 * * *',
 		nextOffset: '0,0',
-		level: '6',
+		level: '5',
 		config: {
 			scheme: '自定义定时任务-启动游戏-斗技',
 		}
