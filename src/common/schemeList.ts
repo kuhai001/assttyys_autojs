@@ -1494,6 +1494,23 @@ const SchemeList: IScheme[] = [
 		},
 	},
 	{
+		id: 623,
+		schemeName: '自定义定时任务-启动游戏-斗技',
+		star: false,
+		groupNames: ['定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '周常_斗技',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
 		id: 701,
 		schemeName: '周常_秘闻',
 		groupNames: ['周常'],
