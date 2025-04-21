@@ -384,9 +384,9 @@ const ScheduleDefaultList: JobOptions[] = [
 		lastRunTime: null,
 		nextDate: null,
 		repeatMode: 3,
-		interval: '0 30 14,21 * * *',
+		interval: '0 30 14,21 * * 1,2,3,4,5',
 		nextOffset: '0,0',
-		level: '5',
+		level: '2',
 		config: {
 			scheme: '自定义定时任务-启动游戏-斗技',
 		}
@@ -401,7 +401,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		repeatMode: 3,
 		interval: '0 30 6,12,18,24 * * 3,4,5,6,0',
 		nextOffset: '0,0',
-		level: '2',
+		level: '3',
 		config: {
 			scheme: '自定义定时任务_启动游戏_绘卷_个人探索30次',
 		}
