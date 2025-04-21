@@ -317,7 +317,7 @@ export class Func002 implements IFuncOrigin {
 		notForCnt: true,
 	},
 	{
-		// 26 宠物奖励确认
+		// 28 宠物奖励确认
 		desc: [1280, 720,
 			[
 				[center, 329, 188, 0x674524],
@@ -396,7 +396,7 @@ export class Func002 implements IFuncOrigin {
 				thisOperator[12], thisOperator[13], thisOperator[14], thisOperator[15],
 				thisOperator[16], thisOperator[17], thisOperator[22], thisOperator[18], // 22要放18前面
 				thisOperator[21], thisOperator[23], thisOperator[24], thisOperator[25],
-				thisOperator[26], thisOperator[27]
+				thisOperator[26], thisOperator[27], thisOperator[28]
 			]
 		});
 	}
