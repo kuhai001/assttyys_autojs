@@ -1302,7 +1302,7 @@ const SchemeList: IScheme[] = [
 				next_scheme: '__停止脚本__',
 			},
 			'997': {
-				priority: '太鼓6->太鼓5->太鼓4->太鼓3->斗鱼6->斗鱼5->斗鱼4',
+				priority: '太鼓6->斗鱼6->太鼓5->斗鱼5->太鼓4->斗鱼4->太鼓3',
 			},
 			'998': {
 				change_enchantment_switch: true,
@@ -1362,8 +1362,12 @@ const SchemeList: IScheme[] = [
 	{
 		id: 615,
 		schemeName: '日常_逢魔日常',
-		list: [509, 510, 511, 40, 0, 1, 2, 3, 23, 24, 26, 508, 8, 504],
+		list: [509, 510, 511, 40, 51, 0, 1, 2, 3, 23, 24, 26, 508, 8, 504],
 		config: {
+			'51': {
+				'greenType': '自定义坐标',
+				'preSearch': true
+			},
 			'0': {
 				jspd_times_longtime_nodo: 20,
 			},
