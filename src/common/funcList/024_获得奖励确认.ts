@@ -52,7 +52,8 @@ export class Func024 implements IFuncOrigin {
 		]
 	}, { // 姑姑皮肤碎片弹窗
 		desc: [1280, 720,
-			[[center, 660, 245, 0xfffefb],
+			[
+				[center, 660, 245, 0xfffefb],
 				[center, 644, 290, 0xf7f7f7],
 				[center, 673, 273, 0x222022],
 				[center, 611, 265, 0x26272c],
@@ -62,5 +63,21 @@ export class Func024 implements IFuncOrigin {
 		oper: [
 			[center, 1280, 720, 832, 459, 1111, 620, 500],
 		]
-	}]
+	},
+	{
+		//  轻衫染获得奖励
+		desc: [1280, 720,
+			[
+				[center, 323, 234, 0x634223],
+				[center, 949, 239, 0x4f361e],
+				[center, 917, 461, 0x987449],
+				[center, 366, 458, 0x977449],
+				[center, 523, 234, 0xdcc884]
+			]
+		],
+		oper: [
+			[center, 1280, 720, 1054, 533, 1160, 662, 1000],
+		]
+	},
+	]
 }
