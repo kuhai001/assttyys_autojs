@@ -313,22 +313,7 @@ export class Func002 implements IFuncOrigin {
 			[center, 1280, 720, 1112, 113, 1238, 595, 1000],
 		]
 	},
-	{
-		// 28宠物奖励确认
-		desc: [1280, 720,
-			[
-				[center, 329, 188, 0x674524],
-				[center, 360, 265, 0xb5a7a1],
-				[center, 393, 481, 0xa25030],
-				[center, 923, 506, 0x87643b],
-				[center, 946, 270, 0xad9f9c]
-			]
-		],
-		oper: [
-			[right, 1280, 720, 1054, 533, 1160, 662, 1000],
-		],
-		notForCnt: true,
-	}];
+	];
 	operatorFunc(thisScript: Script, thisOperator: IFuncOperator[]): boolean {
 		const thisconf = thisScript.scheme.config['2'];
 		if (thisconf && thisconf.rechallenge && thisScript.oper({
@@ -393,7 +378,7 @@ export class Func002 implements IFuncOrigin {
 				thisOperator[12], thisOperator[13], thisOperator[14], thisOperator[15],
 				thisOperator[16], thisOperator[17], thisOperator[22], thisOperator[18], // 22要放18前面
 				thisOperator[21], thisOperator[23], thisOperator[24], thisOperator[25],
-				thisOperator[26], thisOperator[27], thisOperator[28]
+				thisOperator[26], thisOperator[27]
 			]
 		});
 	}
