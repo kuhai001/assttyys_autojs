@@ -61,5 +61,21 @@ export class Func024 implements IFuncOrigin {
 		oper: [
 			[center, 1280, 720, 1215, 32, 1230, 50, 1000],
 		]
-	}]
+	},
+	{
+		// 宠物奖励确认
+		desc: [1280, 720,
+			[
+				[center, 329, 188, 0x674524],
+				[center, 360, 265, 0xb5a7a1],
+				[center, 393, 481, 0xa25030],
+				[center, 923, 506, 0x87643b],
+				[center, 946, 270, 0xad9f9c]
+			]
+		],
+		oper: [
+			[center, 1280, 720, 1054, 533, 1160, 662, 1000],
+		],
+	}
+	]
 }
