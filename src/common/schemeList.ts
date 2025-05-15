@@ -1101,7 +1101,7 @@ const SchemeList: IScheme[] = [
 		groupNames: ['日常'],
 		schemeName: '日常_魂土60次_司机',
 		star: true,
-		list: [509, 510, 511, 50, 0, 1, 2, 3, 5, 27, 306],
+		list: [509, 510, 511, 50, 0, 1, 2, 3, 5, 24, 27, 306],
 		config: {
 			'50': {
 				'buff_type': '御魂',
@@ -1128,7 +1128,7 @@ const SchemeList: IScheme[] = [
 		id: 602,
 		groupNames: ['日常'],
 		schemeName: '日常_魂土60次_乘客',
-		list: [509, 510, 511, 50, 0, 1, 4, 3, 2],
+		list: [509, 510, 511, 50, 0, 1, 4, 3, 24, 2],
 		'star': true,
 		config: {
 			'50': {
