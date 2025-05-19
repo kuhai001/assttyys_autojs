@@ -983,6 +983,9 @@ const SchemeList: IScheme[] = [
 
 			}
 		},
+		commonConfig: {
+			multiColorSimilar: 96,
+		},
 		groupNames: ['绘卷']
 	},
 	{
@@ -1310,7 +1313,7 @@ const SchemeList: IScheme[] = [
 			},
 			'998': {
 				change_enchantment_switch: true,
-				change_enchantment_type: '太鼓',
+				change_enchantment_type: '斗鱼',
 			},
 		},
 	},
