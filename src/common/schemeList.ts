@@ -125,7 +125,7 @@ const SchemeList: IScheme[] = [
 		},
 		commonConfig: {
 			// 通用参数
-			multiColorSimilar: 97,
+			multiColorSimilar: 96,
 		},
 	},
 	{
