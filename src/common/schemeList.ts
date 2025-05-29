@@ -1204,6 +1204,9 @@ const SchemeList: IScheme[] = [
 				'groupNum': '3'
 			}
 		},
+		commonConfig: {
+			multiColorSimilar: 96,
+		},
 		'groupNames': ['日常']
 	},
 	{
