@@ -1582,7 +1582,10 @@ const SchemeList: IScheme[] = [
 			'313': {
 				'preset_pair_契灵_镇墓兽': '1,3'
 			},
-		}
+		},
+		commonConfig: {
+			multiColorSimilar: 96,
+		},
 	},
 	{
 		id: 801,
