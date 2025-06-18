@@ -1506,8 +1506,8 @@ const SchemeList: IScheme[] = [
 	{
 		id: 623,
 		schemeName: '自定义定时任务-启动游戏-斗技',
-		star: false,
-		groupNames: ['定时任务'],
+		star: true,
+		groupNames: ['自定义定时任务'],
 		list: [0, 1, 2, 3, 503, 993],
 		config: {
 			'993': {
