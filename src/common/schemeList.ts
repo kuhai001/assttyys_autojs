@@ -1546,6 +1546,9 @@ const SchemeList: IScheme[] = [
 				greenText: '绿标专用',
 				preSearch: true,
 			},
+			'2': {
+				'mini_area_click': true,
+			},
 		},
 	},
 	{
