@@ -314,18 +314,18 @@ const SchemeList: IScheme[] = [
 	// 	schemeName: '开启BUFF_打探索',
 	// 	list: [501, 50],
 	// },
-	// {
-	// 	id: 29,
-	// 	schemeName: '返回庭院',
-	// 	list: [3, 503],
-	// 	config: {
-	// 		'503': {
-	// 			after_operation: '停止脚本',
-	// 			next_scheme: '通用准备退出',
-	// 			afterCountOper: '停止脚本',
-	// 		},
-	// 	},
-	// },
+	{
+		id: 29,
+		schemeName: '返回庭院',
+		list: [3, 503],
+		config: {
+			'503': {
+				after_operation: '停止脚本',
+				next_scheme: '通用准备退出',
+				afterCountOper: '停止脚本',
+			},
+		},
+	},
 	// {
 	// 	id: 30,
 	// 	schemeName: '式神寄养',
