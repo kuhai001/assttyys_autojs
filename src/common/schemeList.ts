@@ -325,6 +325,7 @@ const SchemeList: IScheme[] = [
 				afterCountOper: '停止脚本',
 			},
 		},
+		groupNames: ['日常'],
 	},
 	// {
 	// 	id: 30,
@@ -1456,7 +1457,7 @@ const SchemeList: IScheme[] = [
 		id: 620,
 		schemeName: '自定义定时任务-启动游戏-悬赏',
 		star: false,
-		groupNames: ['定时任务'],
+		groupNames: ['自定义定时任务'],
 		list: [0, 1, 2, 3, 503, 993],
 		config: {
 			'993': {
