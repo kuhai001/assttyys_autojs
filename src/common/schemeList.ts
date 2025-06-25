@@ -1420,6 +1420,7 @@ const SchemeList: IScheme[] = [
 				jspd_times_longtime_nodo: 1,
 			},
 		},
+		groupNames: ['日常']
 	},
 	{
 		id: 618,
