@@ -304,11 +304,12 @@ const SchemeList: IScheme[] = [
 	// 		},
 	// 	},
 	// },
-	// {
-	// 	id: 26,
-	// 	schemeName: '关闭BUFF',
-	// 	list: [502, 1, 2, 3, 501, 29, 40],
-	// },
+	{
+		id: 26,
+		schemeName: '关闭BUFF',
+		list: [502, 1, 2, 3, 501, 29, 40],
+		groupNames: ['日常'],
+	},
 	// {
 	// 	id: 27,
 	// 	schemeName: '开启BUFF_打探索',
