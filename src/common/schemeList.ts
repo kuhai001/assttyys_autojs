@@ -1562,6 +1562,8 @@ const SchemeList: IScheme[] = [
 		config: {
 			'0': {
 				jspd_times_longtime_nodo: 20,
+				jspd_enabled_zjsj: true,
+				jspd_times_zjsj: 150,
 			},
 			'510': {
 				'fastMode': true,
