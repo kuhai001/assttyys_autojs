@@ -1564,6 +1564,7 @@ const SchemeList: IScheme[] = [
 				jspd_times_longtime_nodo: 20,
 				jspd_enabled_zjsj: true,
 				jspd_times_zjsj: 150,
+				jspd_txpl_zjsj: 300
 			},
 			'510': {
 				'fastMode': true,
