@@ -901,7 +901,7 @@ const SchemeList: IScheme[] = [
 	// 			a_ctivity_huntBoss: true,
 	// 		}
 	// 	}
-	// }, 
+	// },
 	{
 		id: 102,
 		schemeName: '每周真蛇',
