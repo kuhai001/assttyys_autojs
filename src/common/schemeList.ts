@@ -304,30 +304,28 @@ const SchemeList: IScheme[] = [
 	// 		},
 	// 	},
 	// },
-	{
-		id: 26,
-		schemeName: '关闭BUFF',
-		list: [502, 1, 2, 3, 501, 29, 40],
-		groupNames: ['日常'],
-	},
+	// {
+	// 	id: 26,
+	// 	schemeName: '关闭BUFF',
+	// 	list: [502, 1, 2, 3, 501, 29, 40],
+	// },
 	// {
 	// 	id: 27,
 	// 	schemeName: '开启BUFF_打探索',
 	// 	list: [501, 50],
 	// },
-	{
-		id: 29,
-		schemeName: '返回庭院',
-		list: [3, 503],
-		config: {
-			'503': {
-				after_operation: '停止脚本',
-				next_scheme: '通用准备退出',
-				afterCountOper: '停止脚本',
-			},
-		},
-		groupNames: ['日常'],
-	},
+	// {
+	// 	id: 29,
+	// 	schemeName: '返回庭院',
+	// 	list: [3, 503],
+	// 	config: {
+	// 		'503': {
+	// 			after_operation: '停止脚本',
+	// 			next_scheme: '通用准备退出',
+	// 			afterCountOper: '停止脚本',
+	// 		},
+	// 	},
+	// },
 	// {
 	// 	id: 30,
 	// 	schemeName: '式神寄养',
@@ -952,6 +950,9 @@ const SchemeList: IScheme[] = [
 		常用_奉纳御魂_开始奉纳-801
 		常用_抽厕纸-802
 		常用_通用活动-803
+		常用_关闭BUFF-804
+		常用_返回庭院-805
+		常用_业原火-806
 	*/
 	{
 		id: 500,
@@ -1621,6 +1622,47 @@ const SchemeList: IScheme[] = [
 		star: true,
 		groupNames: ['常用'],
 		list: [0, 1, 2, 3, 24, 312],
+	},
+	{
+		id: 804,
+		schemeName: '关闭BUFF',
+		list: [502, 1, 2, 3, 501, 29, 40],
+		groupNames: ['常用'],
+	},
+	{
+		id: 805,
+		schemeName: '返回庭院',
+		list: [3, 503],
+		config: {
+			'503': {
+				after_operation: '停止脚本',
+				next_scheme: '通用准备退出',
+				afterCountOper: '停止脚本',
+			},
+		},
+		groupNames: ['常用'],
+	},
+	{
+		id: 806,
+		schemeName: '业原火',
+		star: false,
+		list: [509, 510, 511, 0, 1, 2, 3, 6, 24],
+		config: {
+			'0': {
+				'jspd_enabled_2': true,
+				'jspd_times_2': '50',
+				'after_operation': '切换方案',
+				'next_scheme': '自定义定时任务-启动游戏-寮突'
+			},
+			'2': {
+				'mini_area_click': true,
+			},
+			'510': {
+				'fastMode': true,
+				'defaultNum': '2'
+			}
+		},
+		groupNames: ['常用'],
 	},
 	// , {
 	// 	id: 102,
