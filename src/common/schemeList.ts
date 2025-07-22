@@ -1645,7 +1645,7 @@ const SchemeList: IScheme[] = [
 	{
 		id: 806,
 		schemeName: '业原火',
-		star: false,
+		star: true,
 		list: [509, 510, 511, 0, 1, 2, 3, 6, 24],
 		config: {
 			'0': {
