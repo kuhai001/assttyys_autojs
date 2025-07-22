@@ -76,6 +76,22 @@ export class Func024 implements IFuncOrigin {
 		oper: [
 			[center, 1280, 720, 1054, 533, 1160, 662, 1000],
 		],
+	},
+	{
+		// 火照归途
+		desc: [1280, 720,
+			[
+				[center, 472, 611, 0x418ece],
+				[center, 442, 611, 0xbedbf5],
+				[center, 466, 598, 0x5294d1],
+				[center, 550, 612, 0x702b0d],
+				[center, 719, 603, 0x3c0306],
+				[center, 763, 591, 0x6c2908]
+			]
+		],
+		oper: [
+			[center, 1280, 720, 426, 604, 731, 658, 1000],
+		],
 	}
 	]
 }
