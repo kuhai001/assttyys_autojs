@@ -1570,7 +1570,7 @@ const SchemeList: IScheme[] = [
 		id: 5406,
 		schemeName: '业原火',
 		star: true,
-		list: [509, 510, 511, 0, 1, 2, 3, 6, 24],
+		list: [509, 510, 511, 29, 53, 0, 1, 2, 3, 6, 24],
 		config: {
 			'0': {
 				'jspd_enabled_2': true,
@@ -1584,7 +1584,10 @@ const SchemeList: IScheme[] = [
 			'510': {
 				'fastMode': true,
 				'defaultNum': '4'
-			}
+			},
+			'53': {
+				challenge_type: '御魂-业原火',
+			},
 		},
 		groupNames: ['常用'],
 	},
@@ -1679,6 +1682,122 @@ const SchemeList: IScheme[] = [
 			}
 		},
 		'groupNames': ['绘卷']
+	},
+	/*
+		6.寮活动
+			庭院进入寮每日活动(自动)-5601
+			阴门挑战-5602
+			首领退治-5603
+			狭间暗域-5604
+			狩猎战-5605
+			道馆-5606
+			宴会'-5607
+			僵尸寮自动攻打道馆-5608
+	*/
+	{
+		id: 5601,
+		schemeName: '进入寮活动New',
+		star: true,
+		list: [3, 500, 505, 516],
+		config: {
+			'500': {
+				a_ctivity_gateOfHades: true,
+				a_ctivity_dojo: true,
+				a_ctivity_hunt: true,
+				a_ctivity_narrow: true,
+				a_ctivity_banquet: true,
+				a_ctivity_huntBoss: true,
+			}
+		}
+	},
+	// {
+	// 	id: 5601,
+	// 	schemeName: '庭院进入寮每日活动(自动)',
+	// 	list: [3, 505, 506, 516],
+	// 	groupNames: ['寮活动'],
+	// 	config: {
+	// 		'506': {
+	// 			auto_switch_enabled: true,
+	// 			gateOfHades_switch: false,
+	// 		},
+	// 		'516': {
+	// 			count: '10',
+	// 			afterCountOper: '停止脚本',
+	// 			next_scheme: '通用准备退出',
+	// 		},
+	// 	},
+	// },
+	{
+		id: 5602,
+		schemeName: '阴门挑战',
+		star: true,
+		groupNames: ['寮活动'],
+		list: [0, 1, 2, 3, 5, 513],
+	},
+	{
+		id: 5603,
+		schemeName: '首领退治',
+		star: true,
+		groupNames: ['寮活动'],
+		list: [0, 1, 2, 3, 512],
+	},
+	{
+		id: 5604,
+		schemeName: '狭间暗域',
+		star: true,
+		groupNames: ['寮活动'],
+		list: [0, 1, 3, 514, 515],
+	},
+	{
+		id: 5605,
+		schemeName: '狩猎战',
+		star: true,
+		groupNames: ['寮活动'],
+		list: [0, 1, 2, 3, 507],
+	},
+	{
+		id: 5606,
+		schemeName: '道馆',
+		groupNames: ['寮活动'],
+		list: [0, 1, 2, 3, 32],
+		star: true,
+	},
+	{
+		id: 5607,
+		schemeName: '宴会',
+		star: true,
+		groupNames: ['寮活动'],
+		list: [0, 3, 1000, 1001],
+		config: {
+			'1001': {
+				change_shikigami_index: '1',
+			},
+		},
+	},
+	{
+		id: 5608,
+		schemeName: '僵尸寮自动攻打道馆',
+		star: true,
+		groupNames: ['寮活动'],
+		list: [311, 32, 519, 505, 51, 0, 1, 2],
+		config: {
+			'32': {
+				after_fail_operation: '再战道馆',
+				exit_second: true,
+			},
+			'51': {
+				greenType: '自定义坐标',
+				preSearch: true
+			},
+			'311': {
+				redType: '神荒',
+			},
+			'519': {
+				defense: 1,
+				coefficient: 5,
+				day: true
+			},
+		},
 	},
 ];
 
