@@ -92,6 +92,20 @@ export class Func024 implements IFuncOrigin {
 		oper: [
 			[center, 1280, 720, 426, 604, 731, 658, 1000],
 		],
+	},
+	{
+		// 魔法小樱升级碎片
+		desc: [1280, 720,
+			[
+				[left, 72, 651, 0xba9566],
+				[center, 611, 279, 0xd5b98a],
+				[center, 643, 301, 0xe29a6a],
+				[center, 670, 303, 0xfdfc93]
+			]
+		],
+		oper: [
+			[center, 1280, 720, 426, 604, 731, 658, 1000],
+		],
 	}
 	]
 }

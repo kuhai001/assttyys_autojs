@@ -969,7 +969,7 @@ const SchemeList: IScheme[] = [
 		'schemeName': '自定义定时任务-启动游戏-寮突',
 		'star': true,
 		'list': [0, 1, 2, 3, 502, 503, 993],
-		'config': {
+		config: {
 			'503': {
 				'afterCountOper': '不进行任何操作'
 			},
@@ -1121,7 +1121,7 @@ const SchemeList: IScheme[] = [
 		'schemeName': '自定义定时任务_启动游戏_绘卷_个突_9退4_进攻',
 		'star': true,
 		'list': [0, 1, 2, 3, 502, 503, 993],
-		'config': {
+		config: {
 			'0': {
 				jspd_times_longtime_nodo: '3',
 			},
@@ -1138,7 +1138,7 @@ const SchemeList: IScheme[] = [
 		'schemeName': '自定义定时任务_启动游戏_绘卷_个人探索30次',
 		'star': true,
 		'list': [0, 1, 2, 3, 502, 503, 993],
-		'config': {
+		config: {
 			'0': {
 				jspd_times_longtime_nodo: '3',
 			},
@@ -1241,7 +1241,7 @@ const SchemeList: IScheme[] = [
 		'schemeName': '日常_个突_9退4_进攻',
 		'star': true,
 		'list': [501, 40, 51, 0, 1, 2, 3, 8, 9, 509, 510, 511, 29, 10],
-		'config': {
+		config: {
 			'501': {
 				'once': true
 			},
@@ -1279,7 +1279,7 @@ const SchemeList: IScheme[] = [
 		'schemeName': '日常_个突_9退4_退出',
 		'star': false,
 		'list': [0, 1, 2, 3, 8, 9, 10],
-		'config': {
+		config: {
 			'0': {
 				'jspd_enabled_2': true,
 				'jspd_times_2': '4',
@@ -1335,7 +1335,7 @@ const SchemeList: IScheme[] = [
 		id: 5207,
 		schemeName: '日常_地鬼日常',
 		list: [509, 510, 511, 40, 0, 1, 2, 3, 16, 29],
-		'config': {
+		config: {
 			'40': {
 				'afterCountOper': '不进行任何操作'
 			},
@@ -1639,7 +1639,7 @@ const SchemeList: IScheme[] = [
 		'schemeName': '绘卷_个突_9退4_退出',
 		'star': false,
 		'list': [0, 1, 2, 3, 8, 9, 10],
-		'config': {
+		config: {
 			'0': {
 				'jspd_enabled_2': true,
 				'jspd_times_2': '4',
@@ -1660,7 +1660,7 @@ const SchemeList: IScheme[] = [
 		'schemeName': '绘卷_个人探索30次',
 		'star': true,
 		'list': [0, 15, 1, 2, 3, 13, 14, 509, 510, 511, 29, 12],
-		'config': {
+		config: {
 			'0': {
 				'jspd_times_longtime_nodo': '3',
 				'jspd_times_1': '3',
