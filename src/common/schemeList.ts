@@ -968,7 +968,7 @@ const SchemeList: IScheme[] = [
 		id: 5103,
 		'schemeName': '自定义定时任务-启动游戏-寮突',
 		'star': true,
-		'list': [0, 1, 2, 3, 502, 503, 993],
+		'list': [0, 1, 2, 3, 503, 993],
 		config: {
 			'503': {
 				'afterCountOper': '不进行任何操作'
