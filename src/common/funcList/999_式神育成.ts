@@ -96,10 +96,10 @@ export class Func999 implements IFuncOrigin {
 			if (point) {
 				console.log('查找阴阳寮_奖励体力成功');
 				const oper = [[
-					point.x + 11,
-					point.y - 11,
-					point.x + 11,
-					point.y - 11,
+					point.x + 20,
+					point.y - 8,
+					point.x + 20,
+					point.y - 8,
 					1200
 				]];
 				thisScript.regionClick(oper);
