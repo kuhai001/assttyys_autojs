@@ -91,7 +91,7 @@ export class Func999 implements IFuncOrigin {
 				desc: thisOperator[3].desc
 			}]
 		})) {
-			const point = thisScript.findMultiColor('阴阳寮_奖励体力');
+			/* const point = thisScript.findMultiColor('阴阳寮_奖励体力');
 
 			if (point) {
 				console.log('查找阴阳寮_奖励体力成功');
@@ -119,7 +119,7 @@ export class Func999 implements IFuncOrigin {
 				]];
 				thisScript.regionClick(oper);
 				return true;
-			}
+			} */
 
 			if (thisScript.global.checked_yard_count > 3) {
 				thisScript.global.checked_yard_count = 0;
