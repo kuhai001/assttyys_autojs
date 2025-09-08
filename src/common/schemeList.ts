@@ -1479,7 +1479,7 @@ const SchemeList: IScheme[] = [
 		id: 5303,
 		schemeName: '周常_契灵',
 		groupNames: ['周常'],
-		list: [510, 0, 1, 51, 2, 3, 313, 29],
+		list: [509, 510, 511, 29, 0, 1, 2, 3, 313],
 		star: true,
 		config: {
 			'510': {
@@ -1698,6 +1698,7 @@ const SchemeList: IScheme[] = [
 		id: 5601,
 		schemeName: '进入寮活动New',
 		star: true,
+		groupNames: ['寮活动'],
 		list: [3, 500, 505, 516],
 		config: {
 			'500': {
