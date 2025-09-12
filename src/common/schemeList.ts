@@ -1515,7 +1515,19 @@ const SchemeList: IScheme[] = [
 		schemeName: '周常_六道椒图',
 		groupNames: ['周常'],
 		star: true,
-		list: [0, 1, 316, 2, 3, 24],
+		list: [509, 510, 511, 29, 0, 1, 316, 2, 3, 24],
+		config: {
+			'510': {
+				'fastMode': true,
+				'groupNum': '5',
+				'defaultNum': '1',
+				'groupNum2': '5',
+				'defaultNum2': '2',
+			},
+			'316': {
+				'overTimes': '2',
+			}
+		},
 	},
 	/*
 	4.常用
