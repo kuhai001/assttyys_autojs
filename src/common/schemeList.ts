@@ -1558,6 +1558,11 @@ const SchemeList: IScheme[] = [
 		star: true,
 		groupNames: ['常用'],
 		list: [0, 1, 2, 3, 24, 312],
+		config: {
+			'0': {
+				jspd_times_longtime_nodo: 10,
+			},
+		}
 	},
 	{
 		id: 5404,
