@@ -153,14 +153,15 @@ export class Func995 implements IFuncOrigin {
 			// 7 确认寄养所选式神弹窗
 			desc: [1280, 720,
 				[
-					[center, 527, 279, 0xcbb59e],
-					[center, 489, 159, 0x9e866e],
-					[right, 1174, 564, 0x5f5847],
-					[center, 689, 544, 0xf4b25f],
+					[center, 527, 279, 0xcbb59c],
+					[center, 489, 159, 0x9e876d],
+					[right, 1174, 564, 0x181b1c],
+					[center, 689, 544, 0xf3b25e],
 					[center, 583, 546, 0xdf6851],
-					[left, 64, 637, 0x18173d],
-					[left, 35, 46, 0x616467],
-				],
+					[left, 64, 637, 0x1a183e],
+					[left, 35, 46, 0x636567]
+				]
+
 			],
 			oper: [
 				[center, 1280, 720, 672, 514, 798, 572, 2000], // 点击确认
