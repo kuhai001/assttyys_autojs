@@ -157,8 +157,7 @@ export class Func998 implements IFuncOrigin {
 		{
 			//	7 检测_式神寄养式页
 			desc: [
-				1280,
-				720,
+				1280, 720,
 				[
 					[right, 1084, 83, 0xa7371d],
 					[right, 1184, 203, 0x525252],
@@ -228,7 +227,7 @@ export class Func998 implements IFuncOrigin {
 				]
 			],
 			oper: [
-				[center, 1280, 720, 582, 270, 638, 400, 600], //  点击 式神养成
+				[center, 1280, 720, 602, 300, 623, 383, 600], //  点击 式神养成
 				[center, 1280, 720, 890, 305, 917, 391, 600], //  点击 结界卡
 			],
 		},
