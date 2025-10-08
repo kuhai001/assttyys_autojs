@@ -54,12 +54,12 @@ export class Func016 implements IFuncOrigin {
 		// 1 地鬼挑战页面
 		desc: [1280, 720,
 			[
-				[left, 137, 216, 0xddd6ce],
-				[left, 181, 631, 0xd7cdc6],
-				[right, 1209, 43, 0xeecccc],
-				[right, 1204, 520, 0xe8d5b0],
-				[right, 1087, 624, 0xebe5ce],
-				[right, 1205, 437, 0xa05437],
+				[left, 137, 216, 0xddd5ce],
+				[left, 181, 631, 0xd6cfc6],
+				[right, 1209, 43, 0xe8d4cf],
+				[right, 1204, 520, 0xcec3b5],
+				[right, 1087, 642, 0xe7e2c8],
+				[right, 1205, 437, 0x9e5339]
 			]
 		],
 		oper: [

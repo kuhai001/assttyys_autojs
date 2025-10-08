@@ -538,9 +538,9 @@ export class Func316 implements IFuncOrigin {
 				if (point) {//  有升级按钮_选择升级
 					const oper = [[
 						point.x - 40,
-						point.y + 410,
-						point.x + 70,
-						point.y + 440,
+						point.y + 390,
+						point.x + 40,
+						point.y + 420,
 						500
 					]];
 					thisScript.regionClick(oper);
