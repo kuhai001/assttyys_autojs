@@ -365,8 +365,14 @@ export function doPush(thisScript: Script, options: {
 	}]
 	try {
 		const res = pushClient.push(data, pushClient.getKVConfig());
+		if (res) {
+			if (res.body && res.body.string) {
+				myToast(`使用${pushClient.name}推送结果：${res.body.string()}`);
+			} else {
+				myToast(`使用${pushClient.name}推送结果：${res}`);
+			}
+		}
 		bmpImage.recycle();
-		myToast(`使用${pushClient.name}推送结果：${res.body.string()}`);
 		return res;
 	} catch (e) {
 		myToast(`使用${pushClient.name}推送报错了，请查看日志`);
