@@ -10,6 +10,7 @@ on:
       - v66_dev
       - Kong_dev
       - ui_refactor
+      - fg
 jobs:
   deploy:
     runs-on: ubuntu-latest
