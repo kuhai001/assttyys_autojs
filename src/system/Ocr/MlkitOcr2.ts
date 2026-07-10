@@ -142,9 +142,11 @@ class MlkitOcr2 implements IOcr {
 				text: item.label + ':' + item.confidence
 			}));
 		} else /* if (textMatchMode === '模糊') */{
+			// 降低默认阈值以提高OCR识别率
+			const threshold = similarityRatio || .5;
 			res = ocrResult.filter(item => {
 				item.similar = nlpSimilarity(item.label, text);
-				return (item.similar as number) >= (similarityRatio || .7)
+				return (item.similar as number) >= threshold
 			});
 			res.sort((a, b) => (b.similar || 0) - (a.similar || 0));
 			toDraw = ocrResult.map(item => ({
