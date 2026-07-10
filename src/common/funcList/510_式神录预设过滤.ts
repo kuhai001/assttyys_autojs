@@ -385,7 +385,11 @@ export class Func510 implements IFuncOrigin {
 						}
 					} else if (thisScript.global.change_shikigami_state === 'search_default') {
 						const defaultName = thisConf.defaultName as string;
-						const result = thisScript.findText(defaultName, 5000, thisOperator[2].oper[3], '模糊');
+						// 获取队伍预设区域的OCR结果并使用降低的阈值进行模糊匹配
+						const toDetectAreaBmp = thisScript.helperBridge.helper.GetBitmap(...thisOperator[2].oper[3].slice(0, 4));
+						const resultArea = thisScript.getOcrDetector().loadImage(toDetectAreaBmp);
+						toDetectAreaBmp.recycle();
+						const result = thisScript.findTextByOcrResult(defaultName, resultArea, '模糊', 0.5);
 
 						if (result.length === 0) {
 							console.log(`未识别队伍预设${thisConf.defaultName}`);

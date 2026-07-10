@@ -144,14 +144,16 @@ class TomatoOcr {
             }));
             res = ocrResult.filter(item => reg.test(item.label));
         } else /*if (textMatchMode === '模糊') */{
+            // 降低默认阈值以提高OCR识别率
+            const threshold = similarityRatio || .5;
             toDraw = ocrResult.map(item => ({
                 region: [item.points[0].x, item.points[0].y, item.points[2].x, item.points[2].y],
-                color: item.similar as number >= (similarityRatio || .7) ? 'green' : 'red',
+                color: item.similar as number >= threshold ? 'green' : 'red',
                 text: item.label + ':' + item.confidence
             }));
             res = ocrResult.filter(item => {
                 item.similar = nlpSimilarity(item.label, text);
-                return (item.similar as number) >= (similarityRatio || .7)
+                return (item.similar as number) >= threshold
             });
             res.sort((a, b) => (b.similar || 0) - (a.similar || 0));
         }
