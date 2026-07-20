@@ -803,6 +803,909 @@ const SchemeList: IScheme[] = [
 			}
 		},
 	},
+	/*
+	1、自定义定时任务
+		自定义定时任务-启动游戏-魂土60次-司机-5101
+		自定义定时任务-启动游戏-魂土60次-乘客-5102
+		自定义定时任务-启动游戏-寮突-5103
+		自定义定时任务-启动游戏-式神寄养-5104
+		自定义定时任务-启动游戏-地鬼-5105
+		自定义定时任务-启动游戏-每日逢魔-5106
+		自定义定时任务-启动游戏-每日签到与收取邮件-5107
+		自定义定时任务-启动游戏-悬赏-5108
+		自定义定时任务-启动游戏-金币妖怪-5109
+		自定义定时任务-启动游戏-斗技-5141
+		自定义定时任务-启动游戏-蓝票分享-5142
+		自定义定时任务_启动游戏_绘卷_个突_9退4_进攻-5198
+		自定义定时任务_启动游戏_绘卷_个人探索30次-5199
+	*/
+	{
+		id: 5101,
+		schemeName: '自定义定时任务-启动游戏-魂土60次-司机',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_魂土60次_司机',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 5102,
+		schemeName: '自定义定时任务-启动游戏-魂土60次-乘客',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_魂土60次_乘客',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 5103,
+		'schemeName': '自定义定时任务-启动游戏-寮突',
+		'star': true,
+		'list': [0, 1, 2, 3, 503, 993],
+		config: {
+			'503': {
+				'afterCountOper': '不进行任何操作'
+			},
+			'993': {
+				'next_scheme': '日常_个突_9退4_进攻',
+				'is_shutdown_the_game_before': true
+			}
+		},
+		'groupNames': ['自定义定时任务']
+	},
+	{
+		id: 5104,
+		schemeName: '自定义定时任务-启动游戏-式神寄养',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_式神寄养',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 5105,
+		schemeName: '自定义定时任务-启动游戏-地鬼',
+		groupNames: ['自定义定时任务'],
+		star: true,
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_地鬼日常',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 5106,
+		schemeName: '自定义定时任务-启动游戏-每日逢魔',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_逢魔日常',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 5107,
+		schemeName: '自定义定时任务-启动游戏-每日签到与收取邮件',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_每日签到与收取邮件',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 5108,
+		schemeName: '自定义定时任务-启动游戏-悬赏',
+		star: false,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_悬赏',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 5109,
+		schemeName: '自定义定时任务-启动游戏-金币妖怪',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '日常_金币妖怪',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 5141,
+		schemeName: '自定义定时任务-启动游戏-斗技',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '周常_斗技',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 5142,
+		schemeName: '自定义定时任务-启动游戏-蓝票分享',
+		star: true,
+		groupNames: ['自定义定时任务'],
+		list: [0, 1, 2, 3, 503, 993],
+		config: {
+			'993': {
+				area: '',
+				is_shutdown_the_game_before: true,
+				next_scheme: '周常_蓝票分享',
+			},
+			'503': {
+				afterCountOper: '不进行任何操作',
+			},
+		},
+	},
+	{
+		id: 5198,
+		'schemeName': '自定义定时任务_启动游戏_绘卷_个突_9退4_进攻',
+		'star': true,
+		'list': [0, 1, 2, 3, 502, 503, 993],
+		config: {
+			'0': {
+				jspd_times_longtime_nodo: '3',
+			},
+			'503': { 'afterCountOper': '不进行任何操作' },
+			'993': {
+				'is_shutdown_the_game_before': true,
+				'next_scheme': '绘卷_个突_9退4_进攻'
+			}
+		},
+		'groupNames': ['自定义定时任务']
+	},
+	{
+		id: 5199,
+		'schemeName': '自定义定时任务_启动游戏_绘卷_个人探索30次',
+		'star': true,
+		'list': [0, 1, 2, 3, 502, 503, 993],
+		config: {
+			'0': {
+				jspd_times_longtime_nodo: '3',
+			},
+			'503': { 'afterCountOper': '不进行任何操作' },
+			'993': {
+				'is_shutdown_the_game_before': true,
+				'next_scheme': '绘卷_个人探索30次'
+			}
+		},
+		'groupNames': ['自定义定时任务']
+	},
+	/*
+	2.日常
+		日常_魂土60次_司机-5201
+		日常_魂土60次_乘客-5202
+		日常_寮突破-5203
+		日常_个突_9退4_进攻-5204
+		日常_个突_9退4_退出-5205
+		日常_式神寄养-5206
+		日常_地鬼-5207
+		日常_逢魔-5208
+		日常_每日签到与收取邮件-5209
+		日常_悬赏-5210
+		日常_金币妖怪-5211
+	*/
+	{
+		id: 5201,
+		groupNames: ['日常'],
+		schemeName: '日常_魂土60次_司机',
+		star: true,
+		list: [509, 510, 511, 50, 0, 1, 2, 3, 5, 24, 27, 306],
+		config: {
+			'50': {
+				'buff_type': '御魂',
+				'ready_once_buff': true
+			},
+			'0': {
+				'jspd_enabled_2': true,
+				'jspd_times_2': '50',
+				'after_operation': '切换方案',
+				'next_scheme': '自定义定时任务-启动游戏-寮突'
+			},
+			'2': {
+				'mini_area_click': true,
+			},
+			'306': {
+				'inviteName': '苦海二号',
+			},
+			'510': {
+				'fastMode': true
+			}
+		},
+	},
+	{
+		id: 5202,
+		groupNames: ['日常'],
+		schemeName: '日常_魂土60次_乘客',
+		list: [509, 510, 511, 50, 0, 1, 4, 3, 24, 2],
+		'star': true,
+		config: {
+			'50': {
+				'buff_type': '御魂',
+				'ready_once_buff': true
+			},
+			'0': {
+				'jspd_enabled_2': true,
+				'jspd_times_2': '50',
+				'after_operation': '切换方案',
+				'next_scheme': '自定义定时任务-启动游戏-寮突'
+			},
+			'2': {
+				'mini_area_click': true,
+			},
+			'510': {
+				'fastMode': true
+			}
+		},
+	},
+	{
+		id: 5203,
+		'schemeName': '日常_寮突破',
+		'star': false,
+		'list': [0, 51, 1, 2, 3, 8, 9, 10, 12, 29],
+		config: {
+			'8': {
+				'afterCountOper': '关闭界面',
+				'type': '寮突破'
+			},
+			'10': {
+				'type': '寮突破'
+			},
+			'51': {
+				'greenType': '自定义坐标'
+			}
+		},
+		'groupNames': ['日常']
+	},
+	{
+		id: 5204,
+		'schemeName': '日常_个突_9退4_进攻',
+		'star': true,
+		'list': [501, 40, 51, 0, 1, 2, 3, 8, 9, 509, 510, 511, 29, 10],
+		config: {
+			'501': {
+				'once': true
+			},
+			'40': {
+				'afterCountOper': '不进行任何操作'
+			},
+			'0': {
+				'after_operation': '停止脚本',
+			},
+			'8': {
+				'afterCountOper': '切换方案',
+				'next_scheme': '日常_寮突破'
+			},
+			'9': {
+				'scheme_switch_enabled': true,
+				'after_operation': '切换方案',
+				'next_scheme': '日常_个突_9退4_退出'
+			},
+			'51': {
+				'greenType': '自定义坐标',
+				'preSearch': true
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '3'
+			}
+		},
+		commonConfig: {
+			multiColorSimilar: 96,
+		},
+		'groupNames': ['日常']
+	},
+	{
+		id: 5205,
+		'schemeName': '日常_个突_9退4_退出',
+		'star': false,
+		'list': [0, 1, 2, 3, 8, 9, 10],
+		config: {
+			'0': {
+				'jspd_enabled_2': true,
+				'jspd_times_2': '4',
+				'after_operation': '切换方案',
+				'next_scheme': '__返回上个方案__'
+			},
+			'1': {
+				'exitBeforeReady': true
+			},
+			'2': {
+				'rechallenge': true
+			},
+			'8': {
+				'afterCountOper': '九退四_切换方案',
+				'next_scheme': '__返回上个方案__'
+			}
+		},
+		'groupNames': ['日常']
+	},
+	{
+		id: 5206,
+		schemeName: '日常_式神寄养',
+		groupNames: ['日常'],
+		list: [0, 3, 999, 998, 997, 994, 995],
+		config: {
+			'0': {
+				jspd_times_longtime_nodo: 20,
+			},
+			'3': {
+				type: '关闭',
+			},
+			'994': {
+				count: '6',
+				afterCountOper: '停止脚本',
+				next_scheme: '通用准备退出',
+			},
+			'995': {
+				maxTimeForwait: '10',
+				afterCountOper: '停止脚本',
+				isAutoFosterCare: true,
+				next_scheme: '__停止脚本__',
+			},
+			'997': {
+				priority: '太鼓6->斗鱼6->太鼓5->斗鱼5->太鼓4->斗鱼4->太鼓3',
+			},
+			'998': {
+				change_enchantment_switch: true,
+				change_enchantment_type: '斗鱼',
+			},
+		},
+	},
+	{
+		id: 5207,
+		schemeName: '日常_地鬼日常',
+		list: [509, 510, 511, 40, 0, 1, 2, 3, 16, 29],
+		config: {
+			'40': {
+				'afterCountOper': '不进行任何操作'
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '7'
+			},
+		},
+		groupNames: ['日常'],
+	},
+	{
+		id: 5208,
+		schemeName: '日常_逢魔日常',
+		list: [509, 510, 511, 40, 51, 0, 1, 2, 3, 23, 24, 26, 508, 8, 504],
+		config: {
+			'51': {
+				'greenType': '自定义坐标',
+				'preSearch': true
+			},
+			'0': {
+				jspd_times_longtime_nodo: 20,
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '2'
+			},
+			'40': {
+				'afterCountOper': '不进行任何操作'
+			},
+		},
+		groupNames: ['日常']
+	},
+	{
+		id: 5209,
+		schemeName: '日常_每日签到与收取邮件',
+		list: [0, 2, 3, 518],
+		config: {
+			'0': {
+				jspd_enabled_longtime_nodo: true,
+				jspd_times_longtime_nodo: 1,
+			},
+		},
+		groupNames: ['日常']
+	},
+	{
+		id: 5210,
+		schemeName: '日常_悬赏',
+		groupNames: ['日常'],
+		list: [509, 510, 511, 40, 0, 1, 2, 3, 18, 29],
+		config: {
+			'40': {
+				'afterCountOper': '不进行任何操作'
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '7'
+			},
+		},
+	},
+	{
+		id: 5211,
+		schemeName: '日常_金币妖怪',
+		groupNames: ['日常'],
+		list: [509, 510, 511, 0, 50, 1, 2, 3, 35, 37, 38],
+		config: {
+			'37': {
+				target: '金币妖怪',
+				createMode: '创建队伍',
+				next_scheme: '关闭BUFF',
+			},
+			'50': {
+				ready_once_buff: true,
+				buff_type: '金币',
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '4',
+				'defaultNum': '2'
+			},
+		},
+	},
+	/*
+	3.周常
+		周常_秘闻-5301
+		周常_斗技-5302
+		周常_器灵-5303
+		周常_蓝票分享-5304
+		周常_六道椒图-5305
+	*/
+	{
+		id: 5301,
+		schemeName: '周常_秘闻',
+		groupNames: ['周常'],
+		star: true,
+		list: [509, 510, 511, 29, 0, 51, 1, 2, 3, 34, 308],
+		config: {
+			'510': {
+				'fastMode': true,
+				'groupNum': '7',
+			},
+			'0': {
+				jspd_times_longtime_nodo: '25',
+				jspd_enabled_1: true,
+				jspd_times_1: 10,
+			},
+			'51': {
+				greenType: '自定义坐标',
+				greenText: '绿标专用',
+				preSearch: true,
+			},
+			'2': {
+				'mini_area_click': true,
+			},
+		},
+	},
+	{
+		id: 5302,
+		schemeName: '周常_斗技',
+		groupNames: ['周常'],
+		star: true,
+		list: [509, 510, 511, 0, 51, 1, 2, 3, 30, 307],
+		config: {
+			'0': {
+				jspd_times_longtime_nodo: 20,
+				jspd_enabled_zjsj: true,
+				jspd_times_zjsj: 150,
+				jspd_txpl_zjsj: 300
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '6',
+			},
+			'51': {
+				greenType: '自定义坐标',
+				greenText: '绿标专用',
+				preSearch: true,
+			},
+		},
+	},
+	{
+		id: 5303,
+		schemeName: '周常_契灵',
+		groupNames: ['周常'],
+		list: [509, 510, 511, 29, 0, 1, 2, 3, 313],
+		star: true,
+		config: {
+			'510': {
+				fastMode: true
+			},
+			'51': {
+				greenType: '自定义坐标',
+				greenText: '绿标专用',
+				preSearch: true,
+			},
+			'313': {
+				'preset_pair_契灵_镇墓兽': '1,3'
+			},
+		},
+		commonConfig: {
+			multiColorSimilar: 96,
+		},
+	},
+	{
+		id: 5304,
+		schemeName: '周常_蓝票分享',
+		groupNames: ['周常'],
+		list: [0, 3, 1100],
+		star: true,
+		config: {
+			'0': {
+				jspd_times_longtime_nodo: '3',
+			},
+		},
+	},
+	{
+		id: 5305,
+		schemeName: '周常_六道椒图',
+		groupNames: ['周常'],
+		star: true,
+		list: [509, 510, 511, 29, 0, 1, 316, 2, 3, 24],
+		config: {
+			'510': {
+				'fastMode': true,
+				'groupNum': '5',
+				'defaultNum': '1',
+				'groupNum2': '5',
+				'defaultNum2': '2',
+			},
+			'316': {
+				'overTimes': '2',
+			}
+		},
+	},
+	/*
+	4.常用
+			常用_奉纳御魂_开始奉纳-5401
+			常用_抽厕纸-5402
+			常用_通用活动-5403
+			常用_关闭BUFF-5404
+			常用_返回庭院-5405
+			常用_业原火-5406
+	*/
+	{
+		id: 5401,
+		groupNames: ['常用'],
+		star: true,
+		schemeName: '常用_奉纳御魂_开始奉纳',
+		list: [0, 2, 3, 302],
+	},
+	{
+		id: 5402,
+		schemeName: '常用_抽厕纸',
+		groupNames: ['常用'],
+		star: true,
+		list: [0, 3, 22],
+	},
+	{
+		id: 5403,
+		schemeName: '常用_通用活动',
+		star: true,
+		groupNames: ['常用'],
+		list: [0, 1, 2, 3, 24, 312],
+		config: {
+			'0': {
+				jspd_times_longtime_nodo: 10,
+			},
+		}
+	},
+	{
+		id: 5404,
+		schemeName: '关闭BUFF',
+		list: [502, 1, 2, 3, 501, 29, 40],
+		groupNames: ['常用'],
+	},
+	{
+		id: 5405,
+		schemeName: '返回庭院',
+		list: [3, 503],
+		config: {
+			'503': {
+				after_operation: '停止脚本',
+				next_scheme: '通用准备退出',
+				afterCountOper: '停止脚本',
+			},
+		},
+		groupNames: ['常用'],
+	},
+	{
+		id: 5406,
+		schemeName: '业原火',
+		star: true,
+		list: [509, 510, 511, 29, 53, 0, 1, 2, 3, 6, 24],
+		config: {
+			'0': {
+				'jspd_enabled_2': true,
+				'jspd_times_2': '50',
+				'after_operation': '切换方案',
+				'next_scheme': '自定义定时任务-启动游戏-寮突'
+			},
+			'2': {
+				'mini_area_click': true,
+			},
+			'510': {
+				'fastMode': true,
+				'defaultNum': '4'
+			},
+			'53': {
+				challenge_type: '御魂-业原火',
+			},
+		},
+		groupNames: ['常用'],
+	},
+	/*
+		5.绘卷
+			绘卷_个突_9退4_进攻-5501
+			绘卷_个突_9退4_退出-5502
+			绘卷_个人探索30次-5503
+	*/
+	{
+		id: 5501,
+		schemeName: '绘卷_个突_9退4_进攻',
+		star: true,
+		list: [509, 510, 511, 0, 51, 1, 2, 3, 8, 9, 10, 29, 25, 7],
+		config: {
+			'0': {
+				scheme_switch_enabled: true,
+				next_scheme: '自定义定时任务_启动游戏_绘卷_个人探索30次',
+				after_operation: '切换方案'
+			},
+			'8': {
+				afterCountOper: '切换方案',
+				next_scheme: '自定义定时任务_启动游戏_绘卷_个人探索30次'
+			},
+			'9': {
+				scheme_switch_enabled: true,
+				next_scheme: '绘卷_个突_9退4_退出'
+			},
+			'51': {
+				greenType: '自定义坐标',
+				preSearch: true
+			},
+			'510': {
+				fastMode: true,
+				groupNum: '3'
+			},
+			'7': {
+				switch_nineWin: true,
+
+			}
+		},
+		commonConfig: {
+			multiColorSimilar: 96,
+		},
+		groupNames: ['绘卷']
+	},
+	{
+		id: 5502,
+		'schemeName': '绘卷_个突_9退4_退出',
+		'star': false,
+		'list': [0, 1, 2, 3, 8, 9, 10],
+		config: {
+			'0': {
+				'jspd_enabled_2': true,
+				'jspd_times_2': '4',
+				'after_operation': '切换方案',
+				'next_scheme': '__返回上个方案__'
+			},
+			'1': { 'exitBeforeReady': true },
+			'2': { 'rechallenge': true },
+			'8': {
+				'afterCountOper': '九退四_切换方案',
+				'next_scheme': '__返回上个方案__'
+			}
+		},
+		'groupNames': ['绘卷']
+	},
+	{
+		id: 5503,
+		'schemeName': '绘卷_个人探索30次',
+		'star': true,
+		'list': [0, 15, 1, 2, 3, 13, 14, 509, 510, 511, 29, 12],
+		config: {
+			'0': {
+				'jspd_times_longtime_nodo': '3',
+				'jspd_times_1': '3',
+				'jspd_enabled_2': true,
+				'jspd_times_2': '30',
+				'next_scheme': '自定义定时任务_启动游戏_绘卷_个突_9退4_进攻',
+				'after_operation': '切换方案',
+				'after_operation_sleep': '2,5'
+			},
+			'2': {
+				'next_scheme': '__返回上个方案__',
+				'mini_area_click': true,
+				'fail': true
+			},
+			'14': { 'type': '无差别' },
+			'510': {
+				'fastMode': true,
+				'groupNum': '4'
+			}
+		},
+		'groupNames': ['绘卷']
+	},
+	/*
+		6.寮活动
+			庭院进入寮每日活动(自动)-5601
+			阴门挑战-5602
+			首领退治-5603
+			狭间暗域-5604
+			狩猎战-5605
+			道馆-5606
+			宴会'-5607
+			僵尸寮自动攻打道馆-5608
+	*/
+	{
+		id: 5601,
+		schemeName: '进入寮活动New',
+		star: true,
+		groupNames: ['寮活动'],
+		list: [3, 500, 505, 516],
+		config: {
+			'500': {
+				a_ctivity_gateOfHades: true,
+				a_ctivity_dojo: true,
+				a_ctivity_hunt: true,
+				a_ctivity_narrow: true,
+				a_ctivity_banquet: true,
+				a_ctivity_huntBoss: true,
+			}
+		}
+	},
+	// {
+	// 	id: 5601,
+	// 	schemeName: '庭院进入寮每日活动(自动)',
+	// 	list: [3, 505, 506, 516],
+	// 	groupNames: ['寮活动'],
+	// 	config: {
+	// 		'506': {
+	// 			auto_switch_enabled: true,
+	// 			gateOfHades_switch: false,
+	// 		},
+	// 		'516': {
+	// 			count: '10',
+	// 			afterCountOper: '停止脚本',
+	// 			next_scheme: '通用准备退出',
+	// 		},
+	// 	},
+	// },
+	{
+		id: 5602,
+		schemeName: '阴门挑战',
+		star: true,
+		groupNames: ['寮活动'],
+		list: [0, 1, 2, 3, 5, 513],
+	},
+	{
+		id: 5603,
+		schemeName: '首领退治',
+		star: true,
+		groupNames: ['寮活动'],
+		list: [0, 1, 2, 3, 512],
+	},
+	{
+		id: 5604,
+		schemeName: '狭间暗域',
+		star: true,
+		groupNames: ['寮活动'],
+		list: [0, 1, 3, 514, 515],
+	},
+	{
+		id: 5605,
+		schemeName: '狩猎战',
+		star: true,
+		groupNames: ['寮活动'],
+		list: [0, 1, 2, 3, 507],
+	},
+	{
+		id: 5606,
+		schemeName: '道馆',
+		groupNames: ['寮活动'],
+		list: [0, 1, 2, 3, 32],
+		star: true,
+	},
+	{
+		id: 5607,
+		schemeName: '宴会',
+		star: true,
+		groupNames: ['寮活动'],
+		list: [0, 3, 1000, 1001],
+		config: {
+			'1001': {
+				change_shikigami_index: '1',
+			},
+		},
+	},
+	{
+		id: 5608,
+		schemeName: '僵尸寮自动攻打道馆',
+		star: true,
+		groupNames: ['寮活动'],
+		list: [311, 32, 519, 505, 51, 0, 1, 2],
+		config: {
+			'32': {
+				after_fail_operation: '再战道馆',
+				exit_second: true,
+			},
+			'51': {
+				greenType: '自定义坐标',
+				preSearch: true
+			},
+			'311': {
+				redType: '神荒',
+			},
+			'519': {
+				defense: 1,
+				coefficient: 5,
+				day: true
+			},
+		},
+	},
 	// 完整demo
 	// , {
 	//     id: 2,
