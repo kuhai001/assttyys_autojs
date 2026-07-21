@@ -390,7 +390,7 @@ export class Func306 implements IFuncOrigin {
 					thisScript.keepScreen();
 				}
 			}
-			result = thisScript.findText('.+', 0, thisOperator[1].oper[0], stringCompareMode);
+			result = thisScript.findText('.+', 0, thisOperator[1].oper[0], '包含');
 			if (result.length === 0) {
 				console.log('未识别到任何昵称');
 				thisScript.global.team_up_Time++;
@@ -402,7 +402,7 @@ export class Func306 implements IFuncOrigin {
 					console.log(`昵称历遍:${result[i].label}`)
 				}
 				// 邀请里点击第一位好友
-				const findInvName = thisScript.findTextByOcrResult(thisConf.inviteName as string, result, '包含')
+				const findInvName = thisScript.findTextByOcrResult(thisConf.inviteName as string, result, stringCompareMode)
 				if (findInvName.length) {
 					toClickRegion = [
 						findInvName[0].points[0].x + 20,
@@ -436,7 +436,7 @@ export class Func306 implements IFuncOrigin {
 							}
 						}
 						thisScript.keepScreen();
-						result = thisScript.findText('.+', 0, thisOperator[1].oper[0], stringCompareMode);
+						result = thisScript.findText('.+', 0, thisOperator[1].oper[0], '包含');
 					}
 				}
 				if (result.length === 0) {
@@ -450,7 +450,7 @@ export class Func306 implements IFuncOrigin {
 						console.log(`昵称历遍:${result[i].label}`)
 					}
 					// 邀请里点击第二位好友
-					const findInvNameTwo = thisScript.findTextByOcrResult(thisConf.inviteNameTwo as string, result, '包含')
+					const findInvNameTwo = thisScript.findTextByOcrResult(thisConf.inviteNameTwo as string, result, stringCompareMode)
 					if (findInvNameTwo.length) {
 						toClickRegionTwo = [
 							findInvNameTwo[0].points[0].x + 10,
