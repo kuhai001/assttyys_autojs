@@ -15,6 +15,11 @@ const SchemeList: IScheme[] = [
 		id: 26,
 		schemeName: '关闭BUFF',
 		list: [0, 1, 2, 3, 501, 29, 40, 503],
+		config: {
+			'40': {
+				scheme_switch_enabled: true,
+			},
+		},
 	},
 	{
 		id: 29,
@@ -171,12 +176,13 @@ const SchemeList: IScheme[] = [
 		schemeName: '每日签到与收取邮件',
 		groupNames: ['日常'],
 		list: [0, 1, 2, 3, 518, 521],
+		star: true,
 		config: {
 			'0': {
 				jspd_enabled_longtime_nodo: true,
 				jspd_times_longtime_nodo: 1,
 				after_operation: '切换方案',
-				next_scheme: '喂猫喂狗'
+				next_scheme: '返回庭院'
 			},
 		},
 	},
