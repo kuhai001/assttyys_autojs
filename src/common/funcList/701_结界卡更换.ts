@@ -30,12 +30,12 @@ export class Func701 implements IFuncOrigin {
 		{ //	0 判断_是否为己方结界
 			desc: [1280, 720,
 				[
-					[left, 63, 37, 0xa7703d],
-					[left, 314, 298, 0xe5bb66],
-					[center, 612, 294, 0xe9bd68],
-					[right, 832, 581, 0x2e2626],
-					[right, 904, 558, 0x952524],
-				],
+					[left, 63, 39, 0xaa713e],
+					[center, 611, 284, 0xbb2f2e],
+					[center, 614, 322, 0xdfc7bb],
+					[left, 202, 513, 0x15120e],
+					[right, 832, 586, 0x2d241f],
+				]
 			],
 			oper: [
 				[center, 1280, 720, 599, 301, 626, 389, 1000], //  点击 式神育成

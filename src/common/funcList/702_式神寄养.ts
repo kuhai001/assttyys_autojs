@@ -25,6 +25,27 @@ export class Func702 implements IFuncOrigin {
 			type: 'scheme',
 			default: '返回庭院',
 			value: '返回庭院',
+		}, {
+			name: 'wait_times',
+			desc: '寄养等待次数（寄养时间未到时重试，达到次数后执行下方操作）',
+			type: 'integer',
+			default: 5,
+		}, {
+			name: 'wait_interval',
+			desc: '单次等待时间（秒）',
+			type: 'integer',
+			default: 60,
+		}, {
+			name: 'wait_afterCountOper',
+			desc: '达到等待次数后的操作',
+			type: 'list',
+			data: ['切换方案', '停止程序'],
+			default: '切换方案',
+		}, {
+			name: 'wait_next_scheme',
+			desc: '切换方案后执行',
+			type: 'scheme',
+			default: '返回庭院',
 		}]
 	}];
 	operator: IFuncOperatorOrigin[] = [
@@ -39,8 +60,8 @@ export class Func702 implements IFuncOrigin {
 				],
 			],
 			oper: [
-				[center, 1280, 720, 599, 301, 626, 389, 1000], //  点击 式神育成
-			],
+				[center, 1280, 720, 598, 297, 632, 394, 1000],
+			]
 		}, { // 1 点击 式神养成页 空式神寄养
 			desc: [
 				1280,
@@ -231,8 +252,22 @@ export class Func702 implements IFuncOrigin {
 				name: '开始寄养',
 				operator: [thisOperator[1]],
 			})) {
-				console.log('寄养时间未到,等待10秒')
-				sleep(10000);
+				if (!thisScript.global.jy_foster_wait_times) {
+					thisScript.global.jy_foster_wait_times = 0;
+				}
+				thisScript.global.jy_foster_wait_times++;
+				console.log(`寄养时间未到,等待${thisconf.wait_interval}秒(第${thisScript.global.jy_foster_wait_times}次)`);
+				if (thisScript.global.jy_foster_wait_times >= +thisconf.wait_times) {
+					thisScript.global.jy_foster_wait_times = 0;
+					if ('切换方案' === thisconf.wait_afterCountOper) {
+						thisScript.regionClick([thisOperator[12].oper[0]]); // 先返回
+						thisScript.rerun(thisconf.wait_next_scheme);
+					} else if ('停止程序' === thisconf.wait_afterCountOper) {
+						thisScript.stop();
+					}
+					return true;
+				}
+				sleep(+thisconf.wait_interval * 1000);
 				thisScript.regionClick([thisOperator[12].oper[0]])
 			}
 			return true;
