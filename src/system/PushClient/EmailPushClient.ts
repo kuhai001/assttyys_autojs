@@ -72,7 +72,11 @@ export default class EmailPushClient extends AbstractPushClient {
 				break;
 			}
 		}
-		const subject = msgPush_prefix + ' ' + firstText;
+		let firstLine = firstText.split('\n')[0];
+		if (firstLine.endsWith('\r')) {
+			firstLine = firstLine.substring(0, firstLine.length - 1);
+		}
+		const subject = msgPush_prefix + ' ' + firstLine;
 
 		console.log('邮件推送: ' + email_from + ' -> ' + email_to);
 
@@ -81,7 +85,7 @@ export default class EmailPushClient extends AbstractPushClient {
 			if (data[j].type === 'text') {
 				htmlParts.push('<p>' + escapeHtml(data[j].data) + '</p>');
 			} else if (data[j].type === 'image') {
-				const b64 = bmpToBase64(scaleBmp(data[j].data, 0.1));
+				const b64 = bmpToBase64(scaleBmp(data[j].data, 0.5));
 				htmlParts.push('<p><img src="data:image/png;base64,' + b64 + '" /></p>');
 			}
 		}
