@@ -11,13 +11,17 @@ const SchemeList: IScheme[] = [
 		star: true,
 		list: [0, 1, 2, 3, 17, 22, 28, 31, 302, 309, 310, 319, 24],
 	},
-	{
+	{ // 增加容错配置，防止无限点击
 		id: 26,
 		schemeName: '关闭BUFF',
 		list: [0, 1, 2, 3, 501, 29, 40, 503],
 		config: {
+			'0': {
+				jspd_enabled_longtime_nodo: true,
+				jspd_times_longtime_nodo: 1,
+			},
 			'40': {
-				scheme_switch_enabled: true,
+				'scheme_switch_enabled': true
 			},
 		},
 	},
@@ -60,12 +64,12 @@ const SchemeList: IScheme[] = [
 		star: true,
 		list: [0, 1, 2, 3, 4],
 	},
-	{
+	{ // 相对于原方案去除51，增加510预设
 		id: 3,
 		schemeName: '个人突破_打9退4',
 		groupNames: ['战斗'],
 		star: true,
-		list: [690, 509, 510, 51, 0, 1, 2, 3, 7, 8, 9, 29, 503],
+		list: [690, 509, 510, 0, 1, 2, 3, 7, 8, 9, 29, 503],
 		config: {
 			'7': {
 				switch_nineWin: true,
@@ -73,10 +77,13 @@ const SchemeList: IScheme[] = [
 			'9': {
 				scheme_switch_enabled: true,
 			},
-			'51': {
-				greenType: '自定义坐标',
-				preSearch: true,
-			},
+
+			'510': {
+				'fastMode': true,
+				'groupNum': '1',
+				'defaultNum': '1'
+			}
+
 		},
 	},
 	{
@@ -94,16 +101,21 @@ const SchemeList: IScheme[] = [
 			},
 		},
 	},
-	{
+	{ // 增加690，509，510以及相关设置
 		id: 5,
 		schemeName: '寮突破',
 		groupNames: ['战斗'],
 		star: true,
-		list: [0, 1, 2, 3, 8, 9, 12, 29],
+		list: [690, 509, 510, 0, 1, 2, 3, 8, 9, 12, 29],
 		config: {
 			'8': {
 				type: '寮突破',
 			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '1',
+				'defaultNum': '1'
+			}
 		},
 	},
 	{
@@ -171,11 +183,11 @@ const SchemeList: IScheme[] = [
 			},
 		},
 	},
-	{
+	{ // 切换方案改为返回庭院假如690功能
 		id: 64,
 		schemeName: '每日签到与收取邮件',
 		groupNames: ['日常'],
-		list: [0, 1, 2, 3, 518, 521],
+		list: [690, 0, 1, 2, 3, 518, 521],
 		star: true,
 		config: {
 			'0': {
@@ -212,18 +224,25 @@ const SchemeList: IScheme[] = [
 			},
 		},
 	},
-	{
+	{ // 功能5目前不能文字识别，会点击错误，改为功能35，37，38
 		id: 24,
 		schemeName: '金币妖怪',
 		groupNames: ['日常'],
-		list: [0, 50, 1, 2, 3, 5, 27],
+		list: [690, 509, 510, 511, 0, 50, 1, 2, 3, 35, 37, 38],
 		config: {
-			'27': {
-				mission: '金币妖怪',
+			'37': {
+				target: '金币妖怪',
+				createMode: '创建队伍',
+				next_scheme: '关闭BUFF',
 			},
 			'50': {
 				ready_once_buff: true,
 				buff_type: '金币',
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '1',
+				'defaultNum': '2'
 			},
 		},
 	},
