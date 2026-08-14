@@ -151,6 +151,7 @@ export type globalRootType = {
 	miWenChange: boolean, // 秘闻是否更换过式神
 	shaoTiao: boolean, // 烧条
 	miWenClearTimer: number, // 秘闻挑战清理状态次数
+	jy_foster_wait_times: number, // 702寄养等待次数计数
 }
 
 export const globalRoot: globalRootType = {
@@ -304,6 +305,7 @@ export const globalRoot: globalRootType = {
 	miWenChange: false,
 	shaoTiao: false,
 	miWenClearTimer: 0,
+	jy_foster_wait_times: 0,
 	back: true,
 	back_time: 0,
 }
