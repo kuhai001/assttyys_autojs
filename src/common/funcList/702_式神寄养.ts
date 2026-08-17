@@ -260,9 +260,11 @@ export class Func702 implements IFuncOrigin {
 				if (thisScript.global.jy_foster_wait_times >= +thisconf.wait_times) {
 					thisScript.global.jy_foster_wait_times = 0;
 					if ('切换方案' === thisconf.wait_afterCountOper) {
+						thisScript.doPush(thisScript, { text: `式神寄养尚未完成，等待规定时间后运行${thisconf.wait_next_scheme}`, before() { console.log(`式神寄养尚未完成，等待规定时间后运行${thisconf.wait_next_scheme}`); } });
 						thisScript.regionClick([thisOperator[12].oper[0]]); // 先返回
 						thisScript.rerun(thisconf.wait_next_scheme);
 					} else if ('停止程序' === thisconf.wait_afterCountOper) {
+						thisScript.doPush(thisScript, { text: `式神寄养尚未完成，等待规定时间后${thisconf.wait_afterCountOper}`, before() { console.log(`式神寄养尚未完成，等待规定时间后${thisconf.wait_afterCountOper}`); } });
 						thisScript.stop();
 					}
 					return true;
