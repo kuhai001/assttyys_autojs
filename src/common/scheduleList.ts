@@ -260,21 +260,21 @@ const ScheduleDefaultList: JobOptions[] = [
 	// 		scheme: '自定义定时任务-启动游戏-每日签到与收取邮件',
 	// 	}
 	// },
-	// {
-	// 	id: 503,
-	// 	name: '自定义地鬼',
-	// 	desc: '自动地鬼',
-	// 	checked: true,
-	// 	lastRunTime: null,
-	// 	nextDate: null,
-	// 	repeatMode: 3,
-	// 	interval: '0 45 18 * * *',
-	// 	nextOffset: '0,0',
-	// 	level: '6',
-	// 	config: {
-	// 		scheme: '自定义定时任务-启动游戏-地鬼',
-	// 	}
-	// },
+	{
+		id: 503,
+		name: '自定义地鬼',
+		desc: '自动地鬼',
+		checked: true,
+		lastRunTime: null,
+		nextDate: null,
+		repeatMode: 3,
+		interval: '0 45 18 * * *',
+		nextOffset: '0,0',
+		level: '6',
+		config: {
+			scheme: '自定义定时任务-启动游戏-地鬼',
+		}
+	},
 	{
 		id: 504,
 		name: '自定义金币妖怪',
@@ -283,7 +283,7 @@ const ScheduleDefaultList: JobOptions[] = [
 		lastRunTime: null,
 		nextDate: null,
 		repeatMode: 3,
-		interval: '0 45 17 * * *',
+		interval: '0 0 16 * * *',
 		nextOffset: '0,0',
 		level: '6',
 		config: {

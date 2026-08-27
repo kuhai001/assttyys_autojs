@@ -23,6 +23,10 @@ const SchemeList: IScheme[] = [
 			'40': {
 				'scheme_switch_enabled': true
 			},
+			'503': {
+				scheme_switch_enabled: true,
+				afterCountOper: '_停止脚本_',
+			}
 		},
 	},
 	{
@@ -166,8 +170,10 @@ const SchemeList: IScheme[] = [
 		star: true,
 		list: [690, 509, 510, 0, 1, 2, 3, 16, 29, 503],
 		config: {
-			'16': {
-				next_scheme: '逢魔日常'
+			'510': {
+				'fastMode': true,
+				'groupNum': '1',
+				'defaultNum': '4'
 			}
 		}
 	},
@@ -916,15 +922,15 @@ const SchemeList: IScheme[] = [
 		schemeName: '自定义定时任务-启动游戏-地鬼',
 		groupNames: ['自定义定时任务'],
 		star: true,
-		list: [0, 1, 2, 3, 503, 993],
+		list: [0, 1, 2, 3, 503, 690],
 		config: {
-			'993': {
-				area: '',
-				is_shutdown_the_game_before: true,
-				next_scheme: '日常_地鬼日常',
-			},
 			'503': {
-				afterCountOper: '不进行任何操作',
+				scheme_switch_enabled: true,
+				next_scheme: '地鬼日常',
+			},
+			'690': {
+				scheme_switch_enabled: true,
+				next_scheme: '地鬼日常',
 			},
 		},
 	},
