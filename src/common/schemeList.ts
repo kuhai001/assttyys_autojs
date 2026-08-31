@@ -174,6 +174,9 @@ const SchemeList: IScheme[] = [
 				'fastMode': true,
 				'groupNum': '1',
 				'defaultNum': '4'
+			},
+			'16': {
+				next_scheme: '逢魔日常'
 			}
 		}
 	},
@@ -182,7 +185,7 @@ const SchemeList: IScheme[] = [
 		schemeName: '逢魔日常',
 		groupNames: ['日常'],
 		star: true,
-		list: [1, 2, 3, 23, 24, 26, 508, 8, 504],
+		list: [1, 2, 3, 23, 24, 26, 508, 8],
 		config: {
 			'508': {
 				next_scheme: '每日签到与收取邮件',
@@ -200,7 +203,7 @@ const SchemeList: IScheme[] = [
 				jspd_enabled_longtime_nodo: true,
 				jspd_times_longtime_nodo: 1,
 				after_operation: '切换方案',
-				next_scheme: '返回庭院'
+				next_scheme: '金币妖怪'
 			},
 		},
 	},
