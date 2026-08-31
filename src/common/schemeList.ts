@@ -60,6 +60,11 @@ const SchemeList: IScheme[] = [
 		groupNames: ['战斗'],
 		star: true,
 		list: [0, 1, 2, 3, 5],
+		config: {
+			'0': {
+				'jspd_enabled_1': true,
+			},
+		},
 	},
 	{
 		id: 2,
@@ -67,6 +72,11 @@ const SchemeList: IScheme[] = [
 		groupNames: ['战斗'],
 		star: true,
 		list: [0, 1, 2, 3, 4],
+		config: {
+			'0': {
+				'jspd_enabled_1': true,
+			},
+		},
 	},
 	{ // 相对于原方案去除51，增加510预设
 		id: 3,
@@ -87,7 +97,6 @@ const SchemeList: IScheme[] = [
 				'groupNum': '1',
 				'defaultNum': '1'
 			}
-
 		},
 	},
 	{
