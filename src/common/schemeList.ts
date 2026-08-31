@@ -162,6 +162,15 @@ const SchemeList: IScheme[] = [
 		groupNames: ['日常'],
 		star: true,
 		list: [690, 509, 510, 1, 2, 3, 18, 29, 503],
+		config: {
+			'510': {
+				'fastMode': true,
+				'groupNum': '1',
+				'defaultNum': '3',
+				'groupNum2': '1',
+				'defaultNum2': '4'
+			},
+		}
 	},
 	{
 		id: 9,
