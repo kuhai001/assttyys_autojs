@@ -670,12 +670,12 @@ const multiFindColors: IMultiFindColorsOrigin = {
 		desc: [
 			[1280, 720,
 				[
-					[center, 745, 269, 0x12110f],
-					[center, 741, 272, 0xb6aca7],
-					[center, 737, 297, 0x160d07],
-					[center, 751, 291, 0xaba69a],
-					[center, 726, 294, 0xaeaa97],
-					[center, 728, 267, 0x060503]
+					[center, 727, 291, 0x2a2a4c],
+					[center, 708, 276, 0x7d779b],
+					[center, 709, 320, 0x817c9f],
+					[center, 726, 321, 0x6c678f],
+					[center, 737, 321, 0x7e7a9f],
+					[center, 746, 310, 0x8b87a7],
 				]
 			],
 			[   //  画质为极速适配
