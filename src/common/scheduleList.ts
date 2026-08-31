@@ -24,11 +24,11 @@ const ScheduleDefaultList: JobOptions[] = [
 		id: 2,
 		name: '放置结界卡',
 		desc: '',
-		checked: false,
+		checked: true,
 		lastRunTime: null,
 		nextDate: null,
-		repeatMode: 2,
-		interval: '5',
+		repeatMode: 3
+		interval: '0 0 05 * * *',
 		nextOffset: '',
 		level: '10',
 		config: {
