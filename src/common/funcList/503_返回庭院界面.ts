@@ -386,10 +386,11 @@ export class Func503 implements IFuncOrigin {
 		desc: [
 			1280, 720,
 			[
-				[center, 738, 324, 0x979693],
-				[center, 738, 349, 0x999595],
-				[center, 740, 247, 0xb7b0af],
-				[center, 754, 302, 0xaba896],
+				[center, 714, 298, 0x8f89a3],
+				[center, 732, 288, 0x202044],
+				[center, 733, 314, 0x262650],
+				[center, 745, 321, 0x7e799f],
+				[center, 722, 322, 0x7f7c9f],
 			]
 		]
 	}, {
