@@ -62,7 +62,7 @@ const SchemeList: IScheme[] = [
 		list: [0, 1, 2, 3, 5],
 		config: {
 			'0': {
-				'jspd_enabled_1': true,
+				'jspd_enabled_2': true,
 			},
 		},
 	},
@@ -74,7 +74,7 @@ const SchemeList: IScheme[] = [
 		list: [0, 1, 2, 3, 4],
 		config: {
 			'0': {
-				'jspd_enabled_1': true,
+				'jspd_enabled_2': true,
 			},
 		},
 	},
