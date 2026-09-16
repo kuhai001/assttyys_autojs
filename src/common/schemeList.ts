@@ -855,6 +855,72 @@ const SchemeList: IScheme[] = [
 			}
 		},
 	},
+	// ==========绘卷 ==========
+	{ // 相对于原方案去除51，增加510预设
+		id: 3,
+		schemeName: '绘卷个人突破',
+		groupNames: ['绘卷'],
+		star: true,
+		list: [690, 509, 510, 0, 1, 2, 3, 7, 8, 9, 29, 503],
+		config: {
+			'8': {
+				next_scheme: '绘卷_探索单人',
+			},
+			'7': {
+				switch_nineWin: true,
+			},
+			'9': {
+				scheme_switch_enabled: true,
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '1',
+				'defaultNum': '1'
+			}
+		},
+	},
+	{
+		id: 4,
+		schemeName: '绘卷个人突破_降级',
+		groupNames: ['绘卷'],
+		list: [0, 1, 2, 3, 8, 9, 11],
+		config: {
+			'0': {
+				jspd_enabled_1: true,
+				jspd_times_1: 27,
+			},
+			'1': {
+				exitBeforeReady: true,
+			},
+			'8': {
+				next_scheme: '绘卷_探索单人',
+			},
+		},
+	},
+	{
+		id: 111,
+		schemeName: '绘卷_探索单人',
+		star: true,
+		list: [690, 509, 510, 50, 0, 1, 2, 3, 14, 29, 503],
+		groupNames: ['绘卷'],
+		config: {
+			'0': {
+				jspd_enabled_2: true,
+				jspd_times_2: '80',
+				after_operation: '切换方案',
+				next_scheme: '绘卷_突破'
+			},
+			'503': {
+				'oper_26': false,
+				'oper_27': false
+			},
+			'510': {
+				'fastMode': true,
+				'groupNum': '1',
+				'defaultNum': '4'
+			}
+		}
+	},
 	/*
 	1、自定义定时任务
 		自定义定时任务-启动游戏-魂土60次-司机-5101
